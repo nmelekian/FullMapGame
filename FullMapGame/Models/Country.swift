@@ -38,7 +38,7 @@ struct Country: Codable, Hashable {
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
                 for index in 0..<landmass.count {
-                    guard index == 0 || index % 5 == 0 else { continue }
+                    guard index == 0 || index % 1 == 0 else { continue }
                     let coord2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(landmass[index][1]), longitude: CLLocationDegrees(landmass[index][0]))
                     coord2DArray.append(coord2D)
                     
@@ -66,7 +66,6 @@ static var testCountry = Country(country: "", city: "", north: 0, south: 0, west
 let countryNames = ["Afghanistan",
                     "Albania",
                     "Algeria",
-                    "American Samoa",
                     "Andorra",
                     "Angola",
                     "Anguilla",

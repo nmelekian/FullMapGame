@@ -64,7 +64,7 @@ struct ContentView: View {
         //        }
         
         VStack {
-            Text("Loaded Countries: \(vm.countries.count.description)")
+            Text("Loaded Countries: \(vm.country.north)")
             Text("User Score: \(score)")
             TextField("Name the country", text: $vm.userGuessesText)
             //            Text(vm.userLatitude.description)
@@ -83,23 +83,32 @@ struct ContentView: View {
                 vm.currentCountryName = vm.randomCountry.country
                 print(vm.randomCountry.country)
                 mapStyle = .hybrid(pointsOfInterest: .excludingAll)
-                print(vm.randomCountry.borders().count.description)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     if vm.userGuessesText == vm.currentCountryName {
                         score += 1
                     }
-                    vm.randomCountry = vm.countries.randomElement()!
-                    vm.borderArray = vm.randomCountry.borders()
                     position = .automatic
                     vm.currentCountryName = ""
                     vm.userGuessesText = ""
-                    //                    vm.hasUserGuessed = false
                     mapStyle = .imagery
+                    
+                    
+                    Task{
+                        vm.randomCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+                        vm.borderArray = vm.randomCountry.borders()
+                        print(vm.randomCountry.borders().count.description)
+                    }
+                    
+                   
+                    //                    vm.hasUserGuessed = false
+                    
                 }
             }
             Button("load Country") {
-                vm.randomCountry = vm.countries[0]
-                vm.borderArray = vm.randomCountry.borders()
+                Task{
+                    vm.randomCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+                    vm.borderArray = vm.randomCountry.borders()
+                }
                 print(vm.borderArray.count.description)
                 print(vm.randomCountry.country)
                 testCountry += 1
@@ -111,9 +120,12 @@ struct ContentView: View {
             
             Button("poopoo") {
                 vm.hasUserGuessed = true
-                vm.randomCountry = vm.countries[33]
-                vm.borderArray = vm.randomCountry.borders()
-                //                print(vm.borderArray[0][1000])
+                Task{
+                    vm.randomCountry = await Bundle.main.decode("Canada.json")
+                    vm.borderArray = vm.randomCountry.borders()
+
+                }
+                                //                print(vm.borderArray[0][1000])
                 print(vm.randomCountry.country)
                 //                testCountry += 1
                 //                if testCountry == 204 {
@@ -124,16 +136,20 @@ struct ContentView: View {
         }
         .padding()
         .onSubmit {
-            vm.currentCountryName = vm.randomCountry.country
+            vm.currentCountryName = vm.country.country
             print(vm.randomCountry.country)
             mapStyle = .hybrid(pointsOfInterest: .excludingAll)
-            print(vm.randomCountry.borders().count.description)
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 if vm.userGuessesText == vm.currentCountryName {
                     score += 1
                 }
-                vm.randomCountry = vm.countries.randomElement()!
-                vm.borderArray = vm.randomCountry.borders()
+                Task{
+                    vm.randomCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+                    vm.borderArray = vm.randomCountry.borders()
+                    vm.country = vm.randomCountry
+                }
+                
                 position = .automatic
                 vm.currentCountryName = ""
                 vm.userGuessesText = ""
@@ -162,6 +178,7 @@ fills in country if correct
  
  Country name bank
  Autocorrect/fill in
+ 
  Continent reference
  
  add a game of states?

@@ -28,7 +28,7 @@ extension Bundle {
 //        return loaded
 //    }
     
-    func decode(_ file: String) async -> [Country] {
+    func decode(_ file: String) async -> Country {
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) in bundle.")
         }
@@ -39,9 +39,9 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
-        let loaded = try! decoder.decode([Country].self, from: data)
-        guard let loaded = try? decoder.decode([Country].self, from: data) else {
-            return []
+        let loaded = try! decoder.decode(Country.self, from: data)
+        guard let loaded = try? decoder.decode(Country.self, from: data) else {
+            return Country.testCountry
         }
         
         return loaded

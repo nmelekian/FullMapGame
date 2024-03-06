@@ -10,8 +10,8 @@ import MapKit
 
 @MainActor
 class CountriesViewModel: ObservableObject {
-    @Published var countries: [Country] = []
-    @Published var randomCountry: Country = Country.testCountry
+    @Published var country: Country = .testCountry
+    @Published var randomCountry: Country = .testCountry
     @Published var borderArray: [[CLLocationCoordinate2D]] = []
     @Published var currentCountryName = ""
     
@@ -47,9 +47,13 @@ class CountriesViewModel: ObservableObject {
     
     init() { // is synchronous
         Task {
-            let countries = await Bundle.main.decode("FullCountryInformation.json")
+            let country = await Bundle.main.decode("\(countryNames.randomElement()!).json")
 //            await MainActor.run {
-                self.countries = countries
+            print(country)
+                self.country = country
+            self.borderArray = country.borders()
+            
+            
 //            }
 //         who knows how long this will take, but at least the user can use the app while the countries are being fetched.
         }
