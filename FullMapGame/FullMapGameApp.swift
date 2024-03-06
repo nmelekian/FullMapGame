@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FullMapGameApp: App {
+    @StateObject var viewModel = CountriesViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

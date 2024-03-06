@@ -11,6 +11,220 @@
 		A60BBD8D2B7D4AD6008B89BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */; };
 		A60BBD8F2B7D4AD7008B89BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60BBD8E2B7D4AD7008B89BB /* Assets.xcassets */; };
 		A60BBD932B7D4AD7008B89BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60BBD922B7D4AD7008B89BB /* Preview Assets.xcassets */; };
+		A60BBD9A2B7D4BA9008B89BB /* Bundle Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBD992B7D4BA9008B89BB /* Bundle Extension.swift */; };
+		A60BBD9E2B7D4BC7008B89BB /* Coordinate Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBD9D2B7D4BC7008B89BB /* Coordinate Extension.swift */; };
+		A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDA12B7D4D0A008B89BB /* Country.swift */; };
+		A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */; };
+		A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */; };
+		A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659A0EA2B852CCC00063A27 /* SpareParts.swift */; };
+		A659A0EF2B853ACA00063A27 /* FullCountryInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */; };
+		A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DD2B98B1A800A5B899 /* Afghanistan.json */; };
+		A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DE2B98B1A800A5B899 /* Albania.json */; };
+		A676E2AF2B98B1A800A5B899 /* Algeria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DF2B98B1A800A5B899 /* Algeria.json */; };
+		A676E2B02B98B1A800A5B899 /* Andorra.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E02B98B1A800A5B899 /* Andorra.json */; };
+		A676E2B12B98B1A800A5B899 /* Angola.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E12B98B1A800A5B899 /* Angola.json */; };
+		A676E2B22B98B1A800A5B899 /* Anguilla.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E22B98B1A800A5B899 /* Anguilla.json */; };
+		A676E2B32B98B1A800A5B899 /* Antigua and Barbuda.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E32B98B1A800A5B899 /* Antigua and Barbuda.json */; };
+		A676E2B42B98B1A800A5B899 /* Argentina.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E42B98B1A800A5B899 /* Argentina.json */; };
+		A676E2B52B98B1A800A5B899 /* Armenia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E52B98B1A800A5B899 /* Armenia.json */; };
+		A676E2B62B98B1A800A5B899 /* Aruba.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E62B98B1A800A5B899 /* Aruba.json */; };
+		A676E2B72B98B1A800A5B899 /* Australia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E72B98B1A800A5B899 /* Australia.json */; };
+		A676E2B82B98B1A800A5B899 /* Austria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E82B98B1A800A5B899 /* Austria.json */; };
+		A676E2B92B98B1A800A5B899 /* Azerbaijan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1E92B98B1A800A5B899 /* Azerbaijan.json */; };
+		A676E2BA2B98B1A800A5B899 /* Bahamas.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1EA2B98B1A800A5B899 /* Bahamas.json */; };
+		A676E2BB2B98B1A800A5B899 /* Bahrain.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1EB2B98B1A800A5B899 /* Bahrain.json */; };
+		A676E2BC2B98B1A800A5B899 /* Bangladesh.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1EC2B98B1A800A5B899 /* Bangladesh.json */; };
+		A676E2BD2B98B1A800A5B899 /* Barbados.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1ED2B98B1A800A5B899 /* Barbados.json */; };
+		A676E2BE2B98B1A800A5B899 /* Belarus.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1EE2B98B1A800A5B899 /* Belarus.json */; };
+		A676E2BF2B98B1A800A5B899 /* Belgium.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1EF2B98B1A800A5B899 /* Belgium.json */; };
+		A676E2C02B98B1A800A5B899 /* Belize.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F02B98B1A800A5B899 /* Belize.json */; };
+		A676E2C12B98B1A800A5B899 /* Benin.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F12B98B1A800A5B899 /* Benin.json */; };
+		A676E2C22B98B1A800A5B899 /* Bermuda.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F22B98B1A800A5B899 /* Bermuda.json */; };
+		A676E2C32B98B1A800A5B899 /* Bhutan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F32B98B1A800A5B899 /* Bhutan.json */; };
+		A676E2C42B98B1A800A5B899 /* Bolivia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F42B98B1A800A5B899 /* Bolivia.json */; };
+		A676E2C52B98B1A800A5B899 /* Bosnia and Herzegovina.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F52B98B1A800A5B899 /* Bosnia and Herzegovina.json */; };
+		A676E2C62B98B1A800A5B899 /* Botswana.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F62B98B1A800A5B899 /* Botswana.json */; };
+		A676E2C72B98B1A800A5B899 /* Brazil.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F72B98B1A800A5B899 /* Brazil.json */; };
+		A676E2C82B98B1A800A5B899 /* Brunei.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F82B98B1A800A5B899 /* Brunei.json */; };
+		A676E2C92B98B1A800A5B899 /* Bulgaria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1F92B98B1A800A5B899 /* Bulgaria.json */; };
+		A676E2CA2B98B1A800A5B899 /* Burkina Faso.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FA2B98B1A800A5B899 /* Burkina Faso.json */; };
+		A676E2CB2B98B1A800A5B899 /* Burundi.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FB2B98B1A800A5B899 /* Burundi.json */; };
+		A676E2CC2B98B1A800A5B899 /* Cabo Verde.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FC2B98B1A800A5B899 /* Cabo Verde.json */; };
+		A676E2CD2B98B1A800A5B899 /* Cambodia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FD2B98B1A800A5B899 /* Cambodia.json */; };
+		A676E2CE2B98B1A800A5B899 /* Cameroon.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FE2B98B1A800A5B899 /* Cameroon.json */; };
+		A676E2CF2B98B1A800A5B899 /* Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1FF2B98B1A800A5B899 /* Canada.json */; };
+		A676E2D02B98B1A800A5B899 /* Cayman Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2002B98B1A800A5B899 /* Cayman Islands.json */; };
+		A676E2D12B98B1A800A5B899 /* Central African Republic.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2012B98B1A800A5B899 /* Central African Republic.json */; };
+		A676E2D22B98B1A800A5B899 /* Chad.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2022B98B1A800A5B899 /* Chad.json */; };
+		A676E2D32B98B1A800A5B899 /* Chile.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2032B98B1A800A5B899 /* Chile.json */; };
+		A676E2D42B98B1A800A5B899 /* China.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2042B98B1A800A5B899 /* China.json */; };
+		A676E2D52B98B1A800A5B899 /* Christmas Island.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2052B98B1A800A5B899 /* Christmas Island.json */; };
+		A676E2D62B98B1A800A5B899 /* Colombia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2062B98B1A800A5B899 /* Colombia.json */; };
+		A676E2D72B98B1A800A5B899 /* Comoros.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2072B98B1A800A5B899 /* Comoros.json */; };
+		A676E2D82B98B1A800A5B899 /* Cook Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2082B98B1A800A5B899 /* Cook Islands.json */; };
+		A676E2D92B98B1A800A5B899 /* Costa Rica.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2092B98B1A800A5B899 /* Costa Rica.json */; };
+		A676E2DA2B98B1A800A5B899 /* Croatia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20A2B98B1A800A5B899 /* Croatia.json */; };
+		A676E2DB2B98B1A800A5B899 /* Cuba.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20B2B98B1A800A5B899 /* Cuba.json */; };
+		A676E2DC2B98B1A800A5B899 /* Cyprus.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20C2B98B1A800A5B899 /* Cyprus.json */; };
+		A676E2DD2B98B1A800A5B899 /* Czech Republic.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20D2B98B1A800A5B899 /* Czech Republic.json */; };
+		A676E2DE2B98B1A800A5B899 /* Democratic Republic of the Congo.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20E2B98B1A800A5B899 /* Democratic Republic of the Congo.json */; };
+		A676E2DF2B98B1A800A5B899 /* Denmark.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E20F2B98B1A800A5B899 /* Denmark.json */; };
+		A676E2E02B98B1A800A5B899 /* Djibouti.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2102B98B1A800A5B899 /* Djibouti.json */; };
+		A676E2E12B98B1A800A5B899 /* Dominica.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2112B98B1A800A5B899 /* Dominica.json */; };
+		A676E2E22B98B1A800A5B899 /* Dominican Republic.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2122B98B1A800A5B899 /* Dominican Republic.json */; };
+		A676E2E32B98B1A800A5B899 /* East Timor.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2132B98B1A800A5B899 /* East Timor.json */; };
+		A676E2E42B98B1A800A5B899 /* Ecuador.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2142B98B1A800A5B899 /* Ecuador.json */; };
+		A676E2E52B98B1A800A5B899 /* Egypt.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2152B98B1A800A5B899 /* Egypt.json */; };
+		A676E2E62B98B1A800A5B899 /* El Salvador.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2162B98B1A800A5B899 /* El Salvador.json */; };
+		A676E2E72B98B1A800A5B899 /* Equatorial Guinea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2172B98B1A800A5B899 /* Equatorial Guinea.json */; };
+		A676E2E82B98B1A800A5B899 /* Eritrea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2182B98B1A800A5B899 /* Eritrea.json */; };
+		A676E2E92B98B1A800A5B899 /* Estonia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2192B98B1A800A5B899 /* Estonia.json */; };
+		A676E2EA2B98B1A800A5B899 /* Eswatini.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21A2B98B1A800A5B899 /* Eswatini.json */; };
+		A676E2EB2B98B1A800A5B899 /* Ethiopia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21B2B98B1A800A5B899 /* Ethiopia.json */; };
+		A676E2EC2B98B1A800A5B899 /* Faroe Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21C2B98B1A800A5B899 /* Faroe Islands.json */; };
+		A676E2ED2B98B1A800A5B899 /* Federated States of Micronesia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21D2B98B1A800A5B899 /* Federated States of Micronesia.json */; };
+		A676E2EE2B98B1A800A5B899 /* Finland.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21E2B98B1A800A5B899 /* Finland.json */; };
+		A676E2EF2B98B1A800A5B899 /* France.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E21F2B98B1A800A5B899 /* France.json */; };
+		A676E2F02B98B1A800A5B899 /* French Guiana.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2202B98B1A800A5B899 /* French Guiana.json */; };
+		A676E2F12B98B1A800A5B899 /* Gabon.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2212B98B1A800A5B899 /* Gabon.json */; };
+		A676E2F22B98B1A800A5B899 /* Gambia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2222B98B1A800A5B899 /* Gambia.json */; };
+		A676E2F32B98B1A800A5B899 /* Georgia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2232B98B1A800A5B899 /* Georgia.json */; };
+		A676E2F42B98B1A800A5B899 /* Germany.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2242B98B1A800A5B899 /* Germany.json */; };
+		A676E2F52B98B1A800A5B899 /* Ghana.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2252B98B1A800A5B899 /* Ghana.json */; };
+		A676E2F62B98B1A800A5B899 /* Greece.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2262B98B1A800A5B899 /* Greece.json */; };
+		A676E2F72B98B1A800A5B899 /* Grenada.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2272B98B1A800A5B899 /* Grenada.json */; };
+		A676E2F82B98B1A800A5B899 /* Guadeloupe.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2282B98B1A800A5B899 /* Guadeloupe.json */; };
+		A676E2F92B98B1A800A5B899 /* Guatemala.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2292B98B1A800A5B899 /* Guatemala.json */; };
+		A676E2FA2B98B1A800A5B899 /* Guinea-Bissau.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22A2B98B1A800A5B899 /* Guinea-Bissau.json */; };
+		A676E2FB2B98B1A800A5B899 /* Guinea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22B2B98B1A800A5B899 /* Guinea.json */; };
+		A676E2FC2B98B1A800A5B899 /* Guyana.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22C2B98B1A800A5B899 /* Guyana.json */; };
+		A676E2FD2B98B1A800A5B899 /* Haiti.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22D2B98B1A800A5B899 /* Haiti.json */; };
+		A676E2FE2B98B1A800A5B899 /* Honduras.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22E2B98B1A800A5B899 /* Honduras.json */; };
+		A676E2FF2B98B1A800A5B899 /* Hungary.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E22F2B98B1A800A5B899 /* Hungary.json */; };
+		A676E3002B98B1A800A5B899 /* Iceland.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2302B98B1A800A5B899 /* Iceland.json */; };
+		A676E3012B98B1A800A5B899 /* India.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2312B98B1A800A5B899 /* India.json */; };
+		A676E3022B98B1A800A5B899 /* Indonesia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2322B98B1A800A5B899 /* Indonesia.json */; };
+		A676E3032B98B1A800A5B899 /* Iran.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2332B98B1A800A5B899 /* Iran.json */; };
+		A676E3042B98B1A800A5B899 /* Iraq.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2342B98B1A800A5B899 /* Iraq.json */; };
+		A676E3052B98B1A800A5B899 /* Ireland.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2352B98B1A800A5B899 /* Ireland.json */; };
+		A676E3062B98B1A800A5B899 /* Israel.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2362B98B1A800A5B899 /* Israel.json */; };
+		A676E3072B98B1A800A5B899 /* Italy.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2372B98B1A800A5B899 /* Italy.json */; };
+		A676E3082B98B1A800A5B899 /* Ivory Coast.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2382B98B1A800A5B899 /* Ivory Coast.json */; };
+		A676E3092B98B1A800A5B899 /* Jamaica.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2392B98B1A800A5B899 /* Jamaica.json */; };
+		A676E30A2B98B1A800A5B899 /* Japan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23A2B98B1A800A5B899 /* Japan.json */; };
+		A676E30B2B98B1A800A5B899 /* Jordan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23B2B98B1A800A5B899 /* Jordan.json */; };
+		A676E30C2B98B1A800A5B899 /* Kazakhstan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23C2B98B1A800A5B899 /* Kazakhstan.json */; };
+		A676E30D2B98B1A800A5B899 /* Kenya.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23D2B98B1A800A5B899 /* Kenya.json */; };
+		A676E30E2B98B1A800A5B899 /* Kiribati.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23E2B98B1A800A5B899 /* Kiribati.json */; };
+		A676E30F2B98B1A800A5B899 /* Kuwait.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E23F2B98B1A800A5B899 /* Kuwait.json */; };
+		A676E3102B98B1A800A5B899 /* Kyrgyzstan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2402B98B1A800A5B899 /* Kyrgyzstan.json */; };
+		A676E3112B98B1A800A5B899 /* Laos.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2412B98B1A800A5B899 /* Laos.json */; };
+		A676E3122B98B1A800A5B899 /* Latvia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2422B98B1A800A5B899 /* Latvia.json */; };
+		A676E3132B98B1A800A5B899 /* Lebanon.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2432B98B1A800A5B899 /* Lebanon.json */; };
+		A676E3142B98B1A800A5B899 /* Lesotho.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2442B98B1A800A5B899 /* Lesotho.json */; };
+		A676E3152B98B1A800A5B899 /* Liberia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2452B98B1A800A5B899 /* Liberia.json */; };
+		A676E3162B98B1A800A5B899 /* Liechtenstein.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2462B98B1A800A5B899 /* Liechtenstein.json */; };
+		A676E3172B98B1A800A5B899 /* Lithuania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2472B98B1A800A5B899 /* Lithuania.json */; };
+		A676E3182B98B1A800A5B899 /* Luxembourg.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2482B98B1A800A5B899 /* Luxembourg.json */; };
+		A676E3192B98B1A800A5B899 /* Madagascar.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2492B98B1A800A5B899 /* Madagascar.json */; };
+		A676E31A2B98B1A800A5B899 /* Malawi.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24A2B98B1A800A5B899 /* Malawi.json */; };
+		A676E31B2B98B1A800A5B899 /* Malaysia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24B2B98B1A800A5B899 /* Malaysia.json */; };
+		A676E31C2B98B1A800A5B899 /* Maldives.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24C2B98B1A800A5B899 /* Maldives.json */; };
+		A676E31D2B98B1A800A5B899 /* Mali.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24D2B98B1A800A5B899 /* Mali.json */; };
+		A676E31E2B98B1A800A5B899 /* Malta.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24E2B98B1A800A5B899 /* Malta.json */; };
+		A676E31F2B98B1A800A5B899 /* Marshall Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E24F2B98B1A800A5B899 /* Marshall Islands.json */; };
+		A676E3202B98B1A800A5B899 /* Martinique.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2502B98B1A800A5B899 /* Martinique.json */; };
+		A676E3212B98B1A800A5B899 /* Mauritania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2512B98B1A800A5B899 /* Mauritania.json */; };
+		A676E3222B98B1A800A5B899 /* Mauritius.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2522B98B1A800A5B899 /* Mauritius.json */; };
+		A676E3232B98B1A800A5B899 /* Mexico.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2532B98B1A800A5B899 /* Mexico.json */; };
+		A676E3242B98B1A800A5B899 /* Moldova.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2542B98B1A800A5B899 /* Moldova.json */; };
+		A676E3252B98B1A800A5B899 /* Monaco.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2552B98B1A800A5B899 /* Monaco.json */; };
+		A676E3262B98B1A800A5B899 /* Mongolia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2562B98B1A800A5B899 /* Mongolia.json */; };
+		A676E3272B98B1A800A5B899 /* Montenegro.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2572B98B1A800A5B899 /* Montenegro.json */; };
+		A676E3282B98B1A800A5B899 /* Morocco.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2582B98B1A800A5B899 /* Morocco.json */; };
+		A676E3292B98B1A800A5B899 /* Mozambique.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2592B98B1A800A5B899 /* Mozambique.json */; };
+		A676E32A2B98B1A800A5B899 /* Myanmar.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25A2B98B1A800A5B899 /* Myanmar.json */; };
+		A676E32B2B98B1A800A5B899 /* Namibia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25B2B98B1A800A5B899 /* Namibia.json */; };
+		A676E32C2B98B1A800A5B899 /* Nauru.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25C2B98B1A800A5B899 /* Nauru.json */; };
+		A676E32D2B98B1A800A5B899 /* Nepal.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25D2B98B1A800A5B899 /* Nepal.json */; };
+		A676E32E2B98B1A800A5B899 /* Netherlands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25E2B98B1A800A5B899 /* Netherlands.json */; };
+		A676E32F2B98B1A800A5B899 /* New Zealand.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E25F2B98B1A800A5B899 /* New Zealand.json */; };
+		A676E3302B98B1A800A5B899 /* Nicaragua.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2602B98B1A800A5B899 /* Nicaragua.json */; };
+		A676E3312B98B1A800A5B899 /* Niger.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2612B98B1A800A5B899 /* Niger.json */; };
+		A676E3322B98B1A800A5B899 /* Nigeria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2622B98B1A800A5B899 /* Nigeria.json */; };
+		A676E3332B98B1A800A5B899 /* Niue.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2632B98B1A800A5B899 /* Niue.json */; };
+		A676E3342B98B1A800A5B899 /* North Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2642B98B1A800A5B899 /* North Korea.json */; };
+		A676E3352B98B1A800A5B899 /* North Macedonia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2652B98B1A800A5B899 /* North Macedonia.json */; };
+		A676E3362B98B1A800A5B899 /* Norway.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2662B98B1A800A5B899 /* Norway.json */; };
+		A676E3372B98B1A800A5B899 /* Oman.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2672B98B1A800A5B899 /* Oman.json */; };
+		A676E3382B98B1A800A5B899 /* Pakistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2682B98B1A800A5B899 /* Pakistan.json */; };
+		A676E3392B98B1A800A5B899 /* Palau.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2692B98B1A800A5B899 /* Palau.json */; };
+		A676E33A2B98B1A800A5B899 /* Palestine.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26A2B98B1A800A5B899 /* Palestine.json */; };
+		A676E33B2B98B1A800A5B899 /* Panama.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26B2B98B1A800A5B899 /* Panama.json */; };
+		A676E33C2B98B1A800A5B899 /* Papua New Guinea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26C2B98B1A800A5B899 /* Papua New Guinea.json */; };
+		A676E33D2B98B1A800A5B899 /* Paraguay.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26D2B98B1A800A5B899 /* Paraguay.json */; };
+		A676E33E2B98B1A800A5B899 /* Peru.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26E2B98B1A800A5B899 /* Peru.json */; };
+		A676E33F2B98B1A800A5B899 /* Philippines.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E26F2B98B1A800A5B899 /* Philippines.json */; };
+		A676E3402B98B1A800A5B899 /* Poland.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2702B98B1A800A5B899 /* Poland.json */; };
+		A676E3412B98B1A800A5B899 /* Portugal.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2712B98B1A800A5B899 /* Portugal.json */; };
+		A676E3422B98B1A800A5B899 /* Qatar.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2722B98B1A800A5B899 /* Qatar.json */; };
+		A676E3432B98B1A800A5B899 /* Republic of the Congo.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2732B98B1A800A5B899 /* Republic of the Congo.json */; };
+		A676E3442B98B1A800A5B899 /* Reunion.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2742B98B1A800A5B899 /* Reunion.json */; };
+		A676E3452B98B1A800A5B899 /* Romania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2752B98B1A800A5B899 /* Romania.json */; };
+		A676E3462B98B1A800A5B899 /* Russia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2762B98B1A800A5B899 /* Russia.json */; };
+		A676E3472B98B1A800A5B899 /* Rwanda.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2772B98B1A800A5B899 /* Rwanda.json */; };
+		A676E3482B98B1A800A5B899 /* Saint Kitts and Nevis.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2782B98B1A800A5B899 /* Saint Kitts and Nevis.json */; };
+		A676E3492B98B1A800A5B899 /* Saint Lucia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2792B98B1A800A5B899 /* Saint Lucia.json */; };
+		A676E34A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json */; };
+		A676E34B2B98B1A800A5B899 /* Samoa.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27B2B98B1A800A5B899 /* Samoa.json */; };
+		A676E34C2B98B1A800A5B899 /* San Marino.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27C2B98B1A800A5B899 /* San Marino.json */; };
+		A676E34D2B98B1A800A5B899 /* Sao Tome and Principe.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27D2B98B1A800A5B899 /* Sao Tome and Principe.json */; };
+		A676E34E2B98B1A800A5B899 /* Saudi Arabia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27E2B98B1A800A5B899 /* Saudi Arabia.json */; };
+		A676E34F2B98B1A800A5B899 /* Senegal.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E27F2B98B1A800A5B899 /* Senegal.json */; };
+		A676E3502B98B1A800A5B899 /* Serbia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2802B98B1A800A5B899 /* Serbia.json */; };
+		A676E3512B98B1A800A5B899 /* Seychelles.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2812B98B1A800A5B899 /* Seychelles.json */; };
+		A676E3522B98B1A800A5B899 /* Sierra Leone.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2822B98B1A800A5B899 /* Sierra Leone.json */; };
+		A676E3532B98B1A800A5B899 /* Singapore.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2832B98B1A800A5B899 /* Singapore.json */; };
+		A676E3542B98B1A800A5B899 /* Slovakia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2842B98B1A800A5B899 /* Slovakia.json */; };
+		A676E3552B98B1A800A5B899 /* Slovenia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2852B98B1A800A5B899 /* Slovenia.json */; };
+		A676E3562B98B1A800A5B899 /* Solomon Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2862B98B1A800A5B899 /* Solomon Islands.json */; };
+		A676E3572B98B1A800A5B899 /* Somalia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2872B98B1A800A5B899 /* Somalia.json */; };
+		A676E3582B98B1A800A5B899 /* South Africa.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2882B98B1A800A5B899 /* South Africa.json */; };
+		A676E3592B98B1A800A5B899 /* South Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2892B98B1A800A5B899 /* South Korea.json */; };
+		A676E35A2B98B1A800A5B899 /* South Sudan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28A2B98B1A800A5B899 /* South Sudan.json */; };
+		A676E35B2B98B1A800A5B899 /* Spain.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28B2B98B1A800A5B899 /* Spain.json */; };
+		A676E35C2B98B1A800A5B899 /* Sri Lanka.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28C2B98B1A800A5B899 /* Sri Lanka.json */; };
+		A676E35D2B98B1A800A5B899 /* Sudan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28D2B98B1A800A5B899 /* Sudan.json */; };
+		A676E35E2B98B1A800A5B899 /* Suriname.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28E2B98B1A800A5B899 /* Suriname.json */; };
+		A676E35F2B98B1A800A5B899 /* Sweden.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E28F2B98B1A800A5B899 /* Sweden.json */; };
+		A676E3602B98B1A800A5B899 /* Switzerland.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2902B98B1A800A5B899 /* Switzerland.json */; };
+		A676E3612B98B1A800A5B899 /* Syria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2912B98B1A800A5B899 /* Syria.json */; };
+		A676E3622B98B1A800A5B899 /* Tajikistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2922B98B1A800A5B899 /* Tajikistan.json */; };
+		A676E3632B98B1A800A5B899 /* Tanzania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2932B98B1A800A5B899 /* Tanzania.json */; };
+		A676E3642B98B1A800A5B899 /* Thailand.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2942B98B1A800A5B899 /* Thailand.json */; };
+		A676E3652B98B1A800A5B899 /* Togo.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2952B98B1A800A5B899 /* Togo.json */; };
+		A676E3662B98B1A800A5B899 /* Tonga.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2962B98B1A800A5B899 /* Tonga.json */; };
+		A676E3672B98B1A800A5B899 /* Trinidad and Tobago.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2972B98B1A800A5B899 /* Trinidad and Tobago.json */; };
+		A676E3682B98B1A800A5B899 /* Tunisia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2982B98B1A800A5B899 /* Tunisia.json */; };
+		A676E3692B98B1A800A5B899 /* Turkey.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2992B98B1A800A5B899 /* Turkey.json */; };
+		A676E36A2B98B1A800A5B899 /* Turkmenistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29A2B98B1A800A5B899 /* Turkmenistan.json */; };
+		A676E36B2B98B1A800A5B899 /* Turks and Caicos Islands.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29B2B98B1A800A5B899 /* Turks and Caicos Islands.json */; };
+		A676E36C2B98B1A800A5B899 /* Tuvalu.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29C2B98B1A800A5B899 /* Tuvalu.json */; };
+		A676E36D2B98B1A800A5B899 /* Uganda.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29D2B98B1A800A5B899 /* Uganda.json */; };
+		A676E36E2B98B1A800A5B899 /* Ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29E2B98B1A800A5B899 /* Ukraine.json */; };
+		A676E36F2B98B1A800A5B899 /* United Arab Emirates.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E29F2B98B1A800A5B899 /* United Arab Emirates.json */; };
+		A676E3702B98B1A800A5B899 /* United Kingdom.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A02B98B1A800A5B899 /* United Kingdom.json */; };
+		A676E3712B98B1A800A5B899 /* United States.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A12B98B1A800A5B899 /* United States.json */; };
+		A676E3722B98B1A800A5B899 /* Uruguay.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A22B98B1A800A5B899 /* Uruguay.json */; };
+		A676E3732B98B1A800A5B899 /* Uzbekistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A32B98B1A800A5B899 /* Uzbekistan.json */; };
+		A676E3742B98B1A800A5B899 /* Vanuatu.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A42B98B1A800A5B899 /* Vanuatu.json */; };
+		A676E3752B98B1A800A5B899 /* Vatican City.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A52B98B1A800A5B899 /* Vatican City.json */; };
+		A676E3762B98B1A800A5B899 /* Venezuela.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A62B98B1A800A5B899 /* Venezuela.json */; };
+		A676E3772B98B1A800A5B899 /* Vietnam.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A72B98B1A800A5B899 /* Vietnam.json */; };
+		A676E3782B98B1A800A5B899 /* Western Sahara.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A82B98B1A800A5B899 /* Western Sahara.json */; };
+		A676E3792B98B1A800A5B899 /* Yemen.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A92B98B1A800A5B899 /* Yemen.json */; };
+		A676E37A2B98B1A800A5B899 /* Zambia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2AA2B98B1A800A5B899 /* Zambia.json */; };
+		A676E37B2B98B1A800A5B899 /* Zimbabwe.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +234,220 @@
 		A60BBD8E2B7D4AD7008B89BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60BBD902B7D4AD7008B89BB /* FullMapGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FullMapGame.entitlements; sourceTree = "<group>"; };
 		A60BBD922B7D4AD7008B89BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A60BBD992B7D4BA9008B89BB /* Bundle Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle Extension.swift"; sourceTree = "<group>"; };
+		A60BBD9D2B7D4BC7008B89BB /* Coordinate Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinate Extension.swift"; sourceTree = "<group>"; };
+		A60BBDA12B7D4D0A008B89BB /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuess.swift; sourceTree = "<group>"; };
+		A659A0EA2B852CCC00063A27 /* SpareParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareParts.swift; sourceTree = "<group>"; };
+		A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FullCountryInformation.json; path = ../../../../../../Downloads/FullCountryInformation.json; sourceTree = "<group>"; };
+		A676E1DD2B98B1A800A5B899 /* Afghanistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Afghanistan.json; sourceTree = "<group>"; };
+		A676E1DE2B98B1A800A5B899 /* Albania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albania.json; sourceTree = "<group>"; };
+		A676E1DF2B98B1A800A5B899 /* Algeria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algeria.json; sourceTree = "<group>"; };
+		A676E1E02B98B1A800A5B899 /* Andorra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Andorra.json; sourceTree = "<group>"; };
+		A676E1E12B98B1A800A5B899 /* Angola.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Angola.json; sourceTree = "<group>"; };
+		A676E1E22B98B1A800A5B899 /* Anguilla.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Anguilla.json; sourceTree = "<group>"; };
+		A676E1E32B98B1A800A5B899 /* Antigua and Barbuda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Antigua and Barbuda.json"; sourceTree = "<group>"; };
+		A676E1E42B98B1A800A5B899 /* Argentina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Argentina.json; sourceTree = "<group>"; };
+		A676E1E52B98B1A800A5B899 /* Armenia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Armenia.json; sourceTree = "<group>"; };
+		A676E1E62B98B1A800A5B899 /* Aruba.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Aruba.json; sourceTree = "<group>"; };
+		A676E1E72B98B1A800A5B899 /* Australia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Australia.json; sourceTree = "<group>"; };
+		A676E1E82B98B1A800A5B899 /* Austria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Austria.json; sourceTree = "<group>"; };
+		A676E1E92B98B1A800A5B899 /* Azerbaijan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Azerbaijan.json; sourceTree = "<group>"; };
+		A676E1EA2B98B1A800A5B899 /* Bahamas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bahamas.json; sourceTree = "<group>"; };
+		A676E1EB2B98B1A800A5B899 /* Bahrain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bahrain.json; sourceTree = "<group>"; };
+		A676E1EC2B98B1A800A5B899 /* Bangladesh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bangladesh.json; sourceTree = "<group>"; };
+		A676E1ED2B98B1A800A5B899 /* Barbados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Barbados.json; sourceTree = "<group>"; };
+		A676E1EE2B98B1A800A5B899 /* Belarus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Belarus.json; sourceTree = "<group>"; };
+		A676E1EF2B98B1A800A5B899 /* Belgium.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Belgium.json; sourceTree = "<group>"; };
+		A676E1F02B98B1A800A5B899 /* Belize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Belize.json; sourceTree = "<group>"; };
+		A676E1F12B98B1A800A5B899 /* Benin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Benin.json; sourceTree = "<group>"; };
+		A676E1F22B98B1A800A5B899 /* Bermuda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bermuda.json; sourceTree = "<group>"; };
+		A676E1F32B98B1A800A5B899 /* Bhutan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bhutan.json; sourceTree = "<group>"; };
+		A676E1F42B98B1A800A5B899 /* Bolivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bolivia.json; sourceTree = "<group>"; };
+		A676E1F52B98B1A800A5B899 /* Bosnia and Herzegovina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Bosnia and Herzegovina.json"; sourceTree = "<group>"; };
+		A676E1F62B98B1A800A5B899 /* Botswana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Botswana.json; sourceTree = "<group>"; };
+		A676E1F72B98B1A800A5B899 /* Brazil.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Brazil.json; sourceTree = "<group>"; };
+		A676E1F82B98B1A800A5B899 /* Brunei.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Brunei.json; sourceTree = "<group>"; };
+		A676E1F92B98B1A800A5B899 /* Bulgaria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bulgaria.json; sourceTree = "<group>"; };
+		A676E1FA2B98B1A800A5B899 /* Burkina Faso.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Burkina Faso.json"; sourceTree = "<group>"; };
+		A676E1FB2B98B1A800A5B899 /* Burundi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Burundi.json; sourceTree = "<group>"; };
+		A676E1FC2B98B1A800A5B899 /* Cabo Verde.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cabo Verde.json"; sourceTree = "<group>"; };
+		A676E1FD2B98B1A800A5B899 /* Cambodia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cambodia.json; sourceTree = "<group>"; };
+		A676E1FE2B98B1A800A5B899 /* Cameroon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cameroon.json; sourceTree = "<group>"; };
+		A676E1FF2B98B1A800A5B899 /* Canada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Canada.json; sourceTree = "<group>"; };
+		A676E2002B98B1A800A5B899 /* Cayman Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cayman Islands.json"; sourceTree = "<group>"; };
+		A676E2012B98B1A800A5B899 /* Central African Republic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Central African Republic.json"; sourceTree = "<group>"; };
+		A676E2022B98B1A800A5B899 /* Chad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chad.json; sourceTree = "<group>"; };
+		A676E2032B98B1A800A5B899 /* Chile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chile.json; sourceTree = "<group>"; };
+		A676E2042B98B1A800A5B899 /* China.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = China.json; sourceTree = "<group>"; };
+		A676E2052B98B1A800A5B899 /* Christmas Island.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Christmas Island.json"; sourceTree = "<group>"; };
+		A676E2062B98B1A800A5B899 /* Colombia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colombia.json; sourceTree = "<group>"; };
+		A676E2072B98B1A800A5B899 /* Comoros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comoros.json; sourceTree = "<group>"; };
+		A676E2082B98B1A800A5B899 /* Cook Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cook Islands.json"; sourceTree = "<group>"; };
+		A676E2092B98B1A800A5B899 /* Costa Rica.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Costa Rica.json"; sourceTree = "<group>"; };
+		A676E20A2B98B1A800A5B899 /* Croatia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Croatia.json; sourceTree = "<group>"; };
+		A676E20B2B98B1A800A5B899 /* Cuba.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cuba.json; sourceTree = "<group>"; };
+		A676E20C2B98B1A800A5B899 /* Cyprus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cyprus.json; sourceTree = "<group>"; };
+		A676E20D2B98B1A800A5B899 /* Czech Republic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Czech Republic.json"; sourceTree = "<group>"; };
+		A676E20E2B98B1A800A5B899 /* Democratic Republic of the Congo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Democratic Republic of the Congo.json"; sourceTree = "<group>"; };
+		A676E20F2B98B1A800A5B899 /* Denmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Denmark.json; sourceTree = "<group>"; };
+		A676E2102B98B1A800A5B899 /* Djibouti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Djibouti.json; sourceTree = "<group>"; };
+		A676E2112B98B1A800A5B899 /* Dominica.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dominica.json; sourceTree = "<group>"; };
+		A676E2122B98B1A800A5B899 /* Dominican Republic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dominican Republic.json"; sourceTree = "<group>"; };
+		A676E2132B98B1A800A5B899 /* East Timor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "East Timor.json"; sourceTree = "<group>"; };
+		A676E2142B98B1A800A5B899 /* Ecuador.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ecuador.json; sourceTree = "<group>"; };
+		A676E2152B98B1A800A5B899 /* Egypt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Egypt.json; sourceTree = "<group>"; };
+		A676E2162B98B1A800A5B899 /* El Salvador.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "El Salvador.json"; sourceTree = "<group>"; };
+		A676E2172B98B1A800A5B899 /* Equatorial Guinea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Equatorial Guinea.json"; sourceTree = "<group>"; };
+		A676E2182B98B1A800A5B899 /* Eritrea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Eritrea.json; sourceTree = "<group>"; };
+		A676E2192B98B1A800A5B899 /* Estonia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Estonia.json; sourceTree = "<group>"; };
+		A676E21A2B98B1A800A5B899 /* Eswatini.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Eswatini.json; sourceTree = "<group>"; };
+		A676E21B2B98B1A800A5B899 /* Ethiopia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ethiopia.json; sourceTree = "<group>"; };
+		A676E21C2B98B1A800A5B899 /* Faroe Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Faroe Islands.json"; sourceTree = "<group>"; };
+		A676E21D2B98B1A800A5B899 /* Federated States of Micronesia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Federated States of Micronesia.json"; sourceTree = "<group>"; };
+		A676E21E2B98B1A800A5B899 /* Finland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Finland.json; sourceTree = "<group>"; };
+		A676E21F2B98B1A800A5B899 /* France.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = France.json; sourceTree = "<group>"; };
+		A676E2202B98B1A800A5B899 /* French Guiana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "French Guiana.json"; sourceTree = "<group>"; };
+		A676E2212B98B1A800A5B899 /* Gabon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gabon.json; sourceTree = "<group>"; };
+		A676E2222B98B1A800A5B899 /* Gambia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gambia.json; sourceTree = "<group>"; };
+		A676E2232B98B1A800A5B899 /* Georgia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Georgia.json; sourceTree = "<group>"; };
+		A676E2242B98B1A800A5B899 /* Germany.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Germany.json; sourceTree = "<group>"; };
+		A676E2252B98B1A800A5B899 /* Ghana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ghana.json; sourceTree = "<group>"; };
+		A676E2262B98B1A800A5B899 /* Greece.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Greece.json; sourceTree = "<group>"; };
+		A676E2272B98B1A800A5B899 /* Grenada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Grenada.json; sourceTree = "<group>"; };
+		A676E2282B98B1A800A5B899 /* Guadeloupe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Guadeloupe.json; sourceTree = "<group>"; };
+		A676E2292B98B1A800A5B899 /* Guatemala.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Guatemala.json; sourceTree = "<group>"; };
+		A676E22A2B98B1A800A5B899 /* Guinea-Bissau.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Guinea-Bissau.json"; sourceTree = "<group>"; };
+		A676E22B2B98B1A800A5B899 /* Guinea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Guinea.json; sourceTree = "<group>"; };
+		A676E22C2B98B1A800A5B899 /* Guyana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Guyana.json; sourceTree = "<group>"; };
+		A676E22D2B98B1A800A5B899 /* Haiti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Haiti.json; sourceTree = "<group>"; };
+		A676E22E2B98B1A800A5B899 /* Honduras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Honduras.json; sourceTree = "<group>"; };
+		A676E22F2B98B1A800A5B899 /* Hungary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hungary.json; sourceTree = "<group>"; };
+		A676E2302B98B1A800A5B899 /* Iceland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Iceland.json; sourceTree = "<group>"; };
+		A676E2312B98B1A800A5B899 /* India.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = India.json; sourceTree = "<group>"; };
+		A676E2322B98B1A800A5B899 /* Indonesia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Indonesia.json; sourceTree = "<group>"; };
+		A676E2332B98B1A800A5B899 /* Iran.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Iran.json; sourceTree = "<group>"; };
+		A676E2342B98B1A800A5B899 /* Iraq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Iraq.json; sourceTree = "<group>"; };
+		A676E2352B98B1A800A5B899 /* Ireland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ireland.json; sourceTree = "<group>"; };
+		A676E2362B98B1A800A5B899 /* Israel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Israel.json; sourceTree = "<group>"; };
+		A676E2372B98B1A800A5B899 /* Italy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Italy.json; sourceTree = "<group>"; };
+		A676E2382B98B1A800A5B899 /* Ivory Coast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ivory Coast.json"; sourceTree = "<group>"; };
+		A676E2392B98B1A800A5B899 /* Jamaica.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jamaica.json; sourceTree = "<group>"; };
+		A676E23A2B98B1A800A5B899 /* Japan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Japan.json; sourceTree = "<group>"; };
+		A676E23B2B98B1A800A5B899 /* Jordan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jordan.json; sourceTree = "<group>"; };
+		A676E23C2B98B1A800A5B899 /* Kazakhstan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kazakhstan.json; sourceTree = "<group>"; };
+		A676E23D2B98B1A800A5B899 /* Kenya.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kenya.json; sourceTree = "<group>"; };
+		A676E23E2B98B1A800A5B899 /* Kiribati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kiribati.json; sourceTree = "<group>"; };
+		A676E23F2B98B1A800A5B899 /* Kuwait.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kuwait.json; sourceTree = "<group>"; };
+		A676E2402B98B1A800A5B899 /* Kyrgyzstan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kyrgyzstan.json; sourceTree = "<group>"; };
+		A676E2412B98B1A800A5B899 /* Laos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Laos.json; sourceTree = "<group>"; };
+		A676E2422B98B1A800A5B899 /* Latvia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Latvia.json; sourceTree = "<group>"; };
+		A676E2432B98B1A800A5B899 /* Lebanon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lebanon.json; sourceTree = "<group>"; };
+		A676E2442B98B1A800A5B899 /* Lesotho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lesotho.json; sourceTree = "<group>"; };
+		A676E2452B98B1A800A5B899 /* Liberia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Liberia.json; sourceTree = "<group>"; };
+		A676E2462B98B1A800A5B899 /* Liechtenstein.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Liechtenstein.json; sourceTree = "<group>"; };
+		A676E2472B98B1A800A5B899 /* Lithuania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lithuania.json; sourceTree = "<group>"; };
+		A676E2482B98B1A800A5B899 /* Luxembourg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Luxembourg.json; sourceTree = "<group>"; };
+		A676E2492B98B1A800A5B899 /* Madagascar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Madagascar.json; sourceTree = "<group>"; };
+		A676E24A2B98B1A800A5B899 /* Malawi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Malawi.json; sourceTree = "<group>"; };
+		A676E24B2B98B1A800A5B899 /* Malaysia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Malaysia.json; sourceTree = "<group>"; };
+		A676E24C2B98B1A800A5B899 /* Maldives.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Maldives.json; sourceTree = "<group>"; };
+		A676E24D2B98B1A800A5B899 /* Mali.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mali.json; sourceTree = "<group>"; };
+		A676E24E2B98B1A800A5B899 /* Malta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Malta.json; sourceTree = "<group>"; };
+		A676E24F2B98B1A800A5B899 /* Marshall Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Marshall Islands.json"; sourceTree = "<group>"; };
+		A676E2502B98B1A800A5B899 /* Martinique.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Martinique.json; sourceTree = "<group>"; };
+		A676E2512B98B1A800A5B899 /* Mauritania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mauritania.json; sourceTree = "<group>"; };
+		A676E2522B98B1A800A5B899 /* Mauritius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mauritius.json; sourceTree = "<group>"; };
+		A676E2532B98B1A800A5B899 /* Mexico.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mexico.json; sourceTree = "<group>"; };
+		A676E2542B98B1A800A5B899 /* Moldova.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moldova.json; sourceTree = "<group>"; };
+		A676E2552B98B1A800A5B899 /* Monaco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Monaco.json; sourceTree = "<group>"; };
+		A676E2562B98B1A800A5B899 /* Mongolia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mongolia.json; sourceTree = "<group>"; };
+		A676E2572B98B1A800A5B899 /* Montenegro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Montenegro.json; sourceTree = "<group>"; };
+		A676E2582B98B1A800A5B899 /* Morocco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Morocco.json; sourceTree = "<group>"; };
+		A676E2592B98B1A800A5B899 /* Mozambique.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mozambique.json; sourceTree = "<group>"; };
+		A676E25A2B98B1A800A5B899 /* Myanmar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Myanmar.json; sourceTree = "<group>"; };
+		A676E25B2B98B1A800A5B899 /* Namibia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Namibia.json; sourceTree = "<group>"; };
+		A676E25C2B98B1A800A5B899 /* Nauru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nauru.json; sourceTree = "<group>"; };
+		A676E25D2B98B1A800A5B899 /* Nepal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nepal.json; sourceTree = "<group>"; };
+		A676E25E2B98B1A800A5B899 /* Netherlands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Netherlands.json; sourceTree = "<group>"; };
+		A676E25F2B98B1A800A5B899 /* New Zealand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "New Zealand.json"; sourceTree = "<group>"; };
+		A676E2602B98B1A800A5B899 /* Nicaragua.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nicaragua.json; sourceTree = "<group>"; };
+		A676E2612B98B1A800A5B899 /* Niger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Niger.json; sourceTree = "<group>"; };
+		A676E2622B98B1A800A5B899 /* Nigeria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nigeria.json; sourceTree = "<group>"; };
+		A676E2632B98B1A800A5B899 /* Niue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Niue.json; sourceTree = "<group>"; };
+		A676E2642B98B1A800A5B899 /* North Korea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "North Korea.json"; sourceTree = "<group>"; };
+		A676E2652B98B1A800A5B899 /* North Macedonia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "North Macedonia.json"; sourceTree = "<group>"; };
+		A676E2662B98B1A800A5B899 /* Norway.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Norway.json; sourceTree = "<group>"; };
+		A676E2672B98B1A800A5B899 /* Oman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Oman.json; sourceTree = "<group>"; };
+		A676E2682B98B1A800A5B899 /* Pakistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pakistan.json; sourceTree = "<group>"; };
+		A676E2692B98B1A800A5B899 /* Palau.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Palau.json; sourceTree = "<group>"; };
+		A676E26A2B98B1A800A5B899 /* Palestine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Palestine.json; sourceTree = "<group>"; };
+		A676E26B2B98B1A800A5B899 /* Panama.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Panama.json; sourceTree = "<group>"; };
+		A676E26C2B98B1A800A5B899 /* Papua New Guinea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Papua New Guinea.json"; sourceTree = "<group>"; };
+		A676E26D2B98B1A800A5B899 /* Paraguay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Paraguay.json; sourceTree = "<group>"; };
+		A676E26E2B98B1A800A5B899 /* Peru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Peru.json; sourceTree = "<group>"; };
+		A676E26F2B98B1A800A5B899 /* Philippines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Philippines.json; sourceTree = "<group>"; };
+		A676E2702B98B1A800A5B899 /* Poland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Poland.json; sourceTree = "<group>"; };
+		A676E2712B98B1A800A5B899 /* Portugal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Portugal.json; sourceTree = "<group>"; };
+		A676E2722B98B1A800A5B899 /* Qatar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Qatar.json; sourceTree = "<group>"; };
+		A676E2732B98B1A800A5B899 /* Republic of the Congo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Republic of the Congo.json"; sourceTree = "<group>"; };
+		A676E2742B98B1A800A5B899 /* Reunion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reunion.json; sourceTree = "<group>"; };
+		A676E2752B98B1A800A5B899 /* Romania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Romania.json; sourceTree = "<group>"; };
+		A676E2762B98B1A800A5B899 /* Russia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Russia.json; sourceTree = "<group>"; };
+		A676E2772B98B1A800A5B899 /* Rwanda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rwanda.json; sourceTree = "<group>"; };
+		A676E2782B98B1A800A5B899 /* Saint Kitts and Nevis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saint Kitts and Nevis.json"; sourceTree = "<group>"; };
+		A676E2792B98B1A800A5B899 /* Saint Lucia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saint Lucia.json"; sourceTree = "<group>"; };
+		A676E27A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saint Vincent and the Grenadines.json"; sourceTree = "<group>"; };
+		A676E27B2B98B1A800A5B899 /* Samoa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Samoa.json; sourceTree = "<group>"; };
+		A676E27C2B98B1A800A5B899 /* San Marino.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "San Marino.json"; sourceTree = "<group>"; };
+		A676E27D2B98B1A800A5B899 /* Sao Tome and Principe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sao Tome and Principe.json"; sourceTree = "<group>"; };
+		A676E27E2B98B1A800A5B899 /* Saudi Arabia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saudi Arabia.json"; sourceTree = "<group>"; };
+		A676E27F2B98B1A800A5B899 /* Senegal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Senegal.json; sourceTree = "<group>"; };
+		A676E2802B98B1A800A5B899 /* Serbia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Serbia.json; sourceTree = "<group>"; };
+		A676E2812B98B1A800A5B899 /* Seychelles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Seychelles.json; sourceTree = "<group>"; };
+		A676E2822B98B1A800A5B899 /* Sierra Leone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sierra Leone.json"; sourceTree = "<group>"; };
+		A676E2832B98B1A800A5B899 /* Singapore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Singapore.json; sourceTree = "<group>"; };
+		A676E2842B98B1A800A5B899 /* Slovakia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Slovakia.json; sourceTree = "<group>"; };
+		A676E2852B98B1A800A5B899 /* Slovenia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Slovenia.json; sourceTree = "<group>"; };
+		A676E2862B98B1A800A5B899 /* Solomon Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Solomon Islands.json"; sourceTree = "<group>"; };
+		A676E2872B98B1A800A5B899 /* Somalia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Somalia.json; sourceTree = "<group>"; };
+		A676E2882B98B1A800A5B899 /* South Africa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "South Africa.json"; sourceTree = "<group>"; };
+		A676E2892B98B1A800A5B899 /* South Korea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "South Korea.json"; sourceTree = "<group>"; };
+		A676E28A2B98B1A800A5B899 /* South Sudan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "South Sudan.json"; sourceTree = "<group>"; };
+		A676E28B2B98B1A800A5B899 /* Spain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spain.json; sourceTree = "<group>"; };
+		A676E28C2B98B1A800A5B899 /* Sri Lanka.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sri Lanka.json"; sourceTree = "<group>"; };
+		A676E28D2B98B1A800A5B899 /* Sudan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sudan.json; sourceTree = "<group>"; };
+		A676E28E2B98B1A800A5B899 /* Suriname.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Suriname.json; sourceTree = "<group>"; };
+		A676E28F2B98B1A800A5B899 /* Sweden.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sweden.json; sourceTree = "<group>"; };
+		A676E2902B98B1A800A5B899 /* Switzerland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switzerland.json; sourceTree = "<group>"; };
+		A676E2912B98B1A800A5B899 /* Syria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Syria.json; sourceTree = "<group>"; };
+		A676E2922B98B1A800A5B899 /* Tajikistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tajikistan.json; sourceTree = "<group>"; };
+		A676E2932B98B1A800A5B899 /* Tanzania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tanzania.json; sourceTree = "<group>"; };
+		A676E2942B98B1A800A5B899 /* Thailand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thailand.json; sourceTree = "<group>"; };
+		A676E2952B98B1A800A5B899 /* Togo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Togo.json; sourceTree = "<group>"; };
+		A676E2962B98B1A800A5B899 /* Tonga.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tonga.json; sourceTree = "<group>"; };
+		A676E2972B98B1A800A5B899 /* Trinidad and Tobago.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Trinidad and Tobago.json"; sourceTree = "<group>"; };
+		A676E2982B98B1A800A5B899 /* Tunisia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tunisia.json; sourceTree = "<group>"; };
+		A676E2992B98B1A800A5B899 /* Turkey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Turkey.json; sourceTree = "<group>"; };
+		A676E29A2B98B1A800A5B899 /* Turkmenistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Turkmenistan.json; sourceTree = "<group>"; };
+		A676E29B2B98B1A800A5B899 /* Turks and Caicos Islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Turks and Caicos Islands.json"; sourceTree = "<group>"; };
+		A676E29C2B98B1A800A5B899 /* Tuvalu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tuvalu.json; sourceTree = "<group>"; };
+		A676E29D2B98B1A800A5B899 /* Uganda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Uganda.json; sourceTree = "<group>"; };
+		A676E29E2B98B1A800A5B899 /* Ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ukraine.json; sourceTree = "<group>"; };
+		A676E29F2B98B1A800A5B899 /* United Arab Emirates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "United Arab Emirates.json"; sourceTree = "<group>"; };
+		A676E2A02B98B1A800A5B899 /* United Kingdom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "United Kingdom.json"; sourceTree = "<group>"; };
+		A676E2A12B98B1A800A5B899 /* United States.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "United States.json"; sourceTree = "<group>"; };
+		A676E2A22B98B1A800A5B899 /* Uruguay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Uruguay.json; sourceTree = "<group>"; };
+		A676E2A32B98B1A800A5B899 /* Uzbekistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Uzbekistan.json; sourceTree = "<group>"; };
+		A676E2A42B98B1A800A5B899 /* Vanuatu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vanuatu.json; sourceTree = "<group>"; };
+		A676E2A52B98B1A800A5B899 /* Vatican City.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Vatican City.json"; sourceTree = "<group>"; };
+		A676E2A62B98B1A800A5B899 /* Venezuela.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Venezuela.json; sourceTree = "<group>"; };
+		A676E2A72B98B1A800A5B899 /* Vietnam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vietnam.json; sourceTree = "<group>"; };
+		A676E2A82B98B1A800A5B899 /* Western Sahara.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Western Sahara.json"; sourceTree = "<group>"; };
+		A676E2A92B98B1A800A5B899 /* Yemen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Yemen.json; sourceTree = "<group>"; };
+		A676E2AA2B98B1A800A5B899 /* Zambia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zambia.json; sourceTree = "<group>"; };
+		A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zimbabwe.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +481,12 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8A2B7D4AD6008B89BB /* FullMapGameApp.swift */,
-				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
+				A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */,
+				A676E2AC2B98B1A800A5B899 /* Countries */,
+				A60BBDAA2B7E8E86008B89BB /* ViewModel */,
+				A60BBD9C2B7D4BB9008B89BB /* Views */,
+				A60BBDA32B7D4D10008B89BB /* Models */,
+				A60BBD9B2B7D4BAE008B89BB /* Extensions */,
 				A60BBD8E2B7D4AD7008B89BB /* Assets.xcassets */,
 				A60BBD902B7D4AD7008B89BB /* FullMapGame.entitlements */,
 				A60BBD912B7D4AD7008B89BB /* Preview Content */,
@@ -67,6 +500,256 @@
 				A60BBD922B7D4AD7008B89BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A60BBD9B2B7D4BAE008B89BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A60BBD992B7D4BA9008B89BB /* Bundle Extension.swift */,
+				A60BBD9D2B7D4BC7008B89BB /* Coordinate Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A60BBD9C2B7D4BB9008B89BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A60BBDA32B7D4D10008B89BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
+				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
+				A659A0EA2B852CCC00063A27 /* SpareParts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A60BBDAA2B7E8E86008B89BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A676E2AC2B98B1A800A5B899 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				A676E1DD2B98B1A800A5B899 /* Afghanistan.json */,
+				A676E1DE2B98B1A800A5B899 /* Albania.json */,
+				A676E1DF2B98B1A800A5B899 /* Algeria.json */,
+				A676E1E02B98B1A800A5B899 /* Andorra.json */,
+				A676E1E12B98B1A800A5B899 /* Angola.json */,
+				A676E1E22B98B1A800A5B899 /* Anguilla.json */,
+				A676E1E32B98B1A800A5B899 /* Antigua and Barbuda.json */,
+				A676E1E42B98B1A800A5B899 /* Argentina.json */,
+				A676E1E52B98B1A800A5B899 /* Armenia.json */,
+				A676E1E62B98B1A800A5B899 /* Aruba.json */,
+				A676E1E72B98B1A800A5B899 /* Australia.json */,
+				A676E1E82B98B1A800A5B899 /* Austria.json */,
+				A676E1E92B98B1A800A5B899 /* Azerbaijan.json */,
+				A676E1EA2B98B1A800A5B899 /* Bahamas.json */,
+				A676E1EB2B98B1A800A5B899 /* Bahrain.json */,
+				A676E1EC2B98B1A800A5B899 /* Bangladesh.json */,
+				A676E1ED2B98B1A800A5B899 /* Barbados.json */,
+				A676E1EE2B98B1A800A5B899 /* Belarus.json */,
+				A676E1EF2B98B1A800A5B899 /* Belgium.json */,
+				A676E1F02B98B1A800A5B899 /* Belize.json */,
+				A676E1F12B98B1A800A5B899 /* Benin.json */,
+				A676E1F22B98B1A800A5B899 /* Bermuda.json */,
+				A676E1F32B98B1A800A5B899 /* Bhutan.json */,
+				A676E1F42B98B1A800A5B899 /* Bolivia.json */,
+				A676E1F52B98B1A800A5B899 /* Bosnia and Herzegovina.json */,
+				A676E1F62B98B1A800A5B899 /* Botswana.json */,
+				A676E1F72B98B1A800A5B899 /* Brazil.json */,
+				A676E1F82B98B1A800A5B899 /* Brunei.json */,
+				A676E1F92B98B1A800A5B899 /* Bulgaria.json */,
+				A676E1FA2B98B1A800A5B899 /* Burkina Faso.json */,
+				A676E1FB2B98B1A800A5B899 /* Burundi.json */,
+				A676E1FC2B98B1A800A5B899 /* Cabo Verde.json */,
+				A676E1FD2B98B1A800A5B899 /* Cambodia.json */,
+				A676E1FE2B98B1A800A5B899 /* Cameroon.json */,
+				A676E1FF2B98B1A800A5B899 /* Canada.json */,
+				A676E2002B98B1A800A5B899 /* Cayman Islands.json */,
+				A676E2012B98B1A800A5B899 /* Central African Republic.json */,
+				A676E2022B98B1A800A5B899 /* Chad.json */,
+				A676E2032B98B1A800A5B899 /* Chile.json */,
+				A676E2042B98B1A800A5B899 /* China.json */,
+				A676E2052B98B1A800A5B899 /* Christmas Island.json */,
+				A676E2062B98B1A800A5B899 /* Colombia.json */,
+				A676E2072B98B1A800A5B899 /* Comoros.json */,
+				A676E2082B98B1A800A5B899 /* Cook Islands.json */,
+				A676E2092B98B1A800A5B899 /* Costa Rica.json */,
+				A676E20A2B98B1A800A5B899 /* Croatia.json */,
+				A676E20B2B98B1A800A5B899 /* Cuba.json */,
+				A676E20C2B98B1A800A5B899 /* Cyprus.json */,
+				A676E20D2B98B1A800A5B899 /* Czech Republic.json */,
+				A676E20E2B98B1A800A5B899 /* Democratic Republic of the Congo.json */,
+				A676E20F2B98B1A800A5B899 /* Denmark.json */,
+				A676E2102B98B1A800A5B899 /* Djibouti.json */,
+				A676E2112B98B1A800A5B899 /* Dominica.json */,
+				A676E2122B98B1A800A5B899 /* Dominican Republic.json */,
+				A676E2132B98B1A800A5B899 /* East Timor.json */,
+				A676E2142B98B1A800A5B899 /* Ecuador.json */,
+				A676E2152B98B1A800A5B899 /* Egypt.json */,
+				A676E2162B98B1A800A5B899 /* El Salvador.json */,
+				A676E2172B98B1A800A5B899 /* Equatorial Guinea.json */,
+				A676E2182B98B1A800A5B899 /* Eritrea.json */,
+				A676E2192B98B1A800A5B899 /* Estonia.json */,
+				A676E21A2B98B1A800A5B899 /* Eswatini.json */,
+				A676E21B2B98B1A800A5B899 /* Ethiopia.json */,
+				A676E21C2B98B1A800A5B899 /* Faroe Islands.json */,
+				A676E21D2B98B1A800A5B899 /* Federated States of Micronesia.json */,
+				A676E21E2B98B1A800A5B899 /* Finland.json */,
+				A676E21F2B98B1A800A5B899 /* France.json */,
+				A676E2202B98B1A800A5B899 /* French Guiana.json */,
+				A676E2212B98B1A800A5B899 /* Gabon.json */,
+				A676E2222B98B1A800A5B899 /* Gambia.json */,
+				A676E2232B98B1A800A5B899 /* Georgia.json */,
+				A676E2242B98B1A800A5B899 /* Germany.json */,
+				A676E2252B98B1A800A5B899 /* Ghana.json */,
+				A676E2262B98B1A800A5B899 /* Greece.json */,
+				A676E2272B98B1A800A5B899 /* Grenada.json */,
+				A676E2282B98B1A800A5B899 /* Guadeloupe.json */,
+				A676E2292B98B1A800A5B899 /* Guatemala.json */,
+				A676E22A2B98B1A800A5B899 /* Guinea-Bissau.json */,
+				A676E22B2B98B1A800A5B899 /* Guinea.json */,
+				A676E22C2B98B1A800A5B899 /* Guyana.json */,
+				A676E22D2B98B1A800A5B899 /* Haiti.json */,
+				A676E22E2B98B1A800A5B899 /* Honduras.json */,
+				A676E22F2B98B1A800A5B899 /* Hungary.json */,
+				A676E2302B98B1A800A5B899 /* Iceland.json */,
+				A676E2312B98B1A800A5B899 /* India.json */,
+				A676E2322B98B1A800A5B899 /* Indonesia.json */,
+				A676E2332B98B1A800A5B899 /* Iran.json */,
+				A676E2342B98B1A800A5B899 /* Iraq.json */,
+				A676E2352B98B1A800A5B899 /* Ireland.json */,
+				A676E2362B98B1A800A5B899 /* Israel.json */,
+				A676E2372B98B1A800A5B899 /* Italy.json */,
+				A676E2382B98B1A800A5B899 /* Ivory Coast.json */,
+				A676E2392B98B1A800A5B899 /* Jamaica.json */,
+				A676E23A2B98B1A800A5B899 /* Japan.json */,
+				A676E23B2B98B1A800A5B899 /* Jordan.json */,
+				A676E23C2B98B1A800A5B899 /* Kazakhstan.json */,
+				A676E23D2B98B1A800A5B899 /* Kenya.json */,
+				A676E23E2B98B1A800A5B899 /* Kiribati.json */,
+				A676E23F2B98B1A800A5B899 /* Kuwait.json */,
+				A676E2402B98B1A800A5B899 /* Kyrgyzstan.json */,
+				A676E2412B98B1A800A5B899 /* Laos.json */,
+				A676E2422B98B1A800A5B899 /* Latvia.json */,
+				A676E2432B98B1A800A5B899 /* Lebanon.json */,
+				A676E2442B98B1A800A5B899 /* Lesotho.json */,
+				A676E2452B98B1A800A5B899 /* Liberia.json */,
+				A676E2462B98B1A800A5B899 /* Liechtenstein.json */,
+				A676E2472B98B1A800A5B899 /* Lithuania.json */,
+				A676E2482B98B1A800A5B899 /* Luxembourg.json */,
+				A676E2492B98B1A800A5B899 /* Madagascar.json */,
+				A676E24A2B98B1A800A5B899 /* Malawi.json */,
+				A676E24B2B98B1A800A5B899 /* Malaysia.json */,
+				A676E24C2B98B1A800A5B899 /* Maldives.json */,
+				A676E24D2B98B1A800A5B899 /* Mali.json */,
+				A676E24E2B98B1A800A5B899 /* Malta.json */,
+				A676E24F2B98B1A800A5B899 /* Marshall Islands.json */,
+				A676E2502B98B1A800A5B899 /* Martinique.json */,
+				A676E2512B98B1A800A5B899 /* Mauritania.json */,
+				A676E2522B98B1A800A5B899 /* Mauritius.json */,
+				A676E2532B98B1A800A5B899 /* Mexico.json */,
+				A676E2542B98B1A800A5B899 /* Moldova.json */,
+				A676E2552B98B1A800A5B899 /* Monaco.json */,
+				A676E2562B98B1A800A5B899 /* Mongolia.json */,
+				A676E2572B98B1A800A5B899 /* Montenegro.json */,
+				A676E2582B98B1A800A5B899 /* Morocco.json */,
+				A676E2592B98B1A800A5B899 /* Mozambique.json */,
+				A676E25A2B98B1A800A5B899 /* Myanmar.json */,
+				A676E25B2B98B1A800A5B899 /* Namibia.json */,
+				A676E25C2B98B1A800A5B899 /* Nauru.json */,
+				A676E25D2B98B1A800A5B899 /* Nepal.json */,
+				A676E25E2B98B1A800A5B899 /* Netherlands.json */,
+				A676E25F2B98B1A800A5B899 /* New Zealand.json */,
+				A676E2602B98B1A800A5B899 /* Nicaragua.json */,
+				A676E2612B98B1A800A5B899 /* Niger.json */,
+				A676E2622B98B1A800A5B899 /* Nigeria.json */,
+				A676E2632B98B1A800A5B899 /* Niue.json */,
+				A676E2642B98B1A800A5B899 /* North Korea.json */,
+				A676E2652B98B1A800A5B899 /* North Macedonia.json */,
+				A676E2662B98B1A800A5B899 /* Norway.json */,
+				A676E2672B98B1A800A5B899 /* Oman.json */,
+				A676E2682B98B1A800A5B899 /* Pakistan.json */,
+				A676E2692B98B1A800A5B899 /* Palau.json */,
+				A676E26A2B98B1A800A5B899 /* Palestine.json */,
+				A676E26B2B98B1A800A5B899 /* Panama.json */,
+				A676E26C2B98B1A800A5B899 /* Papua New Guinea.json */,
+				A676E26D2B98B1A800A5B899 /* Paraguay.json */,
+				A676E26E2B98B1A800A5B899 /* Peru.json */,
+				A676E26F2B98B1A800A5B899 /* Philippines.json */,
+				A676E2702B98B1A800A5B899 /* Poland.json */,
+				A676E2712B98B1A800A5B899 /* Portugal.json */,
+				A676E2722B98B1A800A5B899 /* Qatar.json */,
+				A676E2732B98B1A800A5B899 /* Republic of the Congo.json */,
+				A676E2742B98B1A800A5B899 /* Reunion.json */,
+				A676E2752B98B1A800A5B899 /* Romania.json */,
+				A676E2762B98B1A800A5B899 /* Russia.json */,
+				A676E2772B98B1A800A5B899 /* Rwanda.json */,
+				A676E2782B98B1A800A5B899 /* Saint Kitts and Nevis.json */,
+				A676E2792B98B1A800A5B899 /* Saint Lucia.json */,
+				A676E27A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json */,
+				A676E27B2B98B1A800A5B899 /* Samoa.json */,
+				A676E27C2B98B1A800A5B899 /* San Marino.json */,
+				A676E27D2B98B1A800A5B899 /* Sao Tome and Principe.json */,
+				A676E27E2B98B1A800A5B899 /* Saudi Arabia.json */,
+				A676E27F2B98B1A800A5B899 /* Senegal.json */,
+				A676E2802B98B1A800A5B899 /* Serbia.json */,
+				A676E2812B98B1A800A5B899 /* Seychelles.json */,
+				A676E2822B98B1A800A5B899 /* Sierra Leone.json */,
+				A676E2832B98B1A800A5B899 /* Singapore.json */,
+				A676E2842B98B1A800A5B899 /* Slovakia.json */,
+				A676E2852B98B1A800A5B899 /* Slovenia.json */,
+				A676E2862B98B1A800A5B899 /* Solomon Islands.json */,
+				A676E2872B98B1A800A5B899 /* Somalia.json */,
+				A676E2882B98B1A800A5B899 /* South Africa.json */,
+				A676E2892B98B1A800A5B899 /* South Korea.json */,
+				A676E28A2B98B1A800A5B899 /* South Sudan.json */,
+				A676E28B2B98B1A800A5B899 /* Spain.json */,
+				A676E28C2B98B1A800A5B899 /* Sri Lanka.json */,
+				A676E28D2B98B1A800A5B899 /* Sudan.json */,
+				A676E28E2B98B1A800A5B899 /* Suriname.json */,
+				A676E28F2B98B1A800A5B899 /* Sweden.json */,
+				A676E2902B98B1A800A5B899 /* Switzerland.json */,
+				A676E2912B98B1A800A5B899 /* Syria.json */,
+				A676E2922B98B1A800A5B899 /* Tajikistan.json */,
+				A676E2932B98B1A800A5B899 /* Tanzania.json */,
+				A676E2942B98B1A800A5B899 /* Thailand.json */,
+				A676E2952B98B1A800A5B899 /* Togo.json */,
+				A676E2962B98B1A800A5B899 /* Tonga.json */,
+				A676E2972B98B1A800A5B899 /* Trinidad and Tobago.json */,
+				A676E2982B98B1A800A5B899 /* Tunisia.json */,
+				A676E2992B98B1A800A5B899 /* Turkey.json */,
+				A676E29A2B98B1A800A5B899 /* Turkmenistan.json */,
+				A676E29B2B98B1A800A5B899 /* Turks and Caicos Islands.json */,
+				A676E29C2B98B1A800A5B899 /* Tuvalu.json */,
+				A676E29D2B98B1A800A5B899 /* Uganda.json */,
+				A676E29E2B98B1A800A5B899 /* Ukraine.json */,
+				A676E29F2B98B1A800A5B899 /* United Arab Emirates.json */,
+				A676E2A02B98B1A800A5B899 /* United Kingdom.json */,
+				A676E2A12B98B1A800A5B899 /* United States.json */,
+				A676E2A22B98B1A800A5B899 /* Uruguay.json */,
+				A676E2A32B98B1A800A5B899 /* Uzbekistan.json */,
+				A676E2A42B98B1A800A5B899 /* Vanuatu.json */,
+				A676E2A52B98B1A800A5B899 /* Vatican City.json */,
+				A676E2A62B98B1A800A5B899 /* Venezuela.json */,
+				A676E2A72B98B1A800A5B899 /* Vietnam.json */,
+				A676E2A82B98B1A800A5B899 /* Western Sahara.json */,
+				A676E2A92B98B1A800A5B899 /* Yemen.json */,
+				A676E2AA2B98B1A800A5B899 /* Zambia.json */,
+				A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */,
+			);
+			name = Countries;
+			path = ../../../../../../Downloads/Countries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +810,216 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676E2B02B98B1A800A5B899 /* Andorra.json in Resources */,
+				A676E3172B98B1A800A5B899 /* Lithuania.json in Resources */,
+				A676E3162B98B1A800A5B899 /* Liechtenstein.json in Resources */,
+				A676E33A2B98B1A800A5B899 /* Palestine.json in Resources */,
+				A676E32C2B98B1A800A5B899 /* Nauru.json in Resources */,
+				A676E2EC2B98B1A800A5B899 /* Faroe Islands.json in Resources */,
+				A676E2CE2B98B1A800A5B899 /* Cameroon.json in Resources */,
+				A676E2E72B98B1A800A5B899 /* Equatorial Guinea.json in Resources */,
+				A676E3512B98B1A800A5B899 /* Seychelles.json in Resources */,
+				A676E2D62B98B1A800A5B899 /* Colombia.json in Resources */,
+				A676E32B2B98B1A800A5B899 /* Namibia.json in Resources */,
+				A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */,
+				A676E2BE2B98B1A800A5B899 /* Belarus.json in Resources */,
+				A676E2F92B98B1A800A5B899 /* Guatemala.json in Resources */,
+				A676E2B82B98B1A800A5B899 /* Austria.json in Resources */,
+				A676E3192B98B1A800A5B899 /* Madagascar.json in Resources */,
+				A676E34E2B98B1A800A5B899 /* Saudi Arabia.json in Resources */,
+				A676E31C2B98B1A800A5B899 /* Maldives.json in Resources */,
+				A676E3522B98B1A800A5B899 /* Sierra Leone.json in Resources */,
+				A676E3132B98B1A800A5B899 /* Lebanon.json in Resources */,
+				A676E3332B98B1A800A5B899 /* Niue.json in Resources */,
+				A676E3122B98B1A800A5B899 /* Latvia.json in Resources */,
+				A676E2E92B98B1A800A5B899 /* Estonia.json in Resources */,
+				A676E2DF2B98B1A800A5B899 /* Denmark.json in Resources */,
+				A676E3292B98B1A800A5B899 /* Mozambique.json in Resources */,
+				A676E2D82B98B1A800A5B899 /* Cook Islands.json in Resources */,
+				A676E3212B98B1A800A5B899 /* Mauritania.json in Resources */,
+				A676E3432B98B1A800A5B899 /* Republic of the Congo.json in Resources */,
+				A676E2C52B98B1A800A5B899 /* Bosnia and Herzegovina.json in Resources */,
+				A676E2CD2B98B1A800A5B899 /* Cambodia.json in Resources */,
+				A676E2BB2B98B1A800A5B899 /* Bahrain.json in Resources */,
+				A676E30E2B98B1A800A5B899 /* Kiribati.json in Resources */,
+				A676E3112B98B1A800A5B899 /* Laos.json in Resources */,
+				A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */,
+				A676E2C12B98B1A800A5B899 /* Benin.json in Resources */,
+				A676E3762B98B1A800A5B899 /* Venezuela.json in Resources */,
+				A676E37A2B98B1A800A5B899 /* Zambia.json in Resources */,
+				A676E3072B98B1A800A5B899 /* Italy.json in Resources */,
+				A676E2C32B98B1A800A5B899 /* Bhutan.json in Resources */,
+				A676E33F2B98B1A800A5B899 /* Philippines.json in Resources */,
+				A676E2FB2B98B1A800A5B899 /* Guinea.json in Resources */,
+				A676E3772B98B1A800A5B899 /* Vietnam.json in Resources */,
+				A676E3562B98B1A800A5B899 /* Solomon Islands.json in Resources */,
+				A676E3412B98B1A800A5B899 /* Portugal.json in Resources */,
+				A676E2D02B98B1A800A5B899 /* Cayman Islands.json in Resources */,
+				A676E3142B98B1A800A5B899 /* Lesotho.json in Resources */,
+				A676E2EF2B98B1A800A5B899 /* France.json in Resources */,
+				A676E36A2B98B1A800A5B899 /* Turkmenistan.json in Resources */,
+				A676E3352B98B1A800A5B899 /* North Macedonia.json in Resources */,
+				A676E2F62B98B1A800A5B899 /* Greece.json in Resources */,
+				A676E3652B98B1A800A5B899 /* Togo.json in Resources */,
+				A676E2DE2B98B1A800A5B899 /* Democratic Republic of the Congo.json in Resources */,
+				A676E2CB2B98B1A800A5B899 /* Burundi.json in Resources */,
 				A60BBD932B7D4AD7008B89BB /* Preview Assets.xcassets in Resources */,
+				A676E2BA2B98B1A800A5B899 /* Bahamas.json in Resources */,
+				A676E2BD2B98B1A800A5B899 /* Barbados.json in Resources */,
+				A676E3702B98B1A800A5B899 /* United Kingdom.json in Resources */,
+				A676E3342B98B1A800A5B899 /* North Korea.json in Resources */,
+				A676E3382B98B1A800A5B899 /* Pakistan.json in Resources */,
+				A676E36C2B98B1A800A5B899 /* Tuvalu.json in Resources */,
+				A676E3282B98B1A800A5B899 /* Morocco.json in Resources */,
+				A676E35C2B98B1A800A5B899 /* Sri Lanka.json in Resources */,
+				A676E2F22B98B1A800A5B899 /* Gambia.json in Resources */,
+				A676E3622B98B1A800A5B899 /* Tajikistan.json in Resources */,
+				A676E3372B98B1A800A5B899 /* Oman.json in Resources */,
+				A676E2DA2B98B1A800A5B899 /* Croatia.json in Resources */,
+				A676E2F12B98B1A800A5B899 /* Gabon.json in Resources */,
+				A676E3502B98B1A800A5B899 /* Serbia.json in Resources */,
+				A676E2EA2B98B1A800A5B899 /* Eswatini.json in Resources */,
+				A676E2E62B98B1A800A5B899 /* El Salvador.json in Resources */,
+				A676E2FF2B98B1A800A5B899 /* Hungary.json in Resources */,
+				A676E3422B98B1A800A5B899 /* Qatar.json in Resources */,
+				A676E3392B98B1A800A5B899 /* Palau.json in Resources */,
+				A676E3662B98B1A800A5B899 /* Tonga.json in Resources */,
+				A676E2CF2B98B1A800A5B899 /* Canada.json in Resources */,
+				A676E2E22B98B1A800A5B899 /* Dominican Republic.json in Resources */,
+				A676E3302B98B1A800A5B899 /* Nicaragua.json in Resources */,
+				A676E3062B98B1A800A5B899 /* Israel.json in Resources */,
+				A676E2E82B98B1A800A5B899 /* Eritrea.json in Resources */,
+				A676E3232B98B1A800A5B899 /* Mexico.json in Resources */,
+				A676E2E52B98B1A800A5B899 /* Egypt.json in Resources */,
+				A676E2F82B98B1A800A5B899 /* Guadeloupe.json in Resources */,
+				A676E2E42B98B1A800A5B899 /* Ecuador.json in Resources */,
+				A676E3202B98B1A800A5B899 /* Martinique.json in Resources */,
+				A676E30F2B98B1A800A5B899 /* Kuwait.json in Resources */,
+				A676E3012B98B1A800A5B899 /* India.json in Resources */,
+				A676E3672B98B1A800A5B899 /* Trinidad and Tobago.json in Resources */,
+				A676E2DC2B98B1A800A5B899 /* Cyprus.json in Resources */,
+				A676E3462B98B1A800A5B899 /* Russia.json in Resources */,
+				A676E31B2B98B1A800A5B899 /* Malaysia.json in Resources */,
+				A676E3182B98B1A800A5B899 /* Luxembourg.json in Resources */,
+				A676E36D2B98B1A800A5B899 /* Uganda.json in Resources */,
+				A676E3312B98B1A800A5B899 /* Niger.json in Resources */,
+				A676E36E2B98B1A800A5B899 /* Ukraine.json in Resources */,
+				A676E2BC2B98B1A800A5B899 /* Bangladesh.json in Resources */,
+				A676E2AF2B98B1A800A5B899 /* Algeria.json in Resources */,
+				A676E3482B98B1A800A5B899 /* Saint Kitts and Nevis.json in Resources */,
+				A676E3792B98B1A800A5B899 /* Yemen.json in Resources */,
+				A676E3472B98B1A800A5B899 /* Rwanda.json in Resources */,
+				A676E2F72B98B1A800A5B899 /* Grenada.json in Resources */,
+				A676E32F2B98B1A800A5B899 /* New Zealand.json in Resources */,
+				A676E2C82B98B1A800A5B899 /* Brunei.json in Resources */,
+				A676E32A2B98B1A800A5B899 /* Myanmar.json in Resources */,
+				A676E3602B98B1A800A5B899 /* Switzerland.json in Resources */,
+				A676E3532B98B1A800A5B899 /* Singapore.json in Resources */,
+				A676E2CA2B98B1A800A5B899 /* Burkina Faso.json in Resources */,
+				A676E35B2B98B1A800A5B899 /* Spain.json in Resources */,
+				A676E2C02B98B1A800A5B899 /* Belize.json in Resources */,
+				A676E2FE2B98B1A800A5B899 /* Honduras.json in Resources */,
+				A676E2C42B98B1A800A5B899 /* Bolivia.json in Resources */,
+				A676E31E2B98B1A800A5B899 /* Malta.json in Resources */,
+				A676E2FA2B98B1A800A5B899 /* Guinea-Bissau.json in Resources */,
+				A676E33B2B98B1A800A5B899 /* Panama.json in Resources */,
+				A676E34D2B98B1A800A5B899 /* Sao Tome and Principe.json in Resources */,
+				A676E2D22B98B1A800A5B899 /* Chad.json in Resources */,
+				A676E3272B98B1A800A5B899 /* Montenegro.json in Resources */,
+				A676E34F2B98B1A800A5B899 /* Senegal.json in Resources */,
+				A676E3722B98B1A800A5B899 /* Uruguay.json in Resources */,
+				A676E3262B98B1A800A5B899 /* Mongolia.json in Resources */,
+				A676E33C2B98B1A800A5B899 /* Papua New Guinea.json in Resources */,
+				A676E3552B98B1A800A5B899 /* Slovenia.json in Resources */,
+				A676E2B12B98B1A800A5B899 /* Angola.json in Resources */,
+				A676E3632B98B1A800A5B899 /* Tanzania.json in Resources */,
+				A676E2DB2B98B1A800A5B899 /* Cuba.json in Resources */,
+				A676E3782B98B1A800A5B899 /* Western Sahara.json in Resources */,
+				A676E3042B98B1A800A5B899 /* Iraq.json in Resources */,
+				A676E2D12B98B1A800A5B899 /* Central African Republic.json in Resources */,
+				A676E2D52B98B1A800A5B899 /* Christmas Island.json in Resources */,
+				A676E3732B98B1A800A5B899 /* Uzbekistan.json in Resources */,
+				A676E35A2B98B1A800A5B899 /* South Sudan.json in Resources */,
+				A676E2B72B98B1A800A5B899 /* Australia.json in Resources */,
+				A676E3692B98B1A800A5B899 /* Turkey.json in Resources */,
+				A676E34C2B98B1A800A5B899 /* San Marino.json in Resources */,
+				A676E3402B98B1A800A5B899 /* Poland.json in Resources */,
+				A676E3022B98B1A800A5B899 /* Indonesia.json in Resources */,
+				A676E3442B98B1A800A5B899 /* Reunion.json in Resources */,
+				A676E2FD2B98B1A800A5B899 /* Haiti.json in Resources */,
+				A676E2F02B98B1A800A5B899 /* French Guiana.json in Resources */,
+				A676E2B42B98B1A800A5B899 /* Argentina.json in Resources */,
 				A60BBD8F2B7D4AD7008B89BB /* Assets.xcassets in Resources */,
+				A676E2D92B98B1A800A5B899 /* Costa Rica.json in Resources */,
+				A676E2B32B98B1A800A5B899 /* Antigua and Barbuda.json in Resources */,
+				A676E3152B98B1A800A5B899 /* Liberia.json in Resources */,
+				A676E2D72B98B1A800A5B899 /* Comoros.json in Resources */,
+				A676E2EE2B98B1A800A5B899 /* Finland.json in Resources */,
+				A676E3322B98B1A800A5B899 /* Nigeria.json in Resources */,
+				A676E3452B98B1A800A5B899 /* Romania.json in Resources */,
+				A676E2EB2B98B1A800A5B899 /* Ethiopia.json in Resources */,
+				A676E2DD2B98B1A800A5B899 /* Czech Republic.json in Resources */,
+				A676E3002B98B1A800A5B899 /* Iceland.json in Resources */,
+				A676E3712B98B1A800A5B899 /* United States.json in Resources */,
+				A676E2D42B98B1A800A5B899 /* China.json in Resources */,
+				A676E3032B98B1A800A5B899 /* Iran.json in Resources */,
+				A676E2B52B98B1A800A5B899 /* Armenia.json in Resources */,
+				A676E30D2B98B1A800A5B899 /* Kenya.json in Resources */,
+				A676E36F2B98B1A800A5B899 /* United Arab Emirates.json in Resources */,
+				A676E2B22B98B1A800A5B899 /* Anguilla.json in Resources */,
+				A676E2C72B98B1A800A5B899 /* Brazil.json in Resources */,
+				A676E2C22B98B1A800A5B899 /* Bermuda.json in Resources */,
+				A676E32D2B98B1A800A5B899 /* Nepal.json in Resources */,
+				A676E30B2B98B1A800A5B899 /* Jordan.json in Resources */,
+				A676E3252B98B1A800A5B899 /* Monaco.json in Resources */,
+				A676E36B2B98B1A800A5B899 /* Turks and Caicos Islands.json in Resources */,
+				A676E35E2B98B1A800A5B899 /* Suriname.json in Resources */,
+				A676E35D2B98B1A800A5B899 /* Sudan.json in Resources */,
+				A676E31F2B98B1A800A5B899 /* Marshall Islands.json in Resources */,
+				A676E3082B98B1A800A5B899 /* Ivory Coast.json in Resources */,
+				A676E30C2B98B1A800A5B899 /* Kazakhstan.json in Resources */,
+				A676E34A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json in Resources */,
+				A659A0EF2B853ACA00063A27 /* FullCountryInformation.json in Resources */,
+				A676E2C62B98B1A800A5B899 /* Botswana.json in Resources */,
+				A676E35F2B98B1A800A5B899 /* Sweden.json in Resources */,
+				A676E3492B98B1A800A5B899 /* Saint Lucia.json in Resources */,
+				A676E2C92B98B1A800A5B899 /* Bulgaria.json in Resources */,
+				A676E2F32B98B1A800A5B899 /* Georgia.json in Resources */,
+				A676E3542B98B1A800A5B899 /* Slovakia.json in Resources */,
+				A676E3222B98B1A800A5B899 /* Mauritius.json in Resources */,
+				A676E3362B98B1A800A5B899 /* Norway.json in Resources */,
+				A676E33D2B98B1A800A5B899 /* Paraguay.json in Resources */,
+				A676E2E12B98B1A800A5B899 /* Dominica.json in Resources */,
+				A676E2B92B98B1A800A5B899 /* Azerbaijan.json in Resources */,
+				A676E31D2B98B1A800A5B899 /* Mali.json in Resources */,
+				A676E2FC2B98B1A800A5B899 /* Guyana.json in Resources */,
+				A676E3642B98B1A800A5B899 /* Thailand.json in Resources */,
+				A676E37B2B98B1A800A5B899 /* Zimbabwe.json in Resources */,
+				A676E3682B98B1A800A5B899 /* Tunisia.json in Resources */,
+				A676E3612B98B1A800A5B899 /* Syria.json in Resources */,
+				A676E3242B98B1A800A5B899 /* Moldova.json in Resources */,
+				A676E2E02B98B1A800A5B899 /* Djibouti.json in Resources */,
+				A676E33E2B98B1A800A5B899 /* Peru.json in Resources */,
+				A676E30A2B98B1A800A5B899 /* Japan.json in Resources */,
+				A676E3742B98B1A800A5B899 /* Vanuatu.json in Resources */,
+				A676E2F42B98B1A800A5B899 /* Germany.json in Resources */,
+				A676E2F52B98B1A800A5B899 /* Ghana.json in Resources */,
+				A676E3752B98B1A800A5B899 /* Vatican City.json in Resources */,
+				A676E2B62B98B1A800A5B899 /* Aruba.json in Resources */,
+				A676E2D32B98B1A800A5B899 /* Chile.json in Resources */,
+				A676E31A2B98B1A800A5B899 /* Malawi.json in Resources */,
+				A676E3572B98B1A800A5B899 /* Somalia.json in Resources */,
+				A676E3092B98B1A800A5B899 /* Jamaica.json in Resources */,
+				A676E2E32B98B1A800A5B899 /* East Timor.json in Resources */,
+				A676E2BF2B98B1A800A5B899 /* Belgium.json in Resources */,
+				A676E2ED2B98B1A800A5B899 /* Federated States of Micronesia.json in Resources */,
+				A676E32E2B98B1A800A5B899 /* Netherlands.json in Resources */,
+				A676E3102B98B1A800A5B899 /* Kyrgyzstan.json in Resources */,
+				A676E2CC2B98B1A800A5B899 /* Cabo Verde.json in Resources */,
+				A676E3582B98B1A800A5B899 /* South Africa.json in Resources */,
+				A676E3592B98B1A800A5B899 /* South Korea.json in Resources */,
+				A676E3052B98B1A800A5B899 /* Ireland.json in Resources */,
+				A676E34B2B98B1A800A5B899 /* Samoa.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +1030,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */,
 				A60BBD8D2B7D4AD6008B89BB /* ContentView.swift in Sources */,
+				A60BBD9A2B7D4BA9008B89BB /* Bundle Extension.swift in Sources */,
+				A60BBD9E2B7D4BC7008B89BB /* Coordinate Extension.swift in Sources */,
+				A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */,
+				A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */,
 				A60BBD8B2B7D4AD6008B89BB /* FullMapGameApp.swift in Sources */,
+				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
