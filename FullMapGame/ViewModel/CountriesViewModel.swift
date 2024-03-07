@@ -7,11 +7,13 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
 @MainActor
 class CountriesViewModel: ObservableObject {
     @Published var country: Country = .testCountry
     @Published var randomCountry: Country = .testCountry
+    @Published var countries: [Country] = []
     @Published var borderArray: [[CLLocationCoordinate2D]] = []
     @Published var currentCountryName = ""
     
@@ -23,8 +25,37 @@ class CountriesViewModel: ObservableObject {
     @Published var userGuesses: [UserMapGuess] = []
     @Published var userGuess: UserMapGuess = UserMapGuess.userGuessTest
     @Published var userGuessesText = ""
+    
+    
+    @Published var position: MapCameraPosition = .automatic
+    @Published var testCountry = 0
+    @Published var mapStyle: MapStyle = .imagery
+    @Published var score = 0
 
     
+    
+    
+    
+    func playerSubmit() {
+        currentCountryName = country.country
+        print(randomCountry.country)
+        mapStyle = .hybrid(pointsOfInterest: .excludingAll)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [self] in
+            if userGuessesText == currentCountryName {
+                score += 1
+            }
+            Task{
+                randomCountry = countries.randomElement()!
+                borderArray = randomCountry.borders()
+                country = randomCountry
+            }
+            position = .automatic
+            currentCountryName = ""
+            userGuessesText = ""
+            mapStyle = .imagery
+        }
+    }
     
     
 //    func addPlayerGuess() {
@@ -47,11 +78,18 @@ class CountriesViewModel: ObservableObject {
     
     init() { // is synchronous
         Task {
-            let country = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+            for name in countryNames {
+//                if countries.count == 1 {
+//    
+//                }
+                let country = await Bundle.main.decode("\(name).json")
+                countries.append(country)
+            }
+//            let country = await Bundle.main.decode("\(countryNames.randomElement()!).json")
 //            await MainActor.run {
-            print(country)
-                self.country = country
-            self.borderArray = country.borders()
+//            print(country)
+//                self.country = country
+//            self.borderArray = country.borders()
             
             
 //            }

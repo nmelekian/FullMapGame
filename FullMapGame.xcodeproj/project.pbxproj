@@ -17,7 +17,6 @@
 		A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */; };
 		A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */; };
 		A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659A0EA2B852CCC00063A27 /* SpareParts.swift */; };
-		A659A0EF2B853ACA00063A27 /* FullCountryInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */; };
 		A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DD2B98B1A800A5B899 /* Afghanistan.json */; };
 		A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DE2B98B1A800A5B899 /* Albania.json */; };
 		A676E2AF2B98B1A800A5B899 /* Algeria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DF2B98B1A800A5B899 /* Algeria.json */; };
@@ -225,6 +224,8 @@
 		A676E3792B98B1A800A5B899 /* Yemen.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2A92B98B1A800A5B899 /* Yemen.json */; };
 		A676E37A2B98B1A800A5B899 /* Zambia.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2AA2B98B1A800A5B899 /* Zambia.json */; };
 		A676E37B2B98B1A800A5B899 /* Zimbabwe.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */; };
+		A676E39D2B9A227000A5B899 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676E39C2B9A227000A5B899 /* MapView.swift */; };
+		A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,7 +241,6 @@
 		A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 		A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuess.swift; sourceTree = "<group>"; };
 		A659A0EA2B852CCC00063A27 /* SpareParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareParts.swift; sourceTree = "<group>"; };
-		A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FullCountryInformation.json; path = ../../../../../../Downloads/FullCountryInformation.json; sourceTree = "<group>"; };
 		A676E1DD2B98B1A800A5B899 /* Afghanistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Afghanistan.json; sourceTree = "<group>"; };
 		A676E1DE2B98B1A800A5B899 /* Albania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albania.json; sourceTree = "<group>"; };
 		A676E1DF2B98B1A800A5B899 /* Algeria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algeria.json; sourceTree = "<group>"; };
@@ -448,6 +448,8 @@
 		A676E2A92B98B1A800A5B899 /* Yemen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Yemen.json; sourceTree = "<group>"; };
 		A676E2AA2B98B1A800A5B899 /* Zambia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zambia.json; sourceTree = "<group>"; };
 		A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zimbabwe.json; sourceTree = "<group>"; };
+		A676E39C2B9A227000A5B899 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -481,7 +483,6 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8A2B7D4AD6008B89BB /* FullMapGameApp.swift */,
-				A659A0EE2B853ACA00063A27 /* FullCountryInformation.json */,
 				A676E2AC2B98B1A800A5B899 /* Countries */,
 				A60BBDAA2B7E8E86008B89BB /* ViewModel */,
 				A60BBD9C2B7D4BB9008B89BB /* Views */,
@@ -515,6 +516,8 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
+				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
+				A676E39C2B9A227000A5B899 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -780,7 +783,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					A60BBD862B7D4AD6008B89BB = {
 						CreatedOnToolsVersion = 15.2;
@@ -979,7 +982,6 @@
 				A676E3082B98B1A800A5B899 /* Ivory Coast.json in Resources */,
 				A676E30C2B98B1A800A5B899 /* Kazakhstan.json in Resources */,
 				A676E34A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json in Resources */,
-				A659A0EF2B853ACA00063A27 /* FullCountryInformation.json in Resources */,
 				A676E2C62B98B1A800A5B899 /* Botswana.json in Resources */,
 				A676E35F2B98B1A800A5B899 /* Sweden.json in Resources */,
 				A676E3492B98B1A800A5B899 /* Saint Lucia.json in Resources */,
@@ -1037,7 +1039,9 @@
 				A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */,
 				A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */,
 				A60BBD8B2B7D4AD6008B89BB /* FullMapGameApp.swift in Sources */,
+				A676E39D2B9A227000A5B899 /* MapView.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
+				A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1078,6 +1082,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1139,6 +1144,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1166,6 +1172,7 @@
 				CODE_SIGN_ENTITLEMENTS = FullMapGame/FullMapGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FullMapGame/Preview Content\"";
 				DEVELOPMENT_TEAM = L8NA8XZ3DK;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1184,9 +1191,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nick.FullMapGame;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -1204,6 +1211,7 @@
 				CODE_SIGN_ENTITLEMENTS = FullMapGame/FullMapGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FullMapGame/Preview Content\"";
 				DEVELOPMENT_TEAM = L8NA8XZ3DK;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1222,9 +1230,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nick.FullMapGame;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

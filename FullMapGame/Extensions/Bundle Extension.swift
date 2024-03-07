@@ -40,6 +40,7 @@ extension Bundle {
         let decoder = JSONDecoder()
         
         let loaded = try! decoder.decode(Country.self, from: data)
+        print(loaded.country)
         guard let loaded = try? decoder.decode(Country.self, from: data) else {
             return Country.testCountry
         }
