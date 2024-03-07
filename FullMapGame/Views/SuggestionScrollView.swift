@@ -16,6 +16,7 @@ struct SuggestionScrollView: View {
                 ForEach(searchResults, id: \.self) { country in
                     Button(country) {
                         vm.userGuessesText = country
+                        vm.playerSubmit()
                     }
                     .padding(2)
                     .buttonStyle(.borderedProminent)

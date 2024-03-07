@@ -78,22 +78,21 @@ class CountriesViewModel: ObservableObject {
     
     init() { // is synchronous
         Task {
-            for name in countryNames {
-//                if countries.count == 1 {
-//    
+            let firstCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+            countries.append(firstCountry)
+          
+            randomCountry = countries.randomElement()!
+            borderArray = randomCountry.borders()
+            country = randomCountry
+                
+            
+//            Task{
+//                for name in countryNames {
+//                    let country = await Bundle.main.decode("\(name).json")
+//                    countries.append(country)
 //                }
-                let country = await Bundle.main.decode("\(name).json")
-                countries.append(country)
-            }
-//            let country = await Bundle.main.decode("\(countryNames.randomElement()!).json")
-//            await MainActor.run {
-//            print(country)
-//                self.country = country
-//            self.borderArray = country.borders()
-            
-            
 //            }
-//         who knows how long this will take, but at least the user can use the app while the countries are being fetched.
         }
+       
     }
 }
