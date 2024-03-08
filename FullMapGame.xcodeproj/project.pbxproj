@@ -16,6 +16,8 @@
 		A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDA12B7D4D0A008B89BB /* Country.swift */; };
 		A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */; };
 		A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */; };
+		A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */; };
+		A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B6DC2B9B738B00B5CE59 /* Continent.swift */; };
 		A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659A0EA2B852CCC00063A27 /* SpareParts.swift */; };
 		A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DD2B98B1A800A5B899 /* Afghanistan.json */; };
 		A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DE2B98B1A800A5B899 /* Albania.json */; };
@@ -240,6 +242,8 @@
 		A60BBDA12B7D4D0A008B89BB /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		A60BBDA82B7E8E80008B89BB /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 		A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuess.swift; sourceTree = "<group>"; };
+		A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Lists.swift"; sourceTree = "<group>"; };
+		A620B6DC2B9B738B00B5CE59 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
 		A659A0EA2B852CCC00063A27 /* SpareParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareParts.swift; sourceTree = "<group>"; };
 		A676E1DD2B98B1A800A5B899 /* Afghanistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Afghanistan.json; sourceTree = "<group>"; };
 		A676E1DE2B98B1A800A5B899 /* Albania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albania.json; sourceTree = "<group>"; };
@@ -516,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
+				A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
 				A676E39C2B9A227000A5B899 /* MapView.swift */,
 			);
@@ -525,6 +530,7 @@
 		A60BBDA32B7D4D10008B89BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A620B6DC2B9B738B00B5CE59 /* Continent.swift */,
 				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
 				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
 				A659A0EA2B852CCC00063A27 /* SpareParts.swift */,
@@ -1040,6 +1046,8 @@
 				A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */,
 				A60BBD8B2B7D4AD6008B89BB /* FullMapGameApp.swift in Sources */,
 				A676E39D2B9A227000A5B899 /* MapView.swift in Sources */,
+				A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */,
+				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
 				A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */,
 			);
@@ -1171,13 +1179,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FullMapGame/FullMapGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FullMapGame/Preview Content\"";
 				DEVELOPMENT_TEAM = L8NA8XZ3DK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -1210,13 +1219,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FullMapGame/FullMapGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FullMapGame/Preview Content\"";
 				DEVELOPMENT_TEAM = L8NA8XZ3DK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

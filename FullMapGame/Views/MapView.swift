@@ -22,6 +22,7 @@ struct MapView: View {
             VStack {
                 Text(vm.currentCountryName)
                     .font(.title)
+                    .foregroundStyle(.white)
                 Spacer()
             }
         }

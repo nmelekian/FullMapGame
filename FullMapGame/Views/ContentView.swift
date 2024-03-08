@@ -18,31 +18,46 @@ struct ContentView: View {
             
             //            Text("Loaded Countries: \(vm.countries.count.description)")
             Text("User Score: \(vm.score)")
+            HStack{
+                Text("Select Continent: ")
+                Picker("Select continent", selection: $vm.continent) {
+                    ForEach(Continent.allCases, id: \.self) { continent in
+                        Text("\(continent.rawValue)")
+                       }
+                }
+            }
+            
             TextField("Name the country", text: $vm.userGuessesText)
                 .keyboardType(.alphabet)
                 .autocorrectionDisabled()
                 .focused($isFocused)
+                .padding(.bottom)
                 .onAppear {
                     isFocused = true
                 }
             
         }
+        .sensoryFeedback(.success, trigger: vm.userCorrect)
+        .sensoryFeedback(.error, trigger: vm.userWrong )
         .toolbar {
             ToolbarItem(placement: .keyboard) {
                 SuggestionScrollView(vm: vm)
             }
         }
-        .onSubmit {
-            vm.playerSubmit()
-        }
+//        .onSubmit {
+//            vm.playerSubmit()
+//        }
         .onAppear(perform: {
             Task{
                 for name in countryNames {
                     let country = await Bundle.main.decode("\(name).json")
-                    vm.countries.append(country)
+                    vm.allcountries.append(country)
                 }
             }
         })
+        .onChange(of: vm.continent) { oldValue, newValue in
+            vm.continentSelect(continent: newValue)
+        }
         
     }
 }
