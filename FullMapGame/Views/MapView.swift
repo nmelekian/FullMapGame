@@ -20,9 +20,19 @@ struct MapView: View {
             }
             
             VStack {
-                Text(vm.currentCountryName)
-                    .font(.title)
-                    .foregroundStyle(.white)
+                HStack{
+                    Spacer()
+                    Text(vm.currentCountryName)
+                        .font(.title)
+                        .foregroundStyle(.white)
+                    Button(action: {
+                        vm.position = .automatic
+                    }, label: {
+                        Image(systemName: "location.fill")
+                            .foregroundStyle(.white)
+                    })
+                    .padding()
+                }
                 Spacer()
             }
         }

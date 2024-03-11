@@ -33,7 +33,7 @@ struct MenuView: View {
             }
             Button("Play Game") {
                 vm.gameplay = .game
-                vm.continentSelect(continent: vm.continent)
+                vm.gameStart(continent: vm.continent)
             }
             .buttonStyle(.borderedProminent)
         }.onAppear(perform: {
@@ -46,7 +46,7 @@ struct MenuView: View {
         })
         .onChange(of: vm.continent) { oldValue, newValue in
             vm.gameCounts[3] = newValue.countrycount
-            
+//            vm.gameArray = 
         }
     }
 }

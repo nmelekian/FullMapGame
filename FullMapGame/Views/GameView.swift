@@ -37,11 +37,11 @@ struct GameView: View {
             }
         }
         .onSubmit {
-            
+            vm.playerSubmit()
         }
-        .onChange(of: vm.continent) { oldValue, newValue in
-            vm.continentSelect(continent: newValue)
-        }
+//        .onChange(of: vm.continent) { oldValue, newValue in
+//            vm.continentSelect(continent: newValue)
+//        }
         
     }
     

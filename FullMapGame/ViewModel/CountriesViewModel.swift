@@ -62,43 +62,10 @@ class CountriesViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
             Task{
                 //change these to reflect working off of the shortened array
-                switch continent {
-                case .noChoice:
-                    randomCountry = gameArray.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .Africa:
-                    let africaCountries = gameArray.filter{ AfricaCountries.contains($0.country)}
-                    randomCountry = africaCountries.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .Asia:
-                    let asianCountries = gameArray.filter{ AsianCountries.contains($0.country)}
-                    randomCountry = asianCountries.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .Europe:
-                    let europeanCountries = gameArray.filter{ EuropeCountries.contains($0.country)}
-                    randomCountry = europeanCountries.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .NorthAmerica:
-                    let northAmericanCountries = gameArray.filter{ NorthAmericaCountries.contains($0.country)}
-                    randomCountry = northAmericanCountries.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .SouthAmerica:
-                    let southAmericanContries = gameArray.filter{ SouthAmericaCountries.contains($0.country)}
-                    randomCountry = southAmericanContries.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                case .Oceania:
-                    let oceania = gameArray.filter{ OceaniaCountries.contains($0.country)}
-                    randomCountry = oceania.randomElement()!
-                    borderArray = randomCountry.borders()
-                    country = randomCountry
-                }
                 
+                randomCountry = gameArray.randomElement()!
+                borderArray = randomCountry.borders()
+                country = randomCountry
             }
             position = .automatic
             currentCountryName = ""
@@ -107,28 +74,35 @@ class CountriesViewModel: ObservableObject {
         }
     }
     
-    func continentSelect(continent: Continent) {
+    
+    func continentSelect(continent: Continent) -> [Country] {
         
         switch continent {
         case .noChoice:
-            randomCountry = gameArray.randomElement()!
+            return gameArray
         case .Africa:
-            randomCountry = gameArray.filter{ AfricaCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{ AfricaCountries.contains($0.country)}
         case .Asia:
-            randomCountry = gameArray.filter{ AsianCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{ AsianCountries.contains($0.country)}
         case .Europe:
-            randomCountry = gameArray.filter{ EuropeCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{ EuropeCountries.contains($0.country)}
         case .NorthAmerica:
-            randomCountry = gameArray.filter{NorthAmericaCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{NorthAmericaCountries.contains($0.country)}
         case .SouthAmerica:
-            randomCountry = gameArray.filter{ SouthAmericaCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{ SouthAmericaCountries.contains($0.country)}
         case .Oceania:
-            randomCountry = gameArray.filter{ OceaniaCountries.contains($0.country)}.randomElement()!
+            return gameArray.filter{ OceaniaCountries.contains($0.country)}
         }
+        
+    }
+    
+    func gameStart(continent: Continent) {
+        randomCountry = continentSelect(continent: continent).randomElement()!
         borderArray = randomCountry.borders()
         country = randomCountry
         position = .automatic
     }
+    
     
     func answer() -> Bool {
         
@@ -143,11 +117,7 @@ class CountriesViewModel: ObservableObject {
         }
     }
     
-    func createGameTotal(gameTotal: Int) {
-        for i in 0..<gameTotal {
-            
-        }
-    }
+    
 //    func addPlayerGuess() {
 //        
 //        userGuess = UserMapGuess(name: "Player Guess", latitude: userLatitude, longitude: userLongitude)
