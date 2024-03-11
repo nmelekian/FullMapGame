@@ -217,7 +217,7 @@ let countryNames = ["Afghanistan",
 ]
 
 
-let Africa = [
+let AfricaCountries = [
     "Morocco",
     "Algeria",
     "Tunisia",
@@ -276,7 +276,7 @@ let Africa = [
 ]
 
 
-let Europe = [
+let EuropeCountries = [
     "Iceland",
     "Ireland",
     "Portugal",
@@ -329,7 +329,7 @@ let Europe = [
 
 
 
-let SouthAmerica = [
+let SouthAmericaCountries = [
     "Colombia",
     "Venezuela",
     "Ecuador",
@@ -347,7 +347,7 @@ let SouthAmerica = [
 
 
 
-let NorthAmerica = [
+let NorthAmericaCountries = [
     "Canada",
     "United States",
     "Mexico",
@@ -382,7 +382,7 @@ let NorthAmerica = [
 
 
 
-let Asia = ["Afghanistan",
+let AsianCountries = ["Afghanistan",
             "Armenia",
             "Azerbaijan",
             "Bahrain",
@@ -429,7 +429,7 @@ let Asia = ["Afghanistan",
             "Yemen",
             "Maldives"]
 
-let Oceania = ["Australia",
+let OceaniaCountries = ["Australia",
                "Christmas Island",
                "Cook Islands",
                "East Timor",

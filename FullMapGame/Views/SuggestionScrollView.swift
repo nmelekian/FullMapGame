@@ -36,39 +36,39 @@ struct SuggestionScrollView: View {
         switch vm.continent {
         case .Africa:
             if vm.userGuessesText.isEmpty {
-                return Africa.sorted()
+                return AfricaCountries.sorted()
             } else {
-                return Africa.filter { $0.contains(vm.userGuessesText)}
+                return AfricaCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .NorthAmerica:
             if vm.userGuessesText.isEmpty {
-                return NorthAmerica.sorted()
+                return NorthAmericaCountries.sorted()
             } else {
-                return NorthAmerica.filter { $0.contains(vm.userGuessesText)}
+                return NorthAmericaCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .Asia:
             if vm.userGuessesText.isEmpty {
-                return Asia.sorted()
+                return AsianCountries.sorted()
             } else {
-                return Asia.filter { $0.contains(vm.userGuessesText)}
+                return AsianCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .Europe:
             if vm.userGuessesText.isEmpty {
-                return Europe.sorted()
+                return EuropeCountries.sorted()
             } else {
-                return Europe.filter { $0.contains(vm.userGuessesText)}
+                return EuropeCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .SouthAmerica:
             if vm.userGuessesText.isEmpty {
-                return SouthAmerica.sorted()
+                return SouthAmericaCountries.sorted()
             } else {
-                return SouthAmerica.filter { $0.contains(vm.userGuessesText)}
+                return SouthAmericaCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .Oceania:
             if vm.userGuessesText.isEmpty {
-                return Oceania.sorted()
+                return OceaniaCountries.sorted()
             } else {
-                return Oceania.filter { $0.contains(vm.userGuessesText)}
+                return OceaniaCountries.filter { $0.contains(vm.userGuessesText)}
             }
         case .noChoice:
             if vm.userGuessesText.isEmpty {

@@ -15,4 +15,25 @@ enum Continent: String, CaseIterable {
     case SouthAmerica = "South America"
     case Oceania = "Oceania"
     
+    
+    var countrycount: Int {
+        switch self {
+            
+        case .noChoice:
+            return countryNames.count
+        case .Africa:
+            return AfricaCountries.count 
+        case .Asia:
+            return AsianCountries.count
+        case .Europe:
+            return EuropeCountries.count
+        case .NorthAmerica:
+            return NorthAmericaCountries.count
+        case .SouthAmerica:
+            return SouthAmericaCountries.count
+        case .Oceania:
+            return OceaniaCountries.count
+        }
+    }
+    
 }

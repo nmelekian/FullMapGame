@@ -228,6 +228,9 @@
 		A676E37B2B98B1A800A5B899 /* Zimbabwe.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */; };
 		A676E39D2B9A227000A5B899 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676E39C2B9A227000A5B899 /* MapView.swift */; };
 		A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */; };
+		A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF97582B9BB68B00C59762 /* GameView.swift */; };
+		A6BF975B2B9BB7BE00C59762 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */; };
+		A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975C2B9BBA2C00C59762 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -454,6 +457,9 @@
 		A676E2AB2B98B1A800A5B899 /* Zimbabwe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zimbabwe.json; sourceTree = "<group>"; };
 		A676E39C2B9A227000A5B899 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionScrollView.swift; sourceTree = "<group>"; };
+		A6BF97582B9BB68B00C59762 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
+		A6BF975C2B9BBA2C00C59762 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,6 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
+				A6BF975C2B9BBA2C00C59762 /* MenuView.swift */,
+				A6BF97582B9BB68B00C59762 /* GameView.swift */,
 				A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
 				A676E39C2B9A227000A5B899 /* MapView.swift */,
@@ -534,6 +542,7 @@
 				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
 				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
 				A659A0EA2B852CCC00063A27 /* SpareParts.swift */,
+				A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1045,10 +1054,13 @@
 				A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */,
 				A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */,
 				A60BBD8B2B7D4AD6008B89BB /* FullMapGameApp.swift in Sources */,
+				A6BF975B2B9BB7BE00C59762 /* Gameplay.swift in Sources */,
 				A676E39D2B9A227000A5B899 /* MapView.swift in Sources */,
 				A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */,
+				A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */,
 				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
+				A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */,
 				A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1186,6 +1198,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CountryGuessr;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -1226,6 +1239,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CountryGuessr;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

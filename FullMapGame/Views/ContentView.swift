@@ -11,53 +11,15 @@ import MapKit
 struct ContentView: View {
     @StateObject var vm = CountriesViewModel()
     @FocusState var isFocused
+   
     var body: some View {
-        VStack {
-            MapView(vm: vm)
-            
-            
-            //            Text("Loaded Countries: \(vm.countries.count.description)")
-            Text("User Score: \(vm.score)")
-            HStack{
-                Text("Select Continent: ")
-                Picker("Select continent", selection: $vm.continent) {
-                    ForEach(Continent.allCases, id: \.self) { continent in
-                        Text("\(continent.rawValue)")
-                       }
-                }
-            }
-            
-            TextField("Name the country", text: $vm.userGuessesText)
-                .keyboardType(.alphabet)
-                .autocorrectionDisabled()
-                .focused($isFocused)
-                .padding(.bottom)
-                .onAppear {
-                    isFocused = true
-                }
-            
+        switch vm.gameplay {
+        case .menu:
+          MenuView(vm: vm)
+        case .game:
+            GameView(vm: vm, isFocused: _isFocused )
         }
-        .sensoryFeedback(.success, trigger: vm.userCorrect)
-        .sensoryFeedback(.error, trigger: vm.userWrong )
-        .toolbar {
-            ToolbarItem(placement: .keyboard) {
-                SuggestionScrollView(vm: vm)
-            }
-        }
-//        .onSubmit {
-//            vm.playerSubmit()
-//        }
-        .onAppear(perform: {
-            Task{
-                for name in countryNames {
-                    let country = await Bundle.main.decode("\(name).json")
-                    vm.allcountries.append(country)
-                }
-            }
-        })
-        .onChange(of: vm.continent) { oldValue, newValue in
-            vm.continentSelect(continent: newValue)
-        }
+            
         
     }
 }
