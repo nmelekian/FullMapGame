@@ -17,13 +17,13 @@ struct GameView: View {
             
             
             //            Text("Loaded Countries: \(vm.countries.count.description)")
-            Text("User Score: \(vm.score)")
+            
             
             TextField("Name the country", text: $vm.userGuessesText)
                 .keyboardType(.alphabet)
                 .autocorrectionDisabled()
                 .focused($isFocused)
-                .padding([.bottom, .horizontal])
+                .padding()
                 .onAppear {
                     isFocused = true
                 }

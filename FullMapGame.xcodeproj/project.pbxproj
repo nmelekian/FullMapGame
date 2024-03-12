@@ -231,6 +231,7 @@
 		A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF97582B9BB68B00C59762 /* GameView.swift */; };
 		A6BF975B2B9BB7BE00C59762 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */; };
 		A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975C2B9BBA2C00C59762 /* MenuView.swift */; };
+		A6BF97622BA094F900C59762 /* Taiwan.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97612BA094F900C59762 /* Taiwan.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -460,6 +461,7 @@
 		A6BF97582B9BB68B00C59762 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		A6BF975C2B9BBA2C00C59762 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A6BF97612BA094F900C59762 /* Taiwan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Taiwan.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,7 +530,6 @@
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
 				A6BF975C2B9BBA2C00C59762 /* MenuView.swift */,
 				A6BF97582B9BB68B00C59762 /* GameView.swift */,
-				A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
 				A676E39C2B9A227000A5B899 /* MapView.swift */,
 			);
@@ -538,6 +539,7 @@
 		A60BBDA32B7D4D10008B89BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */,
 				A620B6DC2B9B738B00B5CE59 /* Continent.swift */,
 				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
 				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
@@ -739,6 +741,7 @@
 				A676E28F2B98B1A800A5B899 /* Sweden.json */,
 				A676E2902B98B1A800A5B899 /* Switzerland.json */,
 				A676E2912B98B1A800A5B899 /* Syria.json */,
+				A6BF97612BA094F900C59762 /* Taiwan.json */,
 				A676E2922B98B1A800A5B899 /* Tajikistan.json */,
 				A676E2932B98B1A800A5B899 /* Tanzania.json */,
 				A676E2942B98B1A800A5B899 /* Thailand.json */,
@@ -837,6 +840,7 @@
 				A676E2CE2B98B1A800A5B899 /* Cameroon.json in Resources */,
 				A676E2E72B98B1A800A5B899 /* Equatorial Guinea.json in Resources */,
 				A676E3512B98B1A800A5B899 /* Seychelles.json in Resources */,
+				A6BF97622BA094F900C59762 /* Taiwan.json in Resources */,
 				A676E2D62B98B1A800A5B899 /* Colombia.json in Resources */,
 				A676E32B2B98B1A800A5B899 /* Namibia.json in Resources */,
 				A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */,

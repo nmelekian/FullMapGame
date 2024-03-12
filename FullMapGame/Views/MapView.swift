@@ -20,21 +20,34 @@ struct MapView: View {
             }
             
             VStack {
-                HStack{
+                
+                
+                HStack(alignment:.center){
+                    Text("Score: \(vm.score)")
+                        .foregroundStyle(.white)
+                        .font(.title3)
+                        .padding()
                     Spacer()
                     Text(vm.currentCountryName)
                         .font(.title)
                         .foregroundStyle(.white)
+                        .padding(.trailing)
+                    Spacer()
                     Button(action: {
                         vm.position = .automatic
                     }, label: {
-                        Image(systemName: "location.fill")
+                        Image(systemName: "location.square")
                             .foregroundStyle(.white)
+                            .font(.title2)
                     })
                     .padding()
+                    
                 }
                 Spacer()
             }
+        }
+        .toolbar {
+           
         }
         .mapStyle(vm.mapStyle)
     }
