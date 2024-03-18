@@ -33,7 +33,7 @@ struct Country: Codable, Hashable {
                 }
                 coordArray.append(coord2DArray)
             }
-        } else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen" || country == "Oman" || country == "Belize"{
+        } else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen" || country == "Oman" || country == "Belize" || country == "Somalia"{
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
                 for index in 0..<landmass.count {

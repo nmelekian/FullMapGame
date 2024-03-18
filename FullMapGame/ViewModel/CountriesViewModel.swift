@@ -85,22 +85,35 @@ class CountriesViewModel: ObservableObject {
     }
     
     func nextRound(array: [Country]) {
+        var usedArray = array
         gameCount += 1
         if gameCount == currentGameCountriesCountIndex {
             hasGameCompleted = true
         }
-        print(array.count)
-        recentGuesses.append(country.country)
-        print(recentGuesses)
-        randomCountry = array.randomElement()!
-        if recentGuesses.contains(randomCountry.country) {
-            randomCountry = array.randomElement()!
-        }
-        if recentGuesses.count == 6{
-            for i in 0...2 {
-                recentGuesses.remove(at: i)
+        
+        if currentGameCountriesCountIndex == gameCounts[3] {
+            recentGuesses.append(country.country)
+            usedArray.removeAll { country in
+                recentGuesses.contains(country.country)
+            }
+            randomCountry = usedArray.randomElement()!
+            print(usedArray.count)
+        } else {
+            print(usedArray.count)
+            recentGuesses.append(country.country)
+            print(recentGuesses)
+            randomCountry = usedArray.randomElement()!
+            if recentGuesses.contains(randomCountry.country) {
+                randomCountry = usedArray.randomElement()!
+            }
+            
+            if recentGuesses.count == 6{
+                for i in 0...2 {
+                    recentGuesses.remove(at: i)
+                }
             }
         }
+        
         borderArray = randomCountry.borders()
         country = randomCountry
     }

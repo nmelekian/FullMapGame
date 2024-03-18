@@ -28,8 +28,8 @@ struct GameView: View {
         .onSubmit {
             vm.playerSubmit()
         }
-        .alert("Game Over! You Scored \(vm.score) out of \(vm.currentGameCountriesCountIndex)!", isPresented: $vm.hasGameCompleted) {
-            Button("Ok", role: .cancel) {
+        .alert("You Scored \(vm.score) out of \(vm.currentGameCountriesCountIndex)!", isPresented: $vm.hasGameCompleted) {
+            Button("New Game", role: .cancel) {
                 vm.hasGameCompleted = false
                 vm.gameplay = .menu
                 vm.score = 0
