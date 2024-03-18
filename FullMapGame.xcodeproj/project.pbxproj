@@ -232,6 +232,7 @@
 		A6BF975B2B9BB7BE00C59762 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */; };
 		A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975C2B9BBA2C00C59762 /* MenuView.swift */; };
 		A6BF97622BA094F900C59762 /* Taiwan.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97612BA094F900C59762 /* Taiwan.json */; };
+		A6BF97642BA09BD300C59762 /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF97632BA09BD300C59762 /* TextfieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -462,6 +463,7 @@
 		A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		A6BF975C2B9BBA2C00C59762 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A6BF97612BA094F900C59762 /* Taiwan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Taiwan.json; sourceTree = "<group>"; };
+		A6BF97632BA09BD300C59762 /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,6 +532,7 @@
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
 				A6BF975C2B9BBA2C00C59762 /* MenuView.swift */,
 				A6BF97582B9BB68B00C59762 /* GameView.swift */,
+				A6BF97632BA09BD300C59762 /* TextfieldView.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
 				A676E39C2B9A227000A5B899 /* MapView.swift */,
 			);
@@ -1053,6 +1056,7 @@
 			files = (
 				A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */,
 				A60BBD8D2B7D4AD6008B89BB /* ContentView.swift in Sources */,
+				A6BF97642BA09BD300C59762 /* TextfieldView.swift in Sources */,
 				A60BBD9A2B7D4BA9008B89BB /* Bundle Extension.swift in Sources */,
 				A60BBD9E2B7D4BC7008B89BB /* Coordinate Extension.swift in Sources */,
 				A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */,
@@ -1217,7 +1221,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1258,7 +1262,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";

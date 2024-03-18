@@ -14,19 +14,8 @@ struct GameView: View {
         VStack {
             MapView(vm: vm)
                 .contentMargins(10)
-            
-            
-            //            Text("Loaded Countries: \(vm.countries.count.description)")
-            
-            
-            TextField("Name the country", text: $vm.userGuessesText)
-                .keyboardType(.alphabet)
-                .autocorrectionDisabled()
-                .focused($isFocused)
-                .padding()
-                .onAppear {
-                    isFocused = true
-                }
+
+          TextfieldView(vm: vm, isFocused: _isFocused)
             
         }
         .sensoryFeedback(.success, trigger: vm.userCorrect)

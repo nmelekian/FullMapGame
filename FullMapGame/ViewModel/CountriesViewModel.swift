@@ -91,7 +91,7 @@ class CountriesViewModel: ObservableObject {
         if recentGuesses.contains(randomCountry.country) {
             randomCountry = array.randomElement()!
         }
-        if recentGuesses.count == 50{
+        if recentGuesses.count == 6{
             for i in 0...2 {
                 recentGuesses.remove(at: i)
             }

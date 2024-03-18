@@ -21,7 +21,7 @@ struct Country: Codable, Hashable {
         let coordinatesArray = jsonBorder.flatMap { $0 }
         
         var coordArray: [[CLLocationCoordinate2D]] = []
-       
+        
         if country == "Canada" || country == "United States" || country == "Russia" || country == "Indonesia" || country == "Malaysia"{
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
@@ -33,7 +33,7 @@ struct Country: Codable, Hashable {
                 }
                 coordArray.append(coord2DArray)
             }
-        } else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen"{
+        } else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen" || country == "Oman" || country == "Belize"{
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
                 for index in 0..<landmass.count {

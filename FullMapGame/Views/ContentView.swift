@@ -24,6 +24,10 @@ struct ContentView: View {
     }
 }
 
+/*
+ For continent/whole world selection count, make it go through the whole continent/all countries, no repetitions
+ for any other count
+ */
 
 //#Preview {
 //    ContentView()

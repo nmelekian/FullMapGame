@@ -38,43 +38,43 @@ struct SuggestionScrollView: View {
             if vm.userGuessesText.isEmpty {
                 return AfricaCountries.sorted()
             } else {
-                return AfricaCountries.filter { $0.contains(vm.userGuessesText)}
+                return AfricaCountries.filter {$0.localizedStandardContains(vm.userGuessesText)}
             }
         case .NorthAmerica:
             if vm.userGuessesText.isEmpty {
                 return NorthAmericaCountries.sorted()
             } else {
-                return NorthAmericaCountries.filter { $0.contains(vm.userGuessesText)}
+                return NorthAmericaCountries.filter {$0.localizedStandardContains(vm.userGuessesText)}
             }
         case .Asia:
             if vm.userGuessesText.isEmpty {
                 return AsianCountries.sorted()
             } else {
-                return AsianCountries.filter { $0.contains(vm.userGuessesText)}
+                return AsianCountries.filter { $0.localizedStandardContains(vm.userGuessesText)}
             }
         case .Europe:
             if vm.userGuessesText.isEmpty {
                 return EuropeCountries.sorted()
             } else {
-                return EuropeCountries.filter { $0.contains(vm.userGuessesText)}
+                return EuropeCountries.filter { $0.localizedStandardContains(vm.userGuessesText)}
             }
         case .SouthAmerica:
             if vm.userGuessesText.isEmpty {
                 return SouthAmericaCountries.sorted()
             } else {
-                return SouthAmericaCountries.filter { $0.contains(vm.userGuessesText)}
+                return SouthAmericaCountries.filter { $0.localizedStandardContains(vm.userGuessesText)}
             }
         case .Oceania:
             if vm.userGuessesText.isEmpty {
                 return OceaniaCountries.sorted()
             } else {
-                return OceaniaCountries.filter { $0.contains(vm.userGuessesText)}
+                return OceaniaCountries.filter { $0.localizedStandardContains(vm.userGuessesText)}
             }
         case .noChoice:
             if vm.userGuessesText.isEmpty {
                 return countryNames.sorted()
             } else {
-                return countryNames.filter { $0.contains(vm.userGuessesText)}
+                return countryNames.filter {$0.localizedStandardContains(vm.userGuessesText)}
             }
         }
         
