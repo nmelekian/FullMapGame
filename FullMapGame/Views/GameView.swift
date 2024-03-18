@@ -28,6 +28,13 @@ struct GameView: View {
         .onSubmit {
             vm.playerSubmit()
         }
+        .alert("Game Over! You Scored \(vm.score) out of \(vm.currentGameCountriesCountIndex)!", isPresented: $vm.hasGameCompleted) {
+            Button("Ok", role: .cancel) {
+                vm.hasGameCompleted = false
+                vm.gameplay = .menu
+                vm.score = 0
+            }
+        }
 //        .onChange(of: vm.continent) { oldValue, newValue in
 //            vm.continentSelect(continent: newValue)
 //        }

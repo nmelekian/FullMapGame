@@ -15,7 +15,9 @@ struct MapView: View {
             Map(position: $vm.position) {
                 ForEach(vm.borderArray, id: \.self) { border in
                     MapPolygon(coordinates: border)
-                        .foregroundStyle(.red.opacity(0.7))
+                        .foregroundStyle(vm.country.country == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                        
+                        
                 }
             }
             

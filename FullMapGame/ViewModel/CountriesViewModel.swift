@@ -18,9 +18,9 @@ class CountriesViewModel: ObservableObject {
     @Published var borderArray: [[CLLocationCoordinate2D]] = []
     @Published var currentCountryName = ""
     @Published var currentCountriesArray: [Country] = []
-    @Published var currentCountriesIndex = 10
+    @Published var currentGameCountriesCountIndex = 10
     
-    @Published var userScore = 0
+    @Published var gameCount = 0
     @Published var hasUserGuessed = false
     @Published var userLatitude: CLLocationDegrees = 0
     @Published var userLongitude: CLLocationDegrees = 0
@@ -41,6 +41,7 @@ class CountriesViewModel: ObservableObject {
     @Published var gameplay: Gameplay = .menu
     @Published var gameCounts = [10, 25, 50, 207]
     @Published var recentGuesses = [String]()
+    @Published var hasGameCompleted = false
     
     
     func playerSubmit() {
@@ -48,7 +49,7 @@ class CountriesViewModel: ObservableObject {
         print(randomCountry.country)
         mapStyle = .hybrid(pointsOfInterest: .excludingAll)
         answer()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
             Task{
                 //change these to reflect working off of the shortened array
                 switch continent {
@@ -84,6 +85,10 @@ class CountriesViewModel: ObservableObject {
     }
     
     func nextRound(array: [Country]) {
+        gameCount += 1
+        if gameCount == currentGameCountriesCountIndex {
+            hasGameCompleted = true
+        }
         print(array.count)
         recentGuesses.append(country.country)
         print(recentGuesses)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     @StateObject var vm: CountriesViewModel
-    
+    @State private var allCountries = [Country]()
     var body: some View {
         if vm.allcountries.count >= 70 {
             VStack{
@@ -26,7 +26,7 @@ struct MenuView: View {
                 }
                 HStack{
                     Text("Select Number of Countries: ")
-                    Picker("Select continent", selection: $vm.currentCountriesIndex) {
+                    Picker("Select continent", selection: $vm.currentGameCountriesCountIndex) {
                         ForEach(vm.gameCounts, id: \.self) { amount in
                             Text("\(amount)").tag("")
                         }
@@ -37,7 +37,7 @@ struct MenuView: View {
                     vm.continentSelect(continent: vm.continent)
                 }
                 .buttonStyle(.borderedProminent)
-            }.onChange(of: vm.continent) { oldValue, newValue in
+            }.onChange(of: vm.continent) { _, newValue in
                 vm.gameCounts[3] = newValue.countrycount
             }
         } else {
@@ -46,8 +46,9 @@ struct MenuView: View {
                     Task{
                         for name in countryNames {
                             let country = await Bundle.main.decode("\(name).json")
-                            vm.allcountries.append(country)
+                            allCountries.append(country)
                         }
+                        vm.allcountries = allCountries
                     }
                 })
             }
