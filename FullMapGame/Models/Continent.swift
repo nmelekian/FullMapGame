@@ -14,6 +14,7 @@ enum Continent: String, CaseIterable {
     case NorthAmerica = "North America"
     case SouthAmerica = "South America"
     case Oceania = "Oceania"
+    case usStates = "U.S. States"
     
     
     var countrycount: Int {
@@ -33,6 +34,8 @@ enum Continent: String, CaseIterable {
             return SouthAmericaCountries.count
         case .Oceania:
             return OceaniaCountries.count
+        case .usStates:
+            return AmericanStates.count
         }
     }
     

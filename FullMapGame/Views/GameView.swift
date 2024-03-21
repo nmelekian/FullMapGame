@@ -14,8 +14,14 @@ struct GameView: View {
         VStack {
             MapView(vm: vm)
                 .contentMargins(10)
-
-          TextfieldView(vm: vm, isFocused: _isFocused)
+            VStack {
+                
+#if os(macOS)
+                SuggestionScrollView(vm: vm)
+                    .padding(.top)
+#endif
+                TextfieldView(vm: vm, isFocused: _isFocused)
+            }
             
         }
         .sensoryFeedback(.success, trigger: vm.userCorrect)
@@ -35,9 +41,9 @@ struct GameView: View {
                 vm.score = 0
             }
         }
-//        .onChange(of: vm.continent) { oldValue, newValue in
-//            vm.continentSelect(continent: newValue)
-//        }
+        //        .onChange(of: vm.continent) { oldValue, newValue in
+        //            vm.continentSelect(continent: newValue)
+        //        }
         
     }
     

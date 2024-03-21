@@ -76,6 +76,12 @@ struct SuggestionScrollView: View {
             } else {
                 return countryNames.filter {$0.localizedStandardContains(vm.userGuessesText)}
             }
+        case .usStates:
+            if vm.userGuessesText.isEmpty {
+                return AmericanStates.sorted()
+            } else {
+                return AmericanStates.filter {$0.localizedStandardContains(vm.userGuessesText)}
+            }
         }
         
     }

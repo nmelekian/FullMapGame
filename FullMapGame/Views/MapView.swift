@@ -14,8 +14,13 @@ struct MapView: View {
         ZStack{
             Map(position: $vm.position) {
                 ForEach(vm.borderArray, id: \.self) { border in
-                    MapPolygon(coordinates: border)
-                        .foregroundStyle(vm.country.country == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                    if vm.continent == .usStates{
+                        MapPolygon(coordinates: border)
+                            .foregroundStyle(vm.currentState.stateName == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                    } else {
+                        MapPolygon(coordinates: border)
+                            .foregroundStyle(vm.randomCountry.country == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                    }
                         
                         
                 }
@@ -30,7 +35,7 @@ struct MapView: View {
                         .font(.title3)
                         .padding()
                     Spacer()
-                    Text(vm.currentCountryName)
+                    Text(vm.currentName)
                         .font(.title)
                         .foregroundStyle(.white)
                         .padding(.trailing)

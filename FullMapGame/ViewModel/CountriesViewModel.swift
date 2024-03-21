@@ -16,7 +16,7 @@ class CountriesViewModel: ObservableObject {
     @Published var randomCountry: Country = .testCountry
     @Published var allcountries: [Country] = []
     @Published var borderArray: [[CLLocationCoordinate2D]] = []
-    @Published var currentCountryName = ""
+    @Published var currentName = ""
     @Published var currentCountriesArray: [Country] = []
     @Published var currentGameCountriesCountIndex = 10
     
@@ -44,9 +44,17 @@ class CountriesViewModel: ObservableObject {
     @Published var hasGameCompleted = false
     
     
+    @Published var currentState: USState = .testState
+    @Published var allStates: [USState] = []
+    
+    
     func playerSubmit() {
-        currentCountryName = country.country
-        print(randomCountry.country)
+        
+        if continent == .usStates {
+            currentName = currentState.stateName
+        } else {
+            currentName = country.country
+        }
         mapStyle = .hybrid(pointsOfInterest: .excludingAll)
         answer()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
@@ -74,14 +82,48 @@ class CountriesViewModel: ObservableObject {
                 case .Oceania:
                     let oceania = allcountries.filter{ OceaniaCountries.contains($0.country)}
                     nextRound(array: oceania)
+                case .usStates:
+                    let allStates = allStates
+                    nextStateRound(array: allStates)
                 }
                 
             }
             position = .automatic
-            currentCountryName = ""
+            currentName = ""
             userGuessesText = ""
             mapStyle = .imagery
         }
+    }
+    
+    func nextStateRound(array: [USState]) {
+        var usedArray = array
+        gameCount += 1
+        if gameCount == currentGameCountriesCountIndex {
+            hasGameCompleted = true
+        }
+        
+            if currentGameCountriesCountIndex == gameCounts[3] {
+                recentGuesses.append(currentState.stateName)
+                usedArray.removeAll { state in
+                    recentGuesses.contains(state.stateName)
+                }
+                currentState = usedArray.randomElement()!
+            } else {
+                
+                recentGuesses.append(currentState.stateName)
+                currentState = usedArray.randomElement()!
+                if recentGuesses.contains(randomCountry.country) {
+                    currentState = usedArray.randomElement()!
+                }
+                
+                if recentGuesses.count == 10{
+                    for i in 0...4 {
+                        recentGuesses.remove(at: i)
+                    }
+                }
+            }
+        borderArray = currentState.borders()
+    
     }
     
     func nextRound(array: [Country]) {
@@ -91,31 +133,31 @@ class CountriesViewModel: ObservableObject {
             hasGameCompleted = true
         }
         
-        if currentGameCountriesCountIndex == gameCounts[3] {
-            recentGuesses.append(country.country)
-            usedArray.removeAll { country in
-                recentGuesses.contains(country.country)
-            }
-            randomCountry = usedArray.randomElement()!
-            print(usedArray.count)
-        } else {
-            print(usedArray.count)
-            recentGuesses.append(country.country)
-            print(recentGuesses)
-            randomCountry = usedArray.randomElement()!
-            if recentGuesses.contains(randomCountry.country) {
+            if currentGameCountriesCountIndex == gameCounts[3] {
+                recentGuesses.append(country.country)
+                usedArray.removeAll { country in
+                    recentGuesses.contains(country.country)
+                }
                 randomCountry = usedArray.randomElement()!
-            }
-            
-            if recentGuesses.count == 6{
-                for i in 0...2 {
-                    recentGuesses.remove(at: i)
+            } else {
+                
+                recentGuesses.append(country.country)
+                randomCountry = usedArray.randomElement()!
+                if recentGuesses.contains(randomCountry.country) {
+                    randomCountry = usedArray.randomElement()!
+                }
+                
+                if recentGuesses.count == 6{
+                    for i in 0...2 {
+                        recentGuesses.remove(at: i)
+                    }
                 }
             }
-        }
+            borderArray = randomCountry.borders()
+            country = randomCountry
         
-        borderArray = randomCountry.borders()
-        country = randomCountry
+        
+        
     }
     
     func continentSelect(continent: Continent) {
@@ -135,6 +177,8 @@ class CountriesViewModel: ObservableObject {
             randomCountry = allcountries.filter{ SouthAmericaCountries.contains($0.country)}.randomElement()!
         case .Oceania:
             randomCountry = allcountries.filter{ OceaniaCountries.contains($0.country)}.randomElement()!
+        case .usStates:
+            currentState = allStates.randomElement()!
         }
         borderArray = randomCountry.borders()
         country = randomCountry
@@ -143,7 +187,7 @@ class CountriesViewModel: ObservableObject {
     
     func answer(){
         
-        if currentCountryName == userGuessesText {
+        if currentName == userGuessesText {
             score += 1
             userCorrect.toggle()
         } else {
@@ -172,12 +216,16 @@ class CountriesViewModel: ObservableObject {
     
     init() { // is synchronous
         Task {
+        
             let firstCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
             allcountries.append(firstCountry)
           
+            
+            let firstState = await Bundle.main.decodeState("\(AmericanStatesDecode.randomElement()!).json")
+            allStates.append(firstState)
+            
             randomCountry = allcountries.randomElement()!
             borderArray = randomCountry.borders()
-            country = randomCountry
                 
         }
         

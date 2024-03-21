@@ -39,14 +39,14 @@ struct ContentView: View {
  compare border points of target country
  compare distance between userpoint and border point
  
- turn green when correct
- fills in country if correct
- average points to try to pare down graphics rendering
+
  
- Country name bank
+
+ 
+
  Autocorrect/fill in
  
- Continent reference
+
  
  add a game of states?
  

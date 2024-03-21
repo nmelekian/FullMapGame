@@ -233,6 +233,59 @@
 		A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF975C2B9BBA2C00C59762 /* MenuView.swift */; };
 		A6BF97622BA094F900C59762 /* Taiwan.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97612BA094F900C59762 /* Taiwan.json */; };
 		A6BF97642BA09BD300C59762 /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF97632BA09BD300C59762 /* TextfieldView.swift */; };
+		A6BF97662BAC644E00C59762 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF97652BAC644E00C59762 /* State.swift */; };
+		A6BF97682BAC661800C59762 /* California.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97672BAC661800C59762 /* California.json */; };
+		A6BF97A62BAC8BE300C59762 /* Missouri.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97732BAC8BE200C59762 /* Missouri.json */; };
+		A6BF97A72BAC8BE300C59762 /* Florida.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97742BAC8BE200C59762 /* Florida.json */; };
+		A6BF97A82BAC8BE300C59762 /* Mississippi.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97752BAC8BE200C59762 /* Mississippi.json */; };
+		A6BF97A92BAC8BE300C59762 /* Iowa.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97762BAC8BE200C59762 /* Iowa.json */; };
+		A6BF97AA2BAC8BE300C59762 /* Louisiana.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97772BAC8BE200C59762 /* Louisiana.json */; };
+		A6BF97AB2BAC8BE300C59762 /* North Dakota.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97782BAC8BE200C59762 /* North Dakota.json */; };
+		A6BF97AC2BAC8BE300C59762 /* Colorado.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97792BAC8BE200C59762 /* Colorado.json */; };
+		A6BF97AD2BAC8BE300C59762 /* Vermont.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977A2BAC8BE200C59762 /* Vermont.json */; };
+		A6BF97AE2BAC8BE300C59762 /* Oklahoma.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977B2BAC8BE200C59762 /* Oklahoma.json */; };
+		A6BF97AF2BAC8BE300C59762 /* Nevada.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977C2BAC8BE200C59762 /* Nevada.json */; };
+		A6BF97B02BAC8BE300C59762 /* South Dakota.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977D2BAC8BE200C59762 /* South Dakota.json */; };
+		A6BF97B12BAC8BE300C59762 /* Kansas.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977E2BAC8BE200C59762 /* Kansas.json */; };
+		A6BF97B22BAC8BE300C59762 /* Wisconsin.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF977F2BAC8BE200C59762 /* Wisconsin.json */; };
+		A6BF97B32BAC8BE300C59762 /* Virginia.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97802BAC8BE200C59762 /* Virginia.json */; };
+		A6BF97B42BAC8BE300C59762 /* Puerto Rico.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97812BAC8BE200C59762 /* Puerto Rico.json */; };
+		A6BF97B52BAC8BE300C59762 /* Nebraska.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97822BAC8BE200C59762 /* Nebraska.json */; };
+		A6BF97B62BAC8BE300C59762 /* West Virginia.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97832BAC8BE200C59762 /* West Virginia.json */; };
+		A6BF97B72BAC8BE300C59762 /* Rhode Island.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97842BAC8BE200C59762 /* Rhode Island.json */; };
+		A6BF97B82BAC8BE300C59762 /* Texas.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97852BAC8BE200C59762 /* Texas.json */; };
+		A6BF97B92BAC8BE300C59762 /* New York.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97862BAC8BE200C59762 /* New York.json */; };
+		A6BF97BA2BAC8BE300C59762 /* Utah.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97872BAC8BE200C59762 /* Utah.json */; };
+		A6BF97BB2BAC8BE300C59762 /* Ohio.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97882BAC8BE200C59762 /* Ohio.json */; };
+		A6BF97BC2BAC8BE300C59762 /* Alaska.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97892BAC8BE200C59762 /* Alaska.json */; };
+		A6BF97BD2BAC8BE300C59762 /* New Hampshire.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978A2BAC8BE200C59762 /* New Hampshire.json */; };
+		A6BF97BE2BAC8BE300C59762 /* Maine.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978B2BAC8BE200C59762 /* Maine.json */; };
+		A6BF97BF2BAC8BE300C59762 /* Hawaii.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978C2BAC8BE200C59762 /* Hawaii.json */; };
+		A6BF97C02BAC8BE300C59762 /* Delaware.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978D2BAC8BE200C59762 /* Delaware.json */; };
+		A6BF97C12BAC8BE300C59762 /* Pennsylvania.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978E2BAC8BE200C59762 /* Pennsylvania.json */; };
+		A6BF97C22BAC8BE300C59762 /* New Mexico.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF978F2BAC8BE200C59762 /* New Mexico.json */; };
+		A6BF97C32BAC8BE300C59762 /* Alabama.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97902BAC8BE300C59762 /* Alabama.json */; };
+		A6BF97C42BAC8BE300C59762 /* New Jersey.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97912BAC8BE300C59762 /* New Jersey.json */; };
+		A6BF97C52BAC8BE300C59762 /* South Carolina.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97922BAC8BE300C59762 /* South Carolina.json */; };
+		A6BF97C62BAC8BE300C59762 /* Arkansas.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97932BAC8BE300C59762 /* Arkansas.json */; };
+		A6BF97C72BAC8BE300C59762 /* Indiana.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97942BAC8BE300C59762 /* Indiana.json */; };
+		A6BF97C82BAC8BE300C59762 /* Kentucky.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97952BAC8BE300C59762 /* Kentucky.json */; };
+		A6BF97C92BAC8BE300C59762 /* Arizona.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97962BAC8BE300C59762 /* Arizona.json */; };
+		A6BF97CA2BAC8BE300C59762 /* Montana.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97972BAC8BE300C59762 /* Montana.json */; };
+		A6BF97CB2BAC8BE300C59762 /* Washington DC.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97982BAC8BE300C59762 /* Washington DC.json */; };
+		A6BF97CC2BAC8BE300C59762 /* Maryland.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97992BAC8BE300C59762 /* Maryland.json */; };
+		A6BF97CD2BAC8BE300C59762 /* Connecticut.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979A2BAC8BE300C59762 /* Connecticut.json */; };
+		A6BF97CE2BAC8BE300C59762 /* GeorgiaState.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979B2BAC8BE300C59762 /* GeorgiaState.json */; };
+		A6BF97CF2BAC8BE300C59762 /* Oregon.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979C2BAC8BE300C59762 /* Oregon.json */; };
+		A6BF97D02BAC8BE300C59762 /* Illinois.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979D2BAC8BE300C59762 /* Illinois.json */; };
+		A6BF97D12BAC8BE300C59762 /* Tennessee.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979E2BAC8BE300C59762 /* Tennessee.json */; };
+		A6BF97D22BAC8BE300C59762 /* Massachusetts.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF979F2BAC8BE300C59762 /* Massachusetts.json */; };
+		A6BF97D32BAC8BE300C59762 /* Minnesota.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A02BAC8BE300C59762 /* Minnesota.json */; };
+		A6BF97D42BAC8BE300C59762 /* Michigan.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A12BAC8BE300C59762 /* Michigan.json */; };
+		A6BF97D52BAC8BE300C59762 /* Wyoming.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A22BAC8BE300C59762 /* Wyoming.json */; };
+		A6BF97D62BAC8BE300C59762 /* Washington.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A32BAC8BE300C59762 /* Washington.json */; };
+		A6BF97D72BAC8BE300C59762 /* Idaho.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A42BAC8BE300C59762 /* Idaho.json */; };
+		A6BF97D82BAC8BE300C59762 /* North Carolina.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A52BAC8BE300C59762 /* North Carolina.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -464,6 +517,59 @@
 		A6BF975C2B9BBA2C00C59762 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A6BF97612BA094F900C59762 /* Taiwan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Taiwan.json; sourceTree = "<group>"; };
 		A6BF97632BA09BD300C59762 /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		A6BF97652BAC644E00C59762 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A6BF97672BAC661800C59762 /* California.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = California.json; sourceTree = "<group>"; };
+		A6BF97732BAC8BE200C59762 /* Missouri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Missouri.json; path = ../../../../../../../Downloads/States/Missouri.json; sourceTree = "<group>"; };
+		A6BF97742BAC8BE200C59762 /* Florida.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Florida.json; path = ../../../../../../../Downloads/States/Florida.json; sourceTree = "<group>"; };
+		A6BF97752BAC8BE200C59762 /* Mississippi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Mississippi.json; path = ../../../../../../../Downloads/States/Mississippi.json; sourceTree = "<group>"; };
+		A6BF97762BAC8BE200C59762 /* Iowa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Iowa.json; path = ../../../../../../../Downloads/States/Iowa.json; sourceTree = "<group>"; };
+		A6BF97772BAC8BE200C59762 /* Louisiana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Louisiana.json; path = ../../../../../../../Downloads/States/Louisiana.json; sourceTree = "<group>"; };
+		A6BF97782BAC8BE200C59762 /* North Dakota.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "North Dakota.json"; path = "../../../../../../../Downloads/States/North Dakota.json"; sourceTree = "<group>"; };
+		A6BF97792BAC8BE200C59762 /* Colorado.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Colorado.json; path = ../../../../../../../Downloads/States/Colorado.json; sourceTree = "<group>"; };
+		A6BF977A2BAC8BE200C59762 /* Vermont.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Vermont.json; path = ../../../../../../../Downloads/States/Vermont.json; sourceTree = "<group>"; };
+		A6BF977B2BAC8BE200C59762 /* Oklahoma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Oklahoma.json; path = ../../../../../../../Downloads/States/Oklahoma.json; sourceTree = "<group>"; };
+		A6BF977C2BAC8BE200C59762 /* Nevada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Nevada.json; path = ../../../../../../../Downloads/States/Nevada.json; sourceTree = "<group>"; };
+		A6BF977D2BAC8BE200C59762 /* South Dakota.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "South Dakota.json"; path = "../../../../../../../Downloads/States/South Dakota.json"; sourceTree = "<group>"; };
+		A6BF977E2BAC8BE200C59762 /* Kansas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Kansas.json; path = ../../../../../../../Downloads/States/Kansas.json; sourceTree = "<group>"; };
+		A6BF977F2BAC8BE200C59762 /* Wisconsin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Wisconsin.json; path = ../../../../../../../Downloads/States/Wisconsin.json; sourceTree = "<group>"; };
+		A6BF97802BAC8BE200C59762 /* Virginia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Virginia.json; path = ../../../../../../../Downloads/States/Virginia.json; sourceTree = "<group>"; };
+		A6BF97812BAC8BE200C59762 /* Puerto Rico.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Puerto Rico.json"; path = "../../../../../../../Downloads/States/Puerto Rico.json"; sourceTree = "<group>"; };
+		A6BF97822BAC8BE200C59762 /* Nebraska.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Nebraska.json; path = ../../../../../../../Downloads/States/Nebraska.json; sourceTree = "<group>"; };
+		A6BF97832BAC8BE200C59762 /* West Virginia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "West Virginia.json"; path = "../../../../../../../Downloads/States/West Virginia.json"; sourceTree = "<group>"; };
+		A6BF97842BAC8BE200C59762 /* Rhode Island.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Rhode Island.json"; path = "../../../../../../../Downloads/States/Rhode Island.json"; sourceTree = "<group>"; };
+		A6BF97852BAC8BE200C59762 /* Texas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Texas.json; path = ../../../../../../../Downloads/States/Texas.json; sourceTree = "<group>"; };
+		A6BF97862BAC8BE200C59762 /* New York.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "New York.json"; path = "../../../../../../../Downloads/States/New York.json"; sourceTree = "<group>"; };
+		A6BF97872BAC8BE200C59762 /* Utah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Utah.json; path = ../../../../../../../Downloads/States/Utah.json; sourceTree = "<group>"; };
+		A6BF97882BAC8BE200C59762 /* Ohio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Ohio.json; path = ../../../../../../../Downloads/States/Ohio.json; sourceTree = "<group>"; };
+		A6BF97892BAC8BE200C59762 /* Alaska.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Alaska.json; path = ../../../../../../../Downloads/States/Alaska.json; sourceTree = "<group>"; };
+		A6BF978A2BAC8BE200C59762 /* New Hampshire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "New Hampshire.json"; path = "../../../../../../../Downloads/States/New Hampshire.json"; sourceTree = "<group>"; };
+		A6BF978B2BAC8BE200C59762 /* Maine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Maine.json; path = ../../../../../../../Downloads/States/Maine.json; sourceTree = "<group>"; };
+		A6BF978C2BAC8BE200C59762 /* Hawaii.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hawaii.json; path = ../../../../../../../Downloads/States/Hawaii.json; sourceTree = "<group>"; };
+		A6BF978D2BAC8BE200C59762 /* Delaware.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Delaware.json; path = ../../../../../../../Downloads/States/Delaware.json; sourceTree = "<group>"; };
+		A6BF978E2BAC8BE200C59762 /* Pennsylvania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Pennsylvania.json; path = ../../../../../../../Downloads/States/Pennsylvania.json; sourceTree = "<group>"; };
+		A6BF978F2BAC8BE200C59762 /* New Mexico.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "New Mexico.json"; path = "../../../../../../../Downloads/States/New Mexico.json"; sourceTree = "<group>"; };
+		A6BF97902BAC8BE300C59762 /* Alabama.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Alabama.json; path = ../../../../../../../Downloads/States/Alabama.json; sourceTree = "<group>"; };
+		A6BF97912BAC8BE300C59762 /* New Jersey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "New Jersey.json"; path = "../../../../../../../Downloads/States/New Jersey.json"; sourceTree = "<group>"; };
+		A6BF97922BAC8BE300C59762 /* South Carolina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "South Carolina.json"; path = "../../../../../../../Downloads/States/South Carolina.json"; sourceTree = "<group>"; };
+		A6BF97932BAC8BE300C59762 /* Arkansas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Arkansas.json; path = ../../../../../../../Downloads/States/Arkansas.json; sourceTree = "<group>"; };
+		A6BF97942BAC8BE300C59762 /* Indiana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Indiana.json; path = ../../../../../../../Downloads/States/Indiana.json; sourceTree = "<group>"; };
+		A6BF97952BAC8BE300C59762 /* Kentucky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Kentucky.json; path = ../../../../../../../Downloads/States/Kentucky.json; sourceTree = "<group>"; };
+		A6BF97962BAC8BE300C59762 /* Arizona.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Arizona.json; path = ../../../../../../../Downloads/States/Arizona.json; sourceTree = "<group>"; };
+		A6BF97972BAC8BE300C59762 /* Montana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Montana.json; path = ../../../../../../../Downloads/States/Montana.json; sourceTree = "<group>"; };
+		A6BF97982BAC8BE300C59762 /* Washington DC.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Washington DC.json"; path = "../../../../../../../Downloads/States/Washington DC.json"; sourceTree = "<group>"; };
+		A6BF97992BAC8BE300C59762 /* Maryland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Maryland.json; path = ../../../../../../../Downloads/States/Maryland.json; sourceTree = "<group>"; };
+		A6BF979A2BAC8BE300C59762 /* Connecticut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Connecticut.json; path = ../../../../../../../Downloads/States/Connecticut.json; sourceTree = "<group>"; };
+		A6BF979B2BAC8BE300C59762 /* GeorgiaState.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GeorgiaState.json; path = ../../../../../../../Downloads/States/GeorgiaState.json; sourceTree = "<group>"; };
+		A6BF979C2BAC8BE300C59762 /* Oregon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Oregon.json; path = ../../../../../../../Downloads/States/Oregon.json; sourceTree = "<group>"; };
+		A6BF979D2BAC8BE300C59762 /* Illinois.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Illinois.json; path = ../../../../../../../Downloads/States/Illinois.json; sourceTree = "<group>"; };
+		A6BF979E2BAC8BE300C59762 /* Tennessee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Tennessee.json; path = ../../../../../../../Downloads/States/Tennessee.json; sourceTree = "<group>"; };
+		A6BF979F2BAC8BE300C59762 /* Massachusetts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Massachusetts.json; path = ../../../../../../../Downloads/States/Massachusetts.json; sourceTree = "<group>"; };
+		A6BF97A02BAC8BE300C59762 /* Minnesota.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Minnesota.json; path = ../../../../../../../Downloads/States/Minnesota.json; sourceTree = "<group>"; };
+		A6BF97A12BAC8BE300C59762 /* Michigan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Michigan.json; path = ../../../../../../../Downloads/States/Michigan.json; sourceTree = "<group>"; };
+		A6BF97A22BAC8BE300C59762 /* Wyoming.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Wyoming.json; path = ../../../../../../../Downloads/States/Wyoming.json; sourceTree = "<group>"; };
+		A6BF97A32BAC8BE300C59762 /* Washington.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Washington.json; path = ../../../../../../../Downloads/States/Washington.json; sourceTree = "<group>"; };
+		A6BF97A42BAC8BE300C59762 /* Idaho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Idaho.json; path = ../../../../../../../Downloads/States/Idaho.json; sourceTree = "<group>"; };
+		A6BF97A52BAC8BE300C59762 /* North Carolina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "North Carolina.json"; path = "../../../../../../../Downloads/States/North Carolina.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +603,7 @@
 			isa = PBXGroup;
 			children = (
 				A60BBD8A2B7D4AD6008B89BB /* FullMapGameApp.swift */,
+				A6BF976A2BAC663200C59762 /* States */,
 				A676E2AC2B98B1A800A5B899 /* Countries */,
 				A60BBDAA2B7E8E86008B89BB /* ViewModel */,
 				A60BBD9C2B7D4BB9008B89BB /* Views */,
@@ -546,6 +653,7 @@
 				A620B6DC2B9B738B00B5CE59 /* Continent.swift */,
 				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
 				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
+				A6BF97652BAC644E00C59762 /* State.swift */,
 				A659A0EA2B852CCC00063A27 /* SpareParts.swift */,
 				A6BF975A2B9BB7BE00C59762 /* Gameplay.swift */,
 			);
@@ -776,6 +884,65 @@
 			path = ../../../../../../Downloads/Countries;
 			sourceTree = "<group>";
 		};
+		A6BF976A2BAC663200C59762 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF97902BAC8BE300C59762 /* Alabama.json */,
+				A6BF97892BAC8BE200C59762 /* Alaska.json */,
+				A6BF97962BAC8BE300C59762 /* Arizona.json */,
+				A6BF97932BAC8BE300C59762 /* Arkansas.json */,
+				A6BF97672BAC661800C59762 /* California.json */,
+				A6BF97792BAC8BE200C59762 /* Colorado.json */,
+				A6BF979A2BAC8BE300C59762 /* Connecticut.json */,
+				A6BF978D2BAC8BE200C59762 /* Delaware.json */,
+				A6BF97742BAC8BE200C59762 /* Florida.json */,
+				A6BF979B2BAC8BE300C59762 /* GeorgiaState.json */,
+				A6BF978C2BAC8BE200C59762 /* Hawaii.json */,
+				A6BF97A42BAC8BE300C59762 /* Idaho.json */,
+				A6BF979D2BAC8BE300C59762 /* Illinois.json */,
+				A6BF97942BAC8BE300C59762 /* Indiana.json */,
+				A6BF97762BAC8BE200C59762 /* Iowa.json */,
+				A6BF977E2BAC8BE200C59762 /* Kansas.json */,
+				A6BF97952BAC8BE300C59762 /* Kentucky.json */,
+				A6BF97772BAC8BE200C59762 /* Louisiana.json */,
+				A6BF978B2BAC8BE200C59762 /* Maine.json */,
+				A6BF97992BAC8BE300C59762 /* Maryland.json */,
+				A6BF979F2BAC8BE300C59762 /* Massachusetts.json */,
+				A6BF97A12BAC8BE300C59762 /* Michigan.json */,
+				A6BF97A02BAC8BE300C59762 /* Minnesota.json */,
+				A6BF97752BAC8BE200C59762 /* Mississippi.json */,
+				A6BF97732BAC8BE200C59762 /* Missouri.json */,
+				A6BF97972BAC8BE300C59762 /* Montana.json */,
+				A6BF97822BAC8BE200C59762 /* Nebraska.json */,
+				A6BF977C2BAC8BE200C59762 /* Nevada.json */,
+				A6BF978A2BAC8BE200C59762 /* New Hampshire.json */,
+				A6BF97912BAC8BE300C59762 /* New Jersey.json */,
+				A6BF978F2BAC8BE200C59762 /* New Mexico.json */,
+				A6BF97862BAC8BE200C59762 /* New York.json */,
+				A6BF97A52BAC8BE300C59762 /* North Carolina.json */,
+				A6BF97782BAC8BE200C59762 /* North Dakota.json */,
+				A6BF97882BAC8BE200C59762 /* Ohio.json */,
+				A6BF977B2BAC8BE200C59762 /* Oklahoma.json */,
+				A6BF979C2BAC8BE300C59762 /* Oregon.json */,
+				A6BF978E2BAC8BE200C59762 /* Pennsylvania.json */,
+				A6BF97812BAC8BE200C59762 /* Puerto Rico.json */,
+				A6BF97842BAC8BE200C59762 /* Rhode Island.json */,
+				A6BF97922BAC8BE300C59762 /* South Carolina.json */,
+				A6BF977D2BAC8BE200C59762 /* South Dakota.json */,
+				A6BF979E2BAC8BE300C59762 /* Tennessee.json */,
+				A6BF97852BAC8BE200C59762 /* Texas.json */,
+				A6BF97872BAC8BE200C59762 /* Utah.json */,
+				A6BF977A2BAC8BE200C59762 /* Vermont.json */,
+				A6BF97802BAC8BE200C59762 /* Virginia.json */,
+				A6BF97982BAC8BE300C59762 /* Washington DC.json */,
+				A6BF97A32BAC8BE300C59762 /* Washington.json */,
+				A6BF97832BAC8BE200C59762 /* West Virginia.json */,
+				A6BF977F2BAC8BE200C59762 /* Wisconsin.json */,
+				A6BF97A22BAC8BE300C59762 /* Wyoming.json */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -834,6 +1001,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BF97BE2BAC8BE300C59762 /* Maine.json in Resources */,
 				A676E2B02B98B1A800A5B899 /* Andorra.json in Resources */,
 				A676E3172B98B1A800A5B899 /* Lithuania.json in Resources */,
 				A676E3162B98B1A800A5B899 /* Liechtenstein.json in Resources */,
@@ -855,27 +1023,37 @@
 				A676E31C2B98B1A800A5B899 /* Maldives.json in Resources */,
 				A676E3522B98B1A800A5B899 /* Sierra Leone.json in Resources */,
 				A676E3132B98B1A800A5B899 /* Lebanon.json in Resources */,
+				A6BF97BB2BAC8BE300C59762 /* Ohio.json in Resources */,
+				A6BF97D82BAC8BE300C59762 /* North Carolina.json in Resources */,
 				A676E3332B98B1A800A5B899 /* Niue.json in Resources */,
 				A676E3122B98B1A800A5B899 /* Latvia.json in Resources */,
 				A676E2E92B98B1A800A5B899 /* Estonia.json in Resources */,
+				A6BF97CE2BAC8BE300C59762 /* GeorgiaState.json in Resources */,
+				A6BF97682BAC661800C59762 /* California.json in Resources */,
 				A676E2DF2B98B1A800A5B899 /* Denmark.json in Resources */,
 				A676E3292B98B1A800A5B899 /* Mozambique.json in Resources */,
 				A676E2D82B98B1A800A5B899 /* Cook Islands.json in Resources */,
 				A676E3212B98B1A800A5B899 /* Mauritania.json in Resources */,
+				A6BF97C82BAC8BE300C59762 /* Kentucky.json in Resources */,
 				A676E3432B98B1A800A5B899 /* Republic of the Congo.json in Resources */,
+				A6BF97D32BAC8BE300C59762 /* Minnesota.json in Resources */,
 				A676E2C52B98B1A800A5B899 /* Bosnia and Herzegovina.json in Resources */,
 				A676E2CD2B98B1A800A5B899 /* Cambodia.json in Resources */,
 				A676E2BB2B98B1A800A5B899 /* Bahrain.json in Resources */,
 				A676E30E2B98B1A800A5B899 /* Kiribati.json in Resources */,
 				A676E3112B98B1A800A5B899 /* Laos.json in Resources */,
+				A6BF97BA2BAC8BE300C59762 /* Utah.json in Resources */,
+				A6BF97AD2BAC8BE300C59762 /* Vermont.json in Resources */,
 				A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */,
 				A676E2C12B98B1A800A5B899 /* Benin.json in Resources */,
 				A676E3762B98B1A800A5B899 /* Venezuela.json in Resources */,
 				A676E37A2B98B1A800A5B899 /* Zambia.json in Resources */,
 				A676E3072B98B1A800A5B899 /* Italy.json in Resources */,
+				A6BF97D02BAC8BE300C59762 /* Illinois.json in Resources */,
 				A676E2C32B98B1A800A5B899 /* Bhutan.json in Resources */,
 				A676E33F2B98B1A800A5B899 /* Philippines.json in Resources */,
 				A676E2FB2B98B1A800A5B899 /* Guinea.json in Resources */,
+				A6BF97D52BAC8BE300C59762 /* Wyoming.json in Resources */,
 				A676E3772B98B1A800A5B899 /* Vietnam.json in Resources */,
 				A676E3562B98B1A800A5B899 /* Solomon Islands.json in Resources */,
 				A676E3412B98B1A800A5B899 /* Portugal.json in Resources */,
@@ -885,20 +1063,28 @@
 				A676E36A2B98B1A800A5B899 /* Turkmenistan.json in Resources */,
 				A676E3352B98B1A800A5B899 /* North Macedonia.json in Resources */,
 				A676E2F62B98B1A800A5B899 /* Greece.json in Resources */,
+				A6BF97AE2BAC8BE300C59762 /* Oklahoma.json in Resources */,
+				A6BF97BC2BAC8BE300C59762 /* Alaska.json in Resources */,
+				A6BF97B02BAC8BE300C59762 /* South Dakota.json in Resources */,
 				A676E3652B98B1A800A5B899 /* Togo.json in Resources */,
+				A6BF97C32BAC8BE300C59762 /* Alabama.json in Resources */,
 				A676E2DE2B98B1A800A5B899 /* Democratic Republic of the Congo.json in Resources */,
 				A676E2CB2B98B1A800A5B899 /* Burundi.json in Resources */,
 				A60BBD932B7D4AD7008B89BB /* Preview Assets.xcassets in Resources */,
+				A6BF97B52BAC8BE300C59762 /* Nebraska.json in Resources */,
 				A676E2BA2B98B1A800A5B899 /* Bahamas.json in Resources */,
 				A676E2BD2B98B1A800A5B899 /* Barbados.json in Resources */,
 				A676E3702B98B1A800A5B899 /* United Kingdom.json in Resources */,
 				A676E3342B98B1A800A5B899 /* North Korea.json in Resources */,
 				A676E3382B98B1A800A5B899 /* Pakistan.json in Resources */,
 				A676E36C2B98B1A800A5B899 /* Tuvalu.json in Resources */,
+				A6BF97C22BAC8BE300C59762 /* New Mexico.json in Resources */,
 				A676E3282B98B1A800A5B899 /* Morocco.json in Resources */,
 				A676E35C2B98B1A800A5B899 /* Sri Lanka.json in Resources */,
+				A6BF97CB2BAC8BE300C59762 /* Washington DC.json in Resources */,
 				A676E2F22B98B1A800A5B899 /* Gambia.json in Resources */,
 				A676E3622B98B1A800A5B899 /* Tajikistan.json in Resources */,
+				A6BF97C02BAC8BE300C59762 /* Delaware.json in Resources */,
 				A676E3372B98B1A800A5B899 /* Oman.json in Resources */,
 				A676E2DA2B98B1A800A5B899 /* Croatia.json in Resources */,
 				A676E2F12B98B1A800A5B899 /* Gabon.json in Resources */,
@@ -907,10 +1093,16 @@
 				A676E2E62B98B1A800A5B899 /* El Salvador.json in Resources */,
 				A676E2FF2B98B1A800A5B899 /* Hungary.json in Resources */,
 				A676E3422B98B1A800A5B899 /* Qatar.json in Resources */,
+				A6BF97C52BAC8BE300C59762 /* South Carolina.json in Resources */,
+				A6BF97AC2BAC8BE300C59762 /* Colorado.json in Resources */,
 				A676E3392B98B1A800A5B899 /* Palau.json in Resources */,
+				A6BF97AA2BAC8BE300C59762 /* Louisiana.json in Resources */,
+				A6BF97CA2BAC8BE300C59762 /* Montana.json in Resources */,
 				A676E3662B98B1A800A5B899 /* Tonga.json in Resources */,
 				A676E2CF2B98B1A800A5B899 /* Canada.json in Resources */,
 				A676E2E22B98B1A800A5B899 /* Dominican Republic.json in Resources */,
+				A6BF97AB2BAC8BE300C59762 /* North Dakota.json in Resources */,
+				A6BF97D22BAC8BE300C59762 /* Massachusetts.json in Resources */,
 				A676E3302B98B1A800A5B899 /* Nicaragua.json in Resources */,
 				A676E3062B98B1A800A5B899 /* Israel.json in Resources */,
 				A676E2E82B98B1A800A5B899 /* Eritrea.json in Resources */,
@@ -920,6 +1112,7 @@
 				A676E2E42B98B1A800A5B899 /* Ecuador.json in Resources */,
 				A676E3202B98B1A800A5B899 /* Martinique.json in Resources */,
 				A676E30F2B98B1A800A5B899 /* Kuwait.json in Resources */,
+				A6BF97C42BAC8BE300C59762 /* New Jersey.json in Resources */,
 				A676E3012B98B1A800A5B899 /* India.json in Resources */,
 				A676E3672B98B1A800A5B899 /* Trinidad and Tobago.json in Resources */,
 				A676E2DC2B98B1A800A5B899 /* Cyprus.json in Resources */,
@@ -929,24 +1122,34 @@
 				A676E36D2B98B1A800A5B899 /* Uganda.json in Resources */,
 				A676E3312B98B1A800A5B899 /* Niger.json in Resources */,
 				A676E36E2B98B1A800A5B899 /* Ukraine.json in Resources */,
+				A6BF97CD2BAC8BE300C59762 /* Connecticut.json in Resources */,
 				A676E2BC2B98B1A800A5B899 /* Bangladesh.json in Resources */,
+				A6BF97A72BAC8BE300C59762 /* Florida.json in Resources */,
 				A676E2AF2B98B1A800A5B899 /* Algeria.json in Resources */,
 				A676E3482B98B1A800A5B899 /* Saint Kitts and Nevis.json in Resources */,
 				A676E3792B98B1A800A5B899 /* Yemen.json in Resources */,
+				A6BF97BF2BAC8BE300C59762 /* Hawaii.json in Resources */,
 				A676E3472B98B1A800A5B899 /* Rwanda.json in Resources */,
 				A676E2F72B98B1A800A5B899 /* Grenada.json in Resources */,
 				A676E32F2B98B1A800A5B899 /* New Zealand.json in Resources */,
+				A6BF97B72BAC8BE300C59762 /* Rhode Island.json in Resources */,
 				A676E2C82B98B1A800A5B899 /* Brunei.json in Resources */,
+				A6BF97AF2BAC8BE300C59762 /* Nevada.json in Resources */,
 				A676E32A2B98B1A800A5B899 /* Myanmar.json in Resources */,
 				A676E3602B98B1A800A5B899 /* Switzerland.json in Resources */,
 				A676E3532B98B1A800A5B899 /* Singapore.json in Resources */,
+				A6BF97D42BAC8BE300C59762 /* Michigan.json in Resources */,
+				A6BF97B22BAC8BE300C59762 /* Wisconsin.json in Resources */,
 				A676E2CA2B98B1A800A5B899 /* Burkina Faso.json in Resources */,
 				A676E35B2B98B1A800A5B899 /* Spain.json in Resources */,
+				A6BF97D72BAC8BE300C59762 /* Idaho.json in Resources */,
 				A676E2C02B98B1A800A5B899 /* Belize.json in Resources */,
+				A6BF97A82BAC8BE300C59762 /* Mississippi.json in Resources */,
 				A676E2FE2B98B1A800A5B899 /* Honduras.json in Resources */,
 				A676E2C42B98B1A800A5B899 /* Bolivia.json in Resources */,
 				A676E31E2B98B1A800A5B899 /* Malta.json in Resources */,
 				A676E2FA2B98B1A800A5B899 /* Guinea-Bissau.json in Resources */,
+				A6BF97B12BAC8BE300C59762 /* Kansas.json in Resources */,
 				A676E33B2B98B1A800A5B899 /* Panama.json in Resources */,
 				A676E34D2B98B1A800A5B899 /* Sao Tome and Principe.json in Resources */,
 				A676E2D22B98B1A800A5B899 /* Chad.json in Resources */,
@@ -961,6 +1164,7 @@
 				A676E2DB2B98B1A800A5B899 /* Cuba.json in Resources */,
 				A676E3782B98B1A800A5B899 /* Western Sahara.json in Resources */,
 				A676E3042B98B1A800A5B899 /* Iraq.json in Resources */,
+				A6BF97B82BAC8BE300C59762 /* Texas.json in Resources */,
 				A676E2D12B98B1A800A5B899 /* Central African Republic.json in Resources */,
 				A676E2D52B98B1A800A5B899 /* Christmas Island.json in Resources */,
 				A676E3732B98B1A800A5B899 /* Uzbekistan.json in Resources */,
@@ -975,6 +1179,7 @@
 				A676E2F02B98B1A800A5B899 /* French Guiana.json in Resources */,
 				A676E2B42B98B1A800A5B899 /* Argentina.json in Resources */,
 				A60BBD8F2B7D4AD7008B89BB /* Assets.xcassets in Resources */,
+				A6BF97A92BAC8BE300C59762 /* Iowa.json in Resources */,
 				A676E2D92B98B1A800A5B899 /* Costa Rica.json in Resources */,
 				A676E2B32B98B1A800A5B899 /* Antigua and Barbuda.json in Resources */,
 				A676E3152B98B1A800A5B899 /* Liberia.json in Resources */,
@@ -986,12 +1191,14 @@
 				A676E2DD2B98B1A800A5B899 /* Czech Republic.json in Resources */,
 				A676E3002B98B1A800A5B899 /* Iceland.json in Resources */,
 				A676E3712B98B1A800A5B899 /* United States.json in Resources */,
+				A6BF97C92BAC8BE300C59762 /* Arizona.json in Resources */,
 				A676E2D42B98B1A800A5B899 /* China.json in Resources */,
 				A676E3032B98B1A800A5B899 /* Iran.json in Resources */,
 				A676E2B52B98B1A800A5B899 /* Armenia.json in Resources */,
 				A676E30D2B98B1A800A5B899 /* Kenya.json in Resources */,
 				A676E36F2B98B1A800A5B899 /* United Arab Emirates.json in Resources */,
 				A676E2B22B98B1A800A5B899 /* Anguilla.json in Resources */,
+				A6BF97B92BAC8BE300C59762 /* New York.json in Resources */,
 				A676E2C72B98B1A800A5B899 /* Brazil.json in Resources */,
 				A676E2C22B98B1A800A5B899 /* Bermuda.json in Resources */,
 				A676E32D2B98B1A800A5B899 /* Nepal.json in Resources */,
@@ -1001,12 +1208,14 @@
 				A676E35E2B98B1A800A5B899 /* Suriname.json in Resources */,
 				A676E35D2B98B1A800A5B899 /* Sudan.json in Resources */,
 				A676E31F2B98B1A800A5B899 /* Marshall Islands.json in Resources */,
+				A6BF97D62BAC8BE300C59762 /* Washington.json in Resources */,
 				A676E3082B98B1A800A5B899 /* Ivory Coast.json in Resources */,
 				A676E30C2B98B1A800A5B899 /* Kazakhstan.json in Resources */,
 				A676E34A2B98B1A800A5B899 /* Saint Vincent and the Grenadines.json in Resources */,
 				A676E2C62B98B1A800A5B899 /* Botswana.json in Resources */,
 				A676E35F2B98B1A800A5B899 /* Sweden.json in Resources */,
 				A676E3492B98B1A800A5B899 /* Saint Lucia.json in Resources */,
+				A6BF97B32BAC8BE300C59762 /* Virginia.json in Resources */,
 				A676E2C92B98B1A800A5B899 /* Bulgaria.json in Resources */,
 				A676E2F32B98B1A800A5B899 /* Georgia.json in Resources */,
 				A676E3542B98B1A800A5B899 /* Slovakia.json in Resources */,
@@ -1020,17 +1229,22 @@
 				A676E3642B98B1A800A5B899 /* Thailand.json in Resources */,
 				A676E37B2B98B1A800A5B899 /* Zimbabwe.json in Resources */,
 				A676E3682B98B1A800A5B899 /* Tunisia.json in Resources */,
+				A6BF97D12BAC8BE300C59762 /* Tennessee.json in Resources */,
 				A676E3612B98B1A800A5B899 /* Syria.json in Resources */,
 				A676E3242B98B1A800A5B899 /* Moldova.json in Resources */,
 				A676E2E02B98B1A800A5B899 /* Djibouti.json in Resources */,
 				A676E33E2B98B1A800A5B899 /* Peru.json in Resources */,
 				A676E30A2B98B1A800A5B899 /* Japan.json in Resources */,
+				A6BF97CC2BAC8BE300C59762 /* Maryland.json in Resources */,
+				A6BF97A62BAC8BE300C59762 /* Missouri.json in Resources */,
 				A676E3742B98B1A800A5B899 /* Vanuatu.json in Resources */,
 				A676E2F42B98B1A800A5B899 /* Germany.json in Resources */,
+				A6BF97C12BAC8BE300C59762 /* Pennsylvania.json in Resources */,
 				A676E2F52B98B1A800A5B899 /* Ghana.json in Resources */,
 				A676E3752B98B1A800A5B899 /* Vatican City.json in Resources */,
 				A676E2B62B98B1A800A5B899 /* Aruba.json in Resources */,
 				A676E2D32B98B1A800A5B899 /* Chile.json in Resources */,
+				A6BF97CF2BAC8BE300C59762 /* Oregon.json in Resources */,
 				A676E31A2B98B1A800A5B899 /* Malawi.json in Resources */,
 				A676E3572B98B1A800A5B899 /* Somalia.json in Resources */,
 				A676E3092B98B1A800A5B899 /* Jamaica.json in Resources */,
@@ -1040,9 +1254,14 @@
 				A676E32E2B98B1A800A5B899 /* Netherlands.json in Resources */,
 				A676E3102B98B1A800A5B899 /* Kyrgyzstan.json in Resources */,
 				A676E2CC2B98B1A800A5B899 /* Cabo Verde.json in Resources */,
+				A6BF97B62BAC8BE300C59762 /* West Virginia.json in Resources */,
+				A6BF97C62BAC8BE300C59762 /* Arkansas.json in Resources */,
 				A676E3582B98B1A800A5B899 /* South Africa.json in Resources */,
+				A6BF97BD2BAC8BE300C59762 /* New Hampshire.json in Resources */,
 				A676E3592B98B1A800A5B899 /* South Korea.json in Resources */,
 				A676E3052B98B1A800A5B899 /* Ireland.json in Resources */,
+				A6BF97B42BAC8BE300C59762 /* Puerto Rico.json in Resources */,
+				A6BF97C72BAC8BE300C59762 /* Indiana.json in Resources */,
 				A676E34B2B98B1A800A5B899 /* Samoa.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1067,6 +1286,7 @@
 				A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */,
 				A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */,
 				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
+				A6BF97662BAC644E00C59762 /* State.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
 				A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */,
 				A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */,
@@ -1218,10 +1438,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1259,10 +1479,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
