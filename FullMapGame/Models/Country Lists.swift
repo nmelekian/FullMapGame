@@ -500,6 +500,7 @@ let AmericanStatesDecode = [
     "Washington DC",
     "Washington",
     "Wisconsin",
+    "West Virginia",
     "Wyoming"
 ]
 
@@ -554,5 +555,6 @@ let AmericanStates = [
     "Washington DC",
     "Washington",
     "Wisconsin",
+    "West Virginia",
     "Wyoming"
 ]

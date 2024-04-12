@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct MenuView: View {
     @StateObject var vm: CountriesViewModel
     @State private var allCountries = [Country]()
@@ -36,7 +37,11 @@ struct MenuView: View {
                 Button("Play Game") {
                     vm.gameplay = .game
                     vm.continentSelect(continent: vm.continent)
-                    vm.borderArray = vm.currentState.borders()
+                    
+                    if vm.continent == .usStates {
+                        vm.borderArray = vm.currentState.borders()
+                    }
+                    
                     
                 }
                 .buttonStyle(.borderedProminent)

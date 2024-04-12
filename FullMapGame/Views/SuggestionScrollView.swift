@@ -30,6 +30,8 @@ struct SuggestionScrollView: View {
                 }
             }
         }
+        .scrollIndicators(.hidden)
+        .scrollTargetLayout()
     }
     
     var searchResults: [String] {

@@ -33,13 +33,14 @@ struct ContentView: View {
 //    ContentView()
 //}
 
-
 /*
  user coordinate inputted
  compare border points of target country
  compare distance between userpoint and border point
  
-
+State Guesser:
+ Zooms out slowly of the state, and the faster you answer, the more points you get
+ 
  
 
  

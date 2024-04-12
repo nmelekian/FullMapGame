@@ -286,6 +286,7 @@
 		A6BF97D62BAC8BE300C59762 /* Washington.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A32BAC8BE300C59762 /* Washington.json */; };
 		A6BF97D72BAC8BE300C59762 /* Idaho.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A42BAC8BE300C59762 /* Idaho.json */; };
 		A6BF97D82BAC8BE300C59762 /* North Carolina.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A52BAC8BE300C59762 /* North Carolina.json */; };
+		A6BF98232BC95EFD00C59762 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF98222BC95EFD00C59762 /* CountryInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -570,6 +571,7 @@
 		A6BF97A32BAC8BE300C59762 /* Washington.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Washington.json; path = ../../../../../../../Downloads/States/Washington.json; sourceTree = "<group>"; };
 		A6BF97A42BAC8BE300C59762 /* Idaho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Idaho.json; path = ../../../../../../../Downloads/States/Idaho.json; sourceTree = "<group>"; };
 		A6BF97A52BAC8BE300C59762 /* North Carolina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "North Carolina.json"; path = "../../../../../../../Downloads/States/North Carolina.json"; sourceTree = "<group>"; };
+		A6BF98222BC95EFD00C59762 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +652,7 @@
 			isa = PBXGroup;
 			children = (
 				A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */,
+				A6BF98222BC95EFD00C59762 /* CountryInfo.swift */,
 				A620B6DC2B9B738B00B5CE59 /* Continent.swift */,
 				A60BBDAB2B7E94B4008B89BB /* UserGuess.swift */,
 				A60BBDA12B7D4D0A008B89BB /* Country.swift */,
@@ -1287,6 +1290,7 @@
 				A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */,
 				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
 				A6BF97662BAC644E00C59762 /* State.swift in Sources */,
+				A6BF98232BC95EFD00C59762 /* CountryInfo.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
 				A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */,
 				A676E39F2B9A3B9A00A5B899 /* SuggestionScrollView.swift in Sources */,

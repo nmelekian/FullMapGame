@@ -60,7 +60,7 @@ extension Bundle {
         let decoder = JSONDecoder()
         
         let loaded = try! decoder.decode(USState.self, from: data)
-//        print(loaded.country)
+        print(loaded.stateName)
         guard let loaded = try? decoder.decode(USState.self, from: data) else {
             fatalError("was unable to decode data from \(file)")
         }
