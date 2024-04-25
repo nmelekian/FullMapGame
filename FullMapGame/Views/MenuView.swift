@@ -14,7 +14,10 @@ struct MenuView: View {
     @State private var allStates = [USState]()
     var body: some View {
         if vm.allcountries.count >= 70 {
-            VStack{
+            ZStack{
+                BackgroundMapView()
+                    .opacity(0.65)
+                VStack{
                 Text("CountryGuessr")
                     .font(.title)
                     .bold()
@@ -45,14 +48,15 @@ struct MenuView: View {
                     
                 }
                 .buttonStyle(.borderedProminent)
-            }.onChange(of: vm.continent) { _, newValue in
+            }}.onChange(of: vm.continent) { _, newValue in
                 vm.gameCounts[3] = newValue.countrycount
                 if newValue == .usStates {
                     vm.borderArray = vm.allStates.randomElement()!.borders()
                 }
             }
         } else {
-                ProgressView()
+                LottieView(lottieFile: "globe", animationSpeed: 2)
+                .frame(width: 200, height: 200)
                     .onAppear(perform: {
                     Task{
                         for name in countryNames {
@@ -65,6 +69,9 @@ struct MenuView: View {
                         }
                         vm.allcountries = allCountries
                     }
+                    Task {
+                            
+                        }
                 })
             }
         

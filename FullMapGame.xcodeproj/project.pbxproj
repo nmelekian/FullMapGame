@@ -287,6 +287,11 @@
 		A6BF97D72BAC8BE300C59762 /* Idaho.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A42BAC8BE300C59762 /* Idaho.json */; };
 		A6BF97D82BAC8BE300C59762 /* North Carolina.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF97A52BAC8BE300C59762 /* North Carolina.json */; };
 		A6BF98232BC95EFD00C59762 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF98222BC95EFD00C59762 /* CountryInfo.swift */; };
+		A6BF98252BC95FAD00C59762 /* CountryInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */; };
+		A6BF98282BC971F900C59762 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A6BF98272BC971F900C59762 /* Lottie */; };
+		A6BF982C2BC9723400C59762 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF982B2BC9723400C59762 /* LottieView.swift */; };
+		A6BF982E2BC9744700C59762 /* globe.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF982D2BC9744700C59762 /* globe.json */; };
+		A6ECC60F2BD1A79D00C7A65A /* BackgroundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ECC60E2BD1A79D00C7A65A /* BackgroundMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -572,6 +577,10 @@
 		A6BF97A42BAC8BE300C59762 /* Idaho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Idaho.json; path = ../../../../../../../Downloads/States/Idaho.json; sourceTree = "<group>"; };
 		A6BF97A52BAC8BE300C59762 /* North Carolina.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "North Carolina.json"; path = "../../../../../../../Downloads/States/North Carolina.json"; sourceTree = "<group>"; };
 		A6BF98222BC95EFD00C59762 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
+		A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoService.swift; sourceTree = "<group>"; };
+		A6BF982B2BC9723400C59762 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		A6BF982D2BC9744700C59762 /* globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = globe.json; path = ../../../../../../Downloads/globe.json; sourceTree = "<group>"; };
+		A6ECC60E2BD1A79D00C7A65A /* BackgroundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,6 +588,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BF98282BC971F900C59762 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +621,7 @@
 				A60BBD9C2B7D4BB9008B89BB /* Views */,
 				A60BBDA32B7D4D10008B89BB /* Models */,
 				A60BBD9B2B7D4BAE008B89BB /* Extensions */,
+				A6BF982D2BC9744700C59762 /* globe.json */,
 				A60BBD8E2B7D4AD7008B89BB /* Assets.xcassets */,
 				A60BBD902B7D4AD7008B89BB /* FullMapGame.entitlements */,
 				A60BBD912B7D4AD7008B89BB /* Preview Content */,
@@ -629,6 +640,7 @@
 		A60BBD9B2B7D4BAE008B89BB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */,
 				A60BBD992B7D4BA9008B89BB /* Bundle Extension.swift */,
 				A60BBD9D2B7D4BC7008B89BB /* Coordinate Extension.swift */,
 			);
@@ -644,6 +656,8 @@
 				A6BF97632BA09BD300C59762 /* TextfieldView.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
 				A676E39C2B9A227000A5B899 /* MapView.swift */,
+				A6BF982B2BC9723400C59762 /* LottieView.swift */,
+				A6ECC60E2BD1A79D00C7A65A /* BackgroundMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -962,6 +976,9 @@
 			dependencies = (
 			);
 			name = FullMapGame;
+			packageProductDependencies = (
+				A6BF98272BC971F900C59762 /* Lottie */,
+			);
 			productName = FullMapGame;
 			productReference = A60BBD872B7D4AD6008B89BB /* FullMapGame.app */;
 			productType = "com.apple.product-type.application";
@@ -990,6 +1007,9 @@
 				Base,
 			);
 			mainGroup = A60BBD7E2B7D4AD6008B89BB;
+			packageReferences = (
+				A6BF98262BC971F900C59762 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A60BBD882B7D4AD6008B89BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1014,6 +1034,7 @@
 				A676E2CE2B98B1A800A5B899 /* Cameroon.json in Resources */,
 				A676E2E72B98B1A800A5B899 /* Equatorial Guinea.json in Resources */,
 				A676E3512B98B1A800A5B899 /* Seychelles.json in Resources */,
+				A6BF982E2BC9744700C59762 /* globe.json in Resources */,
 				A6BF97622BA094F900C59762 /* Taiwan.json in Resources */,
 				A676E2D62B98B1A800A5B899 /* Colombia.json in Resources */,
 				A676E32B2B98B1A800A5B899 /* Namibia.json in Resources */,
@@ -1279,8 +1300,10 @@
 				A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */,
 				A60BBD8D2B7D4AD6008B89BB /* ContentView.swift in Sources */,
 				A6BF97642BA09BD300C59762 /* TextfieldView.swift in Sources */,
+				A6ECC60F2BD1A79D00C7A65A /* BackgroundMapView.swift in Sources */,
 				A60BBD9A2B7D4BA9008B89BB /* Bundle Extension.swift in Sources */,
 				A60BBD9E2B7D4BC7008B89BB /* Coordinate Extension.swift in Sources */,
+				A6BF98252BC95FAD00C59762 /* CountryInfoService.swift in Sources */,
 				A60BBDA92B7E8E80008B89BB /* CountriesViewModel.swift in Sources */,
 				A60BBDA22B7D4D0A008B89BB /* Country.swift in Sources */,
 				A60BBD8B2B7D4AD6008B89BB /* FullMapGameApp.swift in Sources */,
@@ -1289,6 +1312,7 @@
 				A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */,
 				A6BF975D2B9BBA2C00C59762 /* MenuView.swift in Sources */,
 				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
+				A6BF982C2BC9723400C59762 /* LottieView.swift in Sources */,
 				A6BF97662BAC644E00C59762 /* State.swift in Sources */,
 				A6BF98232BC95EFD00C59762 /* CountryInfo.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
@@ -1520,6 +1544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6BF98262BC971F900C59762 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6BF98272BC971F900C59762 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6BF98262BC971F900C59762 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A60BBD7F2B7D4AD6008B89BB /* Project object */;
 }

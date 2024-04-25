@@ -17,14 +17,7 @@ struct MapView: View {
                     if vm.continent == .usStates{
                         MapPolygon(coordinates: border)
                             .foregroundStyle(vm.currentState.stateName == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
-                        Annotation("", coordinate: border[0]) {
-                            Button {
-                                print("hi")
-                            } label: {
-                                Text("hi")
-                            }
-
-                        }
+                      
 
                         
                     } else {
@@ -35,6 +28,7 @@ struct MapView: View {
                         
                 }
             }
+            
             
             VStack {
                 
