@@ -33,7 +33,20 @@ struct Country: Codable, Hashable {
                 }
                 coordArray.append(coord2DArray)
             }
-        } else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen" || country == "Oman" || country == "Belize" || country == "Somalia"{
+        }
+//        else if country == "Vatican City" || country == "Tuvalu" || country == "Vanuatu" || country == "Kiribati" || country == "Dominican Republic" || country == "Botswana" || country == "United Arab Emirates"  || country == "Yemen" || country == "Oman" || country == "Belize" || country == "Somalia"{
+//            for landmass in coordinatesArray {
+//                var coord2DArray: [CLLocationCoordinate2D] = []
+//                for index in 0..<landmass.count {
+//                    guard index == 0 || index % 1 == 0 else { continue }
+//                    let coord2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(landmass[index][1]), longitude: CLLocationDegrees(landmass[index][0]))
+//                    coord2DArray.append(coord2D)
+//                    
+//                }
+//                coordArray.append(coord2DArray)
+//            }
+//        }
+        else{
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
                 for index in 0..<landmass.count {
@@ -41,19 +54,11 @@ struct Country: Codable, Hashable {
                     let coord2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(landmass[index][1]), longitude: CLLocationDegrees(landmass[index][0]))
                     coord2DArray.append(coord2D)
                     
-                }
-                coordArray.append(coord2DArray)
-            }
-        }
-        else{
-            for landmass in coordinatesArray {
-                var coord2DArray: [CLLocationCoordinate2D] = []
-                for index in 0..<landmass.count {
-                    guard index == 0 || index % 5 == 0 else { continue }
-                    let coord2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(landmass[index][1]), longitude: CLLocationDegrees(landmass[index][0]))
-                    coord2DArray.append(coord2D)
                     
                 }
+                let orderedSet = Array(NSOrderedSet(array: coord2DArray)) as! [CLLocationCoordinate2D]
+                coord2DArray = orderedSet
+                
                 coordArray.append(coord2DArray)
             }
         }
@@ -66,11 +71,7 @@ struct Country: Codable, Hashable {
         return coordArray
     }
 
-
-
     static var testCountry = Country(country: "", city: "", north: 0, south: 0, west: 0, east: 0, jsonBorder: [[[[2.0,2.0]]]])
-    
-    
-    
+
 }
 

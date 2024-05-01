@@ -17,43 +17,58 @@ struct MenuView: View {
             ZStack{
                 BackgroundMapView()
                     .opacity(0.65)
-                VStack{
-                Text("CountryGuessr")
-                    .font(.title)
-                    .bold()
-                HStack{
-                    Text("Select Continent: ")
-                    Picker("Select continent", selection: $vm.continent) {
-                        ForEach(Continent.allCases, id: \.self) { continent in
-                            Text("\(continent.rawValue)")
+                ZStack{
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundStyle(.white)
+                        .opacity(0.6)
+                        .frame(width: 400, height: 300)
+                    VStack{
+                        Text("CountryGuessr")
+                            .font(.title)
+                            .bold()
+                        VStack{
+                            Text("Select Continent: ")
+                            Picker("Select continent", selection: $vm.continent) {
+                                ForEach(Continent.allCases, id: \.self) { continent in
+                                    Text("\(continent.rawValue)")
+                                }
+                            }
+                            .pickerStyle(.menu)
                         }
-                    }
-                }
-                HStack{
-                    Text("Select Number of Countries: ")
-                    Picker("Select continent", selection: $vm.currentGameCountriesCountIndex) {
-                        ForEach(vm.gameCounts, id: \.self) { amount in
-                            Text("\(amount)").tag("")
+                        VStack{
+                            Text("Select Number of Countries: ")
+                            Picker("Select continent", selection: $vm.currentGameCountriesCountIndex) {
+                                ForEach(vm.gameCounts, id: \.self) { amount in
+                                    Text("\(amount)").tag("")
+                                }
+                            }
+                            .pickerStyle(.segmented)
                         }
+                        Button("Play Game") {
+                            vm.gameplay = .game
+                            vm.continentSelect(continent: vm.continent)
+                            vm.recentGuesses = []
+                            if vm.continent == .usStates {
+                                vm.borderArray = vm.currentState.borders()
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                        
+//                        Button("print country info") {
+//                            print(vm.countryInfo.count.description)
+//                           
+//                            
+//                        }
+                    }
+                }.onChange(of: vm.continent) { _, newValue in
+                    vm.gameCounts[3] = newValue.countrycount
+                    if newValue == .usStates {
+                        vm.borderArray = vm.allStates.randomElement()!.borders()
                     }
                 }
-                Button("Play Game") {
-                    vm.gameplay = .game
-                    vm.continentSelect(continent: vm.continent)
-                    
-                    if vm.continent == .usStates {
-                        vm.borderArray = vm.currentState.borders()
-                    }
-                    
-                    
+                
+                
                 }
-                .buttonStyle(.borderedProminent)
-            }}.onChange(of: vm.continent) { _, newValue in
-                vm.gameCounts[3] = newValue.countrycount
-                if newValue == .usStates {
-                    vm.borderArray = vm.allStates.randomElement()!.borders()
-                }
-            }
         } else {
                 LottieView(lottieFile: "globe", animationSpeed: 2)
                 .frame(width: 200, height: 200)
@@ -68,10 +83,9 @@ struct MenuView: View {
                             vm.allStates.append(usState)
                         }
                         vm.allcountries = allCountries
+                        vm.countryInfo = await fetchCountryInfo()
                     }
-                    Task {
-                            
-                        }
+                    
                 })
             }
         

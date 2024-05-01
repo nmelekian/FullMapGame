@@ -36,6 +36,7 @@ struct GameView: View {
         }
         .alert("You Scored \(vm.score) out of \(vm.currentGameCountriesCountIndex)!", isPresented: $vm.hasGameCompleted) {
             Button("New Game", role: .cancel) {
+                vm.gameCount = 0
                 vm.hasGameCompleted = false
                 vm.gameplay = .menu
                 vm.score = 0
@@ -49,6 +50,4 @@ struct GameView: View {
     
 }
 
-//#Preview {
-//    GameView()
-//}
+

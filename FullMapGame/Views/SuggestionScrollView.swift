@@ -30,6 +30,7 @@ struct SuggestionScrollView: View {
                 }
             }
         }
+        .scrollBounceBehavior(.automatic)
         .scrollIndicators(.hidden)
         .scrollTargetLayout()
     }

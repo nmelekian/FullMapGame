@@ -16,13 +16,13 @@ struct MapView: View {
                 ForEach(vm.borderArray, id: \.self) { border in
                     if vm.continent == .usStates{
                         MapPolygon(coordinates: border)
-                            .foregroundStyle(vm.currentState.stateName == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                            .foregroundStyle(vm.userGuessCorrect ? .green.opacity(0.7) : .red.opacity(0.7))
                       
 
                         
                     } else {
                         MapPolygon(coordinates: border)
-                            .foregroundStyle(vm.randomCountry.country == vm.userGuessesText ? .green.opacity(0.7) : .red.opacity(0.7))
+                            .foregroundStyle(vm.userGuessCorrect ? .green.opacity(0.7) : .red.opacity(0.7))
                     }
                         
                         

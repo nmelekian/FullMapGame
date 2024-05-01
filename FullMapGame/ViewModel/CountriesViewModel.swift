@@ -27,6 +27,7 @@ class CountriesViewModel: ObservableObject {
     @Published var userGuesses: [UserMapGuess] = []
     @Published var userGuess: UserMapGuess = UserMapGuess.userGuessTest
     @Published var userGuessesText = ""
+    @Published var userGuessCorrect = false
     
     
     
@@ -46,10 +47,16 @@ class CountriesViewModel: ObservableObject {
     
     @Published var currentState: USState = .testState
     @Published var allStates: [USState] = []
+    @Published var countryInfo: [CountryInfo] = []
     
     
     func playerSubmit() {
-        
+        if currentState.stateName == userGuessesText {
+            userGuessCorrect = true
+        }
+        if randomCountry.country == userGuessesText {
+            userGuessCorrect = true
+        }
         if continent == .usStates {
             currentName = currentState.stateName
         } else {
@@ -60,6 +67,7 @@ class CountriesViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
             Task{
                 //change these to reflect working off of the shortened array
+                userGuessCorrect = false
                 switch continent {
                 case .noChoice:
                     nextRound(array: allcountries)
@@ -71,7 +79,6 @@ class CountriesViewModel: ObservableObject {
                     nextRound(array: asianCountries)
                 case .Europe:
                     let europeanCountries = allcountries.filter{ EuropeCountries.contains($0.country)}
-                    print(europeanCountries.count)
                     nextRound(array: europeanCountries)
                 case .NorthAmerica:
                     let northAmericanCountries = allcountries.filter{ NorthAmericaCountries.contains($0.country)}
@@ -128,6 +135,7 @@ class CountriesViewModel: ObservableObject {
     
     func nextRound(array: [Country]) {
         var usedArray = array
+//        print(usedArray.description)
         gameCount += 1
         if gameCount == currentGameCountriesCountIndex {
             hasGameCompleted = true
@@ -135,19 +143,30 @@ class CountriesViewModel: ObservableObject {
         
             if currentGameCountriesCountIndex == gameCounts[3] {
                 recentGuesses.append(country.country)
+                print(recentGuesses)
+                usedArray.removeAll { country in
+                    recentGuesses.contains(country.country)
+                }
+                print(usedArray)
+                if usedArray.count >= 1 {
+                    randomCountry = usedArray.randomElement()!
+                }
+                else {
+                    hasGameCompleted = true
+                }
+            } else {
+                
+                recentGuesses.append(country.country)
+
                 usedArray.removeAll { country in
                     recentGuesses.contains(country.country)
                 }
                 randomCountry = usedArray.randomElement()!
-            } else {
+//                if recentGuesses.contains(randomCountry.country) {
+//                    randomCountry = usedArray.randomElement()!
+//                }
                 
-                recentGuesses.append(country.country)
-                randomCountry = usedArray.randomElement()!
-                if recentGuesses.contains(randomCountry.country) {
-                    randomCountry = usedArray.randomElement()!
-                }
-                
-                if recentGuesses.count == 6{
+                if recentGuesses.count == 13{
                     for i in 0...2 {
                         recentGuesses.remove(at: i)
                     }
