@@ -49,7 +49,7 @@ class CountriesViewModel: ObservableObject {
     @Published var allStates: [USState] = []
     @Published var countryInfo: [CountryInfo] = []
     
-    
+    /// Logic for player when they have typed their country and submit the answer
     func playerSubmit() {
         if currentState.stateName == userGuessesText {
             userGuessCorrect = true
@@ -67,6 +67,7 @@ class CountriesViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
             Task{
                 //change these to reflect working off of the shortened array
+                hasUserGuessed = false
                 userGuessCorrect = false
                 switch continent {
                 case .noChoice:
@@ -102,6 +103,9 @@ class CountriesViewModel: ObservableObject {
         }
     }
     
+    
+    ///Starts next round of play for US States
+    ///TODO: Refactor to make states and countries work in same function
     func nextStateRound(array: [USState]) {
         var usedArray = array
         gameCount += 1
@@ -114,7 +118,12 @@ class CountriesViewModel: ObservableObject {
                 usedArray.removeAll { state in
                     recentGuesses.contains(state.stateName)
                 }
-                currentState = usedArray.randomElement()!
+                if usedArray.count >= 1 {
+                    currentState = usedArray.randomElement()!
+                }
+                else {
+                    hasGameCompleted = true
+                }
             } else {
                 
                 recentGuesses.append(currentState.stateName)
@@ -133,6 +142,9 @@ class CountriesViewModel: ObservableObject {
     
     }
     
+    
+    ///Begins next round of play for countries
+    ///TODO: Work to refactor for countries and states
     func nextRound(array: [Country]) {
         var usedArray = array
 //        print(usedArray.description)
@@ -179,6 +191,8 @@ class CountriesViewModel: ObservableObject {
         
     }
     
+    
+    ///Selects the game continent/states for the current game
     func continentSelect(continent: Continent) {
         
         switch continent {
@@ -204,6 +218,7 @@ class CountriesViewModel: ObservableObject {
         position = .automatic
     }
     
+    ///Simple logic for scoring
     func answer(){
         
         if currentName == userGuessesText {

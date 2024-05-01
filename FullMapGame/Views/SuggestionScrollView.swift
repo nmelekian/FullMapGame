@@ -17,6 +17,7 @@ struct SuggestionScrollView: View {
                 ForEach(searchResults, id: \.self) { country in
                     Button(country) {
                         isPressed = true
+                        vm.hasUserGuessed = true
                         vm.userGuessesText = country
                         vm.playerSubmit()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

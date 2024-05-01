@@ -17,48 +17,18 @@ struct MapView: View {
                     if vm.continent == .usStates{
                         MapPolygon(coordinates: border)
                             .foregroundStyle(vm.userGuessCorrect ? .green.opacity(0.7) : .red.opacity(0.7))
-                      
-
-                        
+   
                     } else {
                         MapPolygon(coordinates: border)
                             .foregroundStyle(vm.userGuessCorrect ? .green.opacity(0.7) : .red.opacity(0.7))
                     }
-                        
-                        
                 }
             }
             
-            
-            VStack {
-                
-                
-                HStack(alignment:.center){
-                    Text("Score: \(vm.score)")
-                        .foregroundStyle(.white)
-                        .font(.title3)
-                        .padding()
-                    Spacer()
-                    Text(vm.currentName)
-                        .font(.title)
-                        .foregroundStyle(.white)
-                        .padding(.trailing)
-                    Spacer()
-                    Button(action: {
-                        vm.position = .automatic
-                    }, label: {
-                        Image(systemName: "location.square")
-                            .foregroundStyle(.white)
-                            .font(.title2)
-                    })
-                    .padding()
-                    
-                }
-                Spacer()
-            }
+            CountryNameGuessView(vm: vm)
         }
         .toolbar {
-           
+            
         }
         .mapStyle(vm.mapStyle)
     }

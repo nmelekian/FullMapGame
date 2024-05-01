@@ -22,7 +22,7 @@ struct Country: Codable, Hashable {
         
         var coordArray: [[CLLocationCoordinate2D]] = []
         
-        if country == "Canada" || country == "United States" || country == "Russia" || country == "Indonesia" || country == "Malaysia"{
+        if country == "Canada" || country == "United States" || country == "Russia" || country == "Indonesia" || country == "Malaysia" || country == "Norway"{
             for landmass in coordinatesArray {
                 var coord2DArray: [CLLocationCoordinate2D] = []
                 for index in 0..<landmass.count {

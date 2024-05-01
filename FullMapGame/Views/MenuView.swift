@@ -74,6 +74,7 @@ struct MenuView: View {
                 .frame(width: 200, height: 200)
                     .onAppear(perform: {
                     Task{
+                        vm.countryInfo = await fetchCountryInfo()
                         for name in countryNames {
                             let country = await Bundle.main.decode("\(name).json")
                             allCountries.append(country)
@@ -83,7 +84,7 @@ struct MenuView: View {
                             vm.allStates.append(usState)
                         }
                         vm.allcountries = allCountries
-                        vm.countryInfo = await fetchCountryInfo()
+                        
                     }
                     
                 })

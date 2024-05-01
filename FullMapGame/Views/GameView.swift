@@ -32,6 +32,7 @@ struct GameView: View {
             }
         }
         .onSubmit {
+            vm.hasUserGuessed = true
             vm.playerSubmit()
         }
         .alert("You Scored \(vm.score) out of \(vm.currentGameCountriesCountIndex)!", isPresented: $vm.hasGameCompleted) {
