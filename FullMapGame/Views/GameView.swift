@@ -16,7 +16,7 @@ struct GameView: View {
                 .contentMargins(10)
             VStack {
                 
-#if os(macOS)
+#if targetEnvironment(macCatalyst)
                 SuggestionScrollView(vm: vm)
                     .padding(.top)
 #endif

@@ -7,6 +7,11 @@
 
 import SwiftUI
 import Lottie
+import Foundation
+#if targetEnvironment(macCatalyst)
+import AppKit
+#endif
+
 
 struct LottieView: UIViewRepresentable {
     typealias UIViewType = UIView

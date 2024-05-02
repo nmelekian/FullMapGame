@@ -51,10 +51,10 @@ class CountriesViewModel: ObservableObject {
     
     /// Logic for player when they have typed their country and submit the answer
     func playerSubmit() {
-        if currentState.stateName == userGuessesText {
+        if currentState.stateName.lowercased() == userGuessesText.lowercased() {
             userGuessCorrect = true
         }
-        if randomCountry.country == userGuessesText {
+        if randomCountry.country.lowercased() == userGuessesText.lowercased() {
             userGuessCorrect = true
         }
         if continent == .usStates {
@@ -127,16 +127,19 @@ class CountriesViewModel: ObservableObject {
             } else {
                 
                 recentGuesses.append(currentState.stateName)
-                currentState = usedArray.randomElement()!
-                if recentGuesses.contains(randomCountry.country) {
-                    currentState = usedArray.randomElement()!
+                usedArray.removeAll { state in
+                    recentGuesses.contains(state.stateName)
                 }
+                currentState = usedArray.randomElement()!
                 
-                if recentGuesses.count == 10{
+                if recentGuesses.count == 15{
                     for i in 0...4 {
                         recentGuesses.remove(at: i)
                     }
                 }
+                
+
+               
             }
         borderArray = currentState.borders()
     

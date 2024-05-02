@@ -19,6 +19,7 @@
 		A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */; };
 		A620B6DD2B9B738B00B5CE59 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B6DC2B9B738B00B5CE59 /* Continent.swift */; };
 		A62D6DA32BE28D3100818616 /* CountryNameGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6DA22BE28D3100818616 /* CountryNameGuessView.swift */; };
+		A62D6DA52BE2D03800818616 /* MenuOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6DA42BE2D03800818616 /* MenuOptionsView.swift */; };
 		A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659A0EA2B852CCC00063A27 /* SpareParts.swift */; };
 		A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DD2B98B1A800A5B899 /* Afghanistan.json */; };
 		A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DE2B98B1A800A5B899 /* Albania.json */; };
@@ -310,6 +311,7 @@
 		A620B6DA2B9B605B00B5CE59 /* Country Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Lists.swift"; sourceTree = "<group>"; };
 		A620B6DC2B9B738B00B5CE59 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
 		A62D6DA22BE28D3100818616 /* CountryNameGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryNameGuessView.swift; sourceTree = "<group>"; };
+		A62D6DA42BE2D03800818616 /* MenuOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsView.swift; sourceTree = "<group>"; };
 		A659A0EA2B852CCC00063A27 /* SpareParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareParts.swift; sourceTree = "<group>"; };
 		A676E1DD2B98B1A800A5B899 /* Afghanistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Afghanistan.json; sourceTree = "<group>"; };
 		A676E1DE2B98B1A800A5B899 /* Albania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albania.json; sourceTree = "<group>"; };
@@ -654,6 +656,7 @@
 			children = (
 				A60BBD8C2B7D4AD6008B89BB /* ContentView.swift */,
 				A6BF975C2B9BBA2C00C59762 /* MenuView.swift */,
+				A62D6DA42BE2D03800818616 /* MenuOptionsView.swift */,
 				A6BF97582B9BB68B00C59762 /* GameView.swift */,
 				A6BF97632BA09BD300C59762 /* TextfieldView.swift */,
 				A676E39E2B9A3B9A00A5B899 /* SuggestionScrollView.swift */,
@@ -1318,6 +1321,7 @@
 				A620B6DB2B9B605B00B5CE59 /* Country Lists.swift in Sources */,
 				A6BF982C2BC9723400C59762 /* LottieView.swift in Sources */,
 				A6BF97662BAC644E00C59762 /* State.swift in Sources */,
+				A62D6DA52BE2D03800818616 /* MenuOptionsView.swift in Sources */,
 				A6BF98232BC95EFD00C59762 /* CountryInfo.swift in Sources */,
 				A60BBDAC2B7E94B4008B89BB /* UserGuess.swift in Sources */,
 				A6BF97592B9BB68B00C59762 /* GameView.swift in Sources */,
@@ -1478,7 +1482,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1519,7 +1524,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nick.CountryGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

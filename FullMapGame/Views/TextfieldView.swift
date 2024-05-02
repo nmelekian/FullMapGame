@@ -11,7 +11,7 @@ struct TextfieldView: View {
     @StateObject var vm: CountriesViewModel
     @FocusState var isFocused
     var body: some View {
-        #if os(iOS)
+        #if os(iOS) && !targetEnvironment(macCatalyst)
         TextField("Name the country", text: $vm.userGuessesText)
             .keyboardType(.alphabet)
             .autocorrectionDisabled()
@@ -22,7 +22,7 @@ struct TextfieldView: View {
             }
         #endif
         
-        #if os(macOS)
+        #if targetEnvironment(macCatalyst)
         TextField("Name the country", text: $vm.userGuessesText)
             .autocorrectionDisabled()
             .focused($isFocused)
