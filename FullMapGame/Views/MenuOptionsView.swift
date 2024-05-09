@@ -45,10 +45,6 @@ struct MenuOptionsView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
-                
-//                        Button("print country info") {
-//                            print(vm.countryInfo.count.description)
-//                        }
             }
         }
     }

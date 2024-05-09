@@ -48,6 +48,8 @@ class CountriesViewModel: ObservableObject {
     @Published var currentState: USState = .testState
     @Published var allStates: [USState] = []
     @Published var countryInfo: [CountryInfo] = []
+    @Published var userHintEnabled = false
+    @Published var userHintText = ""
     
     /// Logic for player when they have typed their country and submit the answer
     func playerSubmit() {
@@ -63,6 +65,7 @@ class CountriesViewModel: ObservableObject {
             currentName = country.country
         }
         mapStyle = .hybrid(pointsOfInterest: .excludingAll)
+        userHintEnabled = false 
         answer()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
             Task{
@@ -118,11 +121,12 @@ class CountriesViewModel: ObservableObject {
                 usedArray.removeAll { state in
                     recentGuesses.contains(state.stateName)
                 }
-                if usedArray.count >= 1 {
-                    currentState = usedArray.randomElement()!
+                if usedArray.count == 1 {
+                    hasGameCompleted = true
                 }
                 else {
-                    hasGameCompleted = true
+                    currentState = usedArray.randomElement()!
+                   
                 }
             } else {
                 
@@ -158,11 +162,11 @@ class CountriesViewModel: ObservableObject {
         
             if currentGameCountriesCountIndex == gameCounts[3] {
                 recentGuesses.append(country.country)
-                print(recentGuesses)
+//                print(recentGuesses)
                 usedArray.removeAll { country in
                     recentGuesses.contains(country.country)
                 }
-                print(usedArray)
+//                print(usedArray)
                 if usedArray.count >= 1 {
                     randomCountry = usedArray.randomElement()!
                 }
@@ -187,6 +191,7 @@ class CountriesViewModel: ObservableObject {
                     }
                 }
             }
+        
             borderArray = randomCountry.borders()
             country = randomCountry
         
@@ -254,7 +259,7 @@ class CountriesViewModel: ObservableObject {
     init() { // is synchronous
         Task {
         
-            let firstCountry = await Bundle.main.decode("\(countryNames.randomElement()!).json")
+            let firstCountry: Country = await Bundle.main.decode("\(countryNames.randomElement()!).json")
             allcountries.append(firstCountry)
           
             

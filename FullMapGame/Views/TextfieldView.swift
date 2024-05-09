@@ -11,6 +11,7 @@ struct TextfieldView: View {
     @StateObject var vm: CountriesViewModel
     @FocusState var isFocused
     var body: some View {
+        
         #if os(iOS) && !targetEnvironment(macCatalyst)
         TextField("Name the country", text: $vm.userGuessesText)
             .keyboardType(.alphabet)
@@ -31,10 +32,5 @@ struct TextfieldView: View {
                 isFocused = true
             }
         #endif
-        
     }
 }
-
-//#Preview {
-//    TextfieldView()
-//}

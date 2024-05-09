@@ -43,10 +43,6 @@ struct GameView: View {
                 vm.score = 0
             }
         }
-        //        .onChange(of: vm.continent) { oldValue, newValue in
-        //            vm.continentSelect(continent: newValue)
-        //        }
-        
     }
     
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct SuggestionScrollView: View {
     @StateObject var vm: CountriesViewModel
     @State private var isPressed = false
-
+    
     var body: some View {
         ScrollView(.horizontal) {
             HStack{
@@ -87,7 +87,6 @@ struct SuggestionScrollView: View {
                 return AmericanStates.filter {$0.localizedStandardContains(vm.userGuessesText)}
             }
         }
-        
     }
 }
 

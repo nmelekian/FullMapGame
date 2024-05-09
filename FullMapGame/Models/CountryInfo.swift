@@ -23,7 +23,6 @@ struct Name: Codable, Hashable {
     
 }
 
-
 struct Flags: Codable, Hashable{
     var png: String
 }

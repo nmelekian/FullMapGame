@@ -11,16 +11,14 @@ import MapKit
 struct ContentView: View {
     @StateObject var vm = CountriesViewModel()
     @FocusState var isFocused
-   
+    
     var body: some View {
         switch vm.gameplay {
         case .menu:
-          MenuView(vm: vm)
+            MenuView(vm: vm)
         case .game:
             GameView(vm: vm, isFocused: _isFocused )
-        }
-            
-        
+        }  
     }
 }
 
@@ -34,21 +32,8 @@ struct ContentView: View {
 //}
 
 /*
- user coordinate inputted
- compare border points of target country
- compare distance between userpoint and border point
  
-State Guesser:
+ State Guesser:
  Zooms out slowly of the state, and the faster you answer, the more points you get
- 
- 
-
- 
-
  Autocorrect/fill in
- 
-
- 
- add a game of states?
- 
  */

@@ -28,10 +28,4 @@ func fetchCountryInfo() async -> [CountryInfo]{
     }
     let noDupes = Array(Set(countryInfo))
     return noDupes
-    //    for country in response.countries {
-//        print(country.name.common)
-//        print(country.capital.first ?? "none")
-//    }
-//    print(response.countries.count)
-//    print(countryNames.count)
 }

@@ -28,9 +28,6 @@ struct USState: Codable, Hashable {
                 }
                 coordArray.append(coord2DArray)
             }
-        
-       
-        
         if coordArray.count > 100 {
           coordArray = Array(coordArray.sorted(by: { landmass1, landmass2 in
                 landmass1.count > landmass2.count})[0..<30])

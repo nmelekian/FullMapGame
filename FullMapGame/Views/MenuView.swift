@@ -37,11 +37,11 @@ struct MenuView: View {
                     .onAppear(perform: {
                         Task{
                             for name in countryNames {
-                                let country = await Bundle.main.decode("\(name).json")
+                                let country: Country = await Bundle.main.decode("\(name).json")
                                 allCountries.append(country)
                             }
                             for state in AmericanStatesDecode {
-                                let usState = await Bundle.main.decodeState("\(state).json")
+                                let usState: USState = await Bundle.main.decode("\(state).json")
                                 vm.allStates.append(usState)
                             }
                             vm.allcountries = allCountries
@@ -50,7 +50,6 @@ struct MenuView: View {
                         Task {
                             vm.countryInfo = await fetchCountryInfo()
                         }
-                        
                     })
             }
         }

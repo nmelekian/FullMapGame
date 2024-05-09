@@ -28,7 +28,7 @@ extension Bundle {
 //        return loaded
 //    }
     
-    func decode(_ file: String) async -> Country {
+    func decodeCountry(_ file: String) async -> Country {
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) in bundle.")
         }
@@ -39,8 +39,8 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
-        let loaded = try! decoder.decode(Country.self, from: data)
-        print(loaded.country)
+//        let loaded = try! decoder.decode(Country.self, from: data)
+//        print(loaded.country)
         guard let loaded = try? decoder.decode(Country.self, from: data) else {
             return Country.testCountry
         }
@@ -59,12 +59,33 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
-        let loaded = try! decoder.decode(USState.self, from: data)
-        print(loaded.stateName)
+//        let loaded = try! decoder.decode(USState.self, from: data)
+//        print(loaded.stateName)
         guard let loaded = try? decoder.decode(USState.self, from: data) else {
             fatalError("was unable to decode data from \(file)")
         }
         
         return loaded
     }
+    
+    func decode<T: Codable>(_ file: String) async -> T {
+        guard let url = self.url(forResource: file, withExtension: nil) else {
+            fatalError("Failed to locate \(file) in bundle.")
+        }
+        
+        guard let data = try? Data(contentsOf: url) else {
+            fatalError("Failed to load \(file) from bundle.")
+        }
+        
+        let decoder = JSONDecoder()
+        
+//        let loaded = try! decoder.decode(T.self, from: data)
+//        print(loaded.stateName)
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
+            fatalError("was unable to decode data from \(file)")
+        }
+        
+        return loaded
+    }
+
 }

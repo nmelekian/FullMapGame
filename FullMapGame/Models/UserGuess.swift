@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-
+/// Not relevant to project currently
 struct UserMapGuess: Codable, Identifiable, Equatable{
     var id = UUID()
     
@@ -18,9 +18,7 @@ struct UserMapGuess: Codable, Identifiable, Equatable{
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
-    
-    
-    
+  
     static var userGuessTest = UserMapGuess(name: "Test", latitude: 0.0, longitude: 0.0)
     
 }
