@@ -10,10 +10,12 @@ import SwiftUI
 struct CountryNameGuessView: View {
     @StateObject var vm: CountriesViewModel
     @State private var alertShowing = false
+    @State private var enabled = false
+    @State private var animationAmount = 0.0
     var currentCountryFlag: CountryInfo {
         vm.countryInfo.first { country in
             country.name.common == vm.currentName
-        } ?? vm.countryInfo[0]
+        } ?? CountryInfo(name: Name(common: "Filler", official: "Filler"), flags: Flags(png: "circle.fill"), capital: ["Filler"])
     }
     var body: some View {
         VStack {
@@ -28,38 +30,25 @@ struct CountryNameGuessView: View {
                 .alert("Return to Menu?", isPresented: $alertShowing) {
                     Button("Keep Playing", role: .cancel) { }
                     Button("Go To Menu", role: .destructive) {
-                        vm.gameplay = .menu
                         vm.recentGuesses = []
                         vm.currentGameCountriesCountIndex = 0
                         vm.gameCount = 0
                         vm.score = 0
                         vm.continent = .noChoice
+                        vm.hasGameCompleted = false
+                        vm.gameplay = .menu
+                        vm.gameCounts[3] = vm.continent.countrycount
+                        
                     }
                     
                 }
                 Spacer()
-                if vm.userHintEnabled {
-                    VStack(spacing: 5){
-                        Text("Capital City:")
-                            .font(.system(size: 25))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.3)
-                            .padding([.leading,.trailing])
-                        Text(vm.userHintText)
-                            .font(.system(size: 25))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.3)
-                            .padding([.leading,.trailing])
-                    }
-                    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
-                    .padding(.trailing, 4)
-                    
-                }
+               
                 if vm.hasUserGuessed {
                     VStack(alignment: .center){
                         if vm.continent != .usStates{
                             Text(vm.currentName)
-                                .font(.system(size: 25))
+                                .font(.title)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.3)
                                 .padding([.top,.leading,.trailing])
@@ -79,15 +68,55 @@ struct CountryNameGuessView: View {
                                 .font(.system(size: 25))
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.3)
-                                .padding()
+                                .padding([.top,.leading,.trailing])
+                            Image(vm.currentName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                             
+                                
                         }
                     }
                     .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
                     .padding(.trailing, 4)
                     
+                } else {
+                    if vm.userHintEnabled {
+                        VStack(spacing: 5){
+                            Text("Capital City:")
+                                .font(.system(size: 25))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.3)
+                                .padding([.leading,.trailing])
+                            Text(vm.userHintText)
+                                .font(.system(size: 25))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.3)
+                                .padding([.leading,.trailing])
+                        }
+                        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
+                        .padding(.trailing, 4)
+                        
+                    } else {
+                        
+                                Button(action: {
+                                    vm.userHintText = vm.continent == .usStates ? vm.currentState.capital  : vm.country.city
+                                    vm.userHintEnabled.toggle()
+                                    
+                                }, label: {
+                                    Text("Hint")
+                                        .font(.title3)
+                                        .padding()
+                                        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
+                                        .padding([.leading, .bottom], 2)
+                                        
+                                })
+                                .disabled(vm.userHintEnabled)
+                    }
                 }
                 Spacer()
                 Button(action: {
+                    
                     vm.position = .automatic
                 }, label: {
                     Image(systemName: "location")
@@ -107,18 +136,31 @@ struct CountryNameGuessView: View {
                     .padding([.leading, .bottom], 2)
                 
                 Spacer()
-                Button(action: {
-                    vm.userHintText = vm.country.city
-                    vm.userHintEnabled.toggle()
-                }, label: {
-                    Text("Hint")
-                        .font(.title3)
-                        .padding()
-                        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
-                        .padding([.leading, .bottom], 2)
+        
+                if vm.hasUserGuessed {
+                        Button(action: {
+                            vm.nextQuestion()
+                            
+                        }, label: {
+                            Image(systemName: "arrow.right")
+                                .font(.title3)
+                                .foregroundStyle(.purple)
+                                .bold()
+                                .padding()
+                                .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 10))
+                                .padding([.leading, .bottom], 2)
+                                
+                                
+                        }) 
+//                        .transition(.scale)
                         
-                })
-                .disabled(vm.userHintEnabled)
+                    
+                    
+                    
+                }
+                
+                    
+                
             }
         }
     }

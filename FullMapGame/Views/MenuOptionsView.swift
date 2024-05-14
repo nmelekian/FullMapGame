@@ -43,6 +43,7 @@ struct MenuOptionsView: View {
                     if vm.continent == .usStates {
                         vm.borderArray = vm.currentState.borders()
                     }
+                    vm.position = .automatic
                 }
                 .buttonStyle(.borderedProminent)
             }

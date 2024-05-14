@@ -40,7 +40,7 @@ class CountriesViewModel: ObservableObject {
     @Published var userCorrect = false
     @Published var userWrong = false
     @Published var gameplay: Gameplay = .menu
-    @Published var gameCounts = [10, 25, 50, 207]
+    @Published var gameCounts = [10, 25, 50, 208]
     @Published var recentGuesses = [String]()
     @Published var hasGameCompleted = false
     
@@ -67,7 +67,11 @@ class CountriesViewModel: ObservableObject {
         mapStyle = .hybrid(pointsOfInterest: .excludingAll)
         userHintEnabled = false 
         answer()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
+        
+    }
+    
+    func nextQuestion() {
+        DispatchQueue.main.asyncAfter(deadline: .now()) { [self] in
             Task{
                 //change these to reflect working off of the shortened array
                 hasUserGuessed = false
