@@ -12,11 +12,12 @@ struct CountryNameGuessView: View {
     @State private var alertShowing = false
     @State private var enabled = false
     @State private var animationAmount = 0.0
-    var currentCountryFlag: CountryInfo {
+    var currentCountryFlag: CountryInfo? {
         vm.countryInfo.first { country in
             country.name.common == vm.currentName
-        } ?? CountryInfo(name: Name(common: "Filler", official: "Filler"), flags: Flags(png: "circle.fill"), capital: ["Filler"])
+        }
     }
+    
     var body: some View {
         VStack {
             HStack(alignment:.center){
@@ -53,7 +54,7 @@ struct CountryNameGuessView: View {
                                 .minimumScaleFactor(0.3)
                                 .padding([.top,.leading,.trailing])
                             AsyncImage(
-                                url: URL(string: currentCountryFlag.flags.png) ,
+                                url: URL(string: currentCountryFlag?.flags.png ?? "dd") ,
                                 content: { image in
                                     image.resizable()
                                         .aspectRatio(contentMode: .fit)
