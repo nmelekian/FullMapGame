@@ -21,6 +21,7 @@
 		A62D6DA32BE28D3100818616 /* CountryNameGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6DA22BE28D3100818616 /* CountryNameGuessView.swift */; };
 		A62D6DA52BE2D03800818616 /* MenuOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6DA42BE2D03800818616 /* MenuOptionsView.swift */; };
 		A659A0EB2B852CCC00063A27 /* SpareParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659A0EA2B852CCC00063A27 /* SpareParts.swift */; };
+		A67247262C6E8A430070DBAF /* globe.json in Resources */ = {isa = PBXBuildFile; fileRef = A67247252C6E8A430070DBAF /* globe.json */; };
 		A676E2AD2B98B1A800A5B899 /* Afghanistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DD2B98B1A800A5B899 /* Afghanistan.json */; };
 		A676E2AE2B98B1A800A5B899 /* Albania.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DE2B98B1A800A5B899 /* Albania.json */; };
 		A676E2AF2B98B1A800A5B899 /* Algeria.json in Resources */ = {isa = PBXBuildFile; fileRef = A676E1DF2B98B1A800A5B899 /* Algeria.json */; };
@@ -292,7 +293,6 @@
 		A6BF98252BC95FAD00C59762 /* CountryInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */; };
 		A6BF98282BC971F900C59762 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A6BF98272BC971F900C59762 /* Lottie */; };
 		A6BF982C2BC9723400C59762 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF982B2BC9723400C59762 /* LottieView.swift */; };
-		A6BF982E2BC9744700C59762 /* globe.json in Resources */ = {isa = PBXBuildFile; fileRef = A6BF982D2BC9744700C59762 /* globe.json */; };
 		A6ECC60F2BD1A79D00C7A65A /* BackgroundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ECC60E2BD1A79D00C7A65A /* BackgroundMapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -313,6 +313,7 @@
 		A62D6DA22BE28D3100818616 /* CountryNameGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryNameGuessView.swift; sourceTree = "<group>"; };
 		A62D6DA42BE2D03800818616 /* MenuOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsView.swift; sourceTree = "<group>"; };
 		A659A0EA2B852CCC00063A27 /* SpareParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareParts.swift; sourceTree = "<group>"; };
+		A67247252C6E8A430070DBAF /* globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globe.json; sourceTree = "<group>"; };
 		A676E1DD2B98B1A800A5B899 /* Afghanistan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Afghanistan.json; sourceTree = "<group>"; };
 		A676E1DE2B98B1A800A5B899 /* Albania.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Albania.json; sourceTree = "<group>"; };
 		A676E1DF2B98B1A800A5B899 /* Algeria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algeria.json; sourceTree = "<group>"; };
@@ -583,7 +584,6 @@
 		A6BF98222BC95EFD00C59762 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
 		A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoService.swift; sourceTree = "<group>"; };
 		A6BF982B2BC9723400C59762 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		A6BF982D2BC9744700C59762 /* globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = globe.json; path = ../../../../../../Downloads/globe.json; sourceTree = "<group>"; };
 		A6ECC60E2BD1A79D00C7A65A /* BackgroundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -625,7 +625,6 @@
 				A60BBD9C2B7D4BB9008B89BB /* Views */,
 				A60BBDA32B7D4D10008B89BB /* Models */,
 				A60BBD9B2B7D4BAE008B89BB /* Extensions */,
-				A6BF982D2BC9744700C59762 /* globe.json */,
 				A60BBD8E2B7D4AD7008B89BB /* Assets.xcassets */,
 				A60BBD902B7D4AD7008B89BB /* FullMapGame.entitlements */,
 				A60BBD912B7D4AD7008B89BB /* Preview Content */,
@@ -647,6 +646,7 @@
 				A6BF98242BC95FAD00C59762 /* CountryInfoService.swift */,
 				A60BBD992B7D4BA9008B89BB /* Bundle Extension.swift */,
 				A60BBD9D2B7D4BC7008B89BB /* Coordinate Extension.swift */,
+				A67247252C6E8A430070DBAF /* globe.json */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1040,7 +1040,7 @@
 				A676E2CE2B98B1A800A5B899 /* Cameroon.json in Resources */,
 				A676E2E72B98B1A800A5B899 /* Equatorial Guinea.json in Resources */,
 				A676E3512B98B1A800A5B899 /* Seychelles.json in Resources */,
-				A6BF982E2BC9744700C59762 /* globe.json in Resources */,
+				A67247262C6E8A430070DBAF /* globe.json in Resources */,
 				A6BF97622BA094F900C59762 /* Taiwan.json in Resources */,
 				A676E2D62B98B1A800A5B899 /* Colombia.json in Resources */,
 				A676E32B2B98B1A800A5B899 /* Namibia.json in Resources */,

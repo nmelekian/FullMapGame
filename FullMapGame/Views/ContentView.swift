@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    @StateObject var vm = CountriesViewModel()
+    @StateObject var vm: CountriesViewModel
     @FocusState var isFocused
     
     var body: some View {
@@ -37,3 +37,30 @@ struct ContentView: View {
  Zooms out slowly of the state, and the faster you answer, the more points you get
  Autocorrect/fill in
  */
+
+
+func choice(introArray: [String], choice1: String, choice2: String, choice3: String, defaulted: String) {
+    for line in introArray {
+        print(line)
+    }
+    
+    var hasChosen = false
+    
+    while !hasChosen {
+        if let choice = readLine() {
+            switch choice {
+            case "1" :
+                print(choice1)
+                hasChosen = true
+            case "2":
+                print(choice2)
+                hasChosen = true
+            case "3":
+                print(choice3)
+                hasChosen = true
+            default:
+                print(defaulted)
+            }
+        }
+    }
+}

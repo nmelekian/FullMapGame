@@ -8,7 +8,8 @@
 import Foundation
 import MapKit
 
-extension CLLocationCoordinate2D: Hashable, Codable {
+
+extension CLLocationCoordinate2D: @retroactive Hashable, Codable {
     public func encode(to encoder: Encoder) throws {
         
     }

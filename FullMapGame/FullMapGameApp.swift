@@ -13,7 +13,7 @@ struct FullMapGameApp: App {
     @StateObject var viewModel = CountriesViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: viewModel)
                 .environmentObject(viewModel)
         }
     }

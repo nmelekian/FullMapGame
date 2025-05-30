@@ -25,7 +25,7 @@ struct MenuOptionsView: View {
                             Text("\(continent.rawValue)")
                         }
                     }
-                    .pickerStyle(.menu)
+                    .pickerStyle(.automatic)
                 }
                 VStack{
                     Text("Select Number of Countries: ")

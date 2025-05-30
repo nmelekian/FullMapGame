@@ -103,10 +103,12 @@ class CountriesViewModel: ObservableObject {
                 }
                 
             }
-            position = .automatic
-            currentName = ""
-            userGuessesText = ""
-            mapStyle = .imagery
+            withAnimation {
+                position = .automatic
+                currentName = ""
+                userGuessesText = ""
+                mapStyle = .imagery
+            }
         }
     }
     
@@ -195,12 +197,8 @@ class CountriesViewModel: ObservableObject {
                     }
                 }
             }
-        
             borderArray = randomCountry.borders()
             country = randomCountry
-        
-        
-        
     }
     
     
@@ -240,25 +238,6 @@ class CountriesViewModel: ObservableObject {
             userWrong.toggle()
         }
     }
-    
-  
-//    func addPlayerGuess() {
-//        
-//        userGuess = UserMapGuess(name: "Player Guess", latitude: userLatitude, longitude: userLongitude)
-//        
-////        let playerGuess = UserMapGuess(name: "player guess \(UUID())", latitude: userLatitude, longitude: userLongitude)
-////        userGuesses.append(playerGuess)
-//    }
-    
-    
-//    func IncreasePlayerScore() {
-//        if userGuess == randomCountry.country {
-//            userScore += 1
-//        }
-//    }
-    
-    
-    
     
     init() { // is synchronous
         Task {
